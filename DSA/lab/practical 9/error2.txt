@@ -1,0 +1,83 @@
+//error when deleting first node or something it deletes all contacts
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : a
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : b
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : c
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : ab
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : abc
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 2
+Enter name : a
+Contact deleted successfully :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+There is no contact in the list :(
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 

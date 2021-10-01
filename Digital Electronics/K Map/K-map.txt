@@ -1,0 +1,74 @@
+-> SOP [Sum of Products]
+	A = 0 -> Ā
+	A = 1 -> A
+-> POS [Product of Sum]
+	A = 0 -> A
+	A = 1 -> Ā
+	
+->Number of cells for K-map table : 2^(n)
+	where n is the number of variables
+	
+->there should be only one bit change in the k-map table in the concequent column and row ! thats why in four column we write 11 before 10 as its after the 10 column so that from 01 to 11 it only change 1 bit of 0 to 1 but if we use 10 instead of 11 then from 01 to 10 there are 2 bit changed so we cannot use that!
+
+->k-map table representation : 
+
+	For 2 : 	cells = 2^2	= 4
+		0	2
+		1	3
+	For 3 :		cells = 2^3 = 8
+		0	2	6	4
+		1	3	7	5
+	For 4 : 	cells = 2^4 = 16
+		0	4	12	8	
+		1	5	13	9
+		3	7	15	11
+		2	6	14	10
+
+->We have to write m[small m] just before above numbers in SOP tables which represents min terms 
+->M is for Max term
+
+->SOP are always written for HIGH outputs [we must consider only ONE in this form] [SOP form also called CANONICAL or STANDARD SOP]
+->POS are always written for LOW outputs [we must consider only ZERO in this form]
+
+->SOP 's shortform will be represented by SIGMA
+->POS 's shortform will be represented by PIE
+
+->Grouping can be made only for even terms like 2, 4, 8, 16 etc. according to the bits
+->In sop as we are considering only ones so grouping ones and after that we should only consider common variables in the expression like in column there is ĀB and AB then we must take B only in the expression from column and in row wise if there is CD only there we should write CDB as expression for group of those 2 cells.
+-> if there is no common variable among the column group or row group so as Ā+A = 1 we should take them as 1 only.so if there is no common element in row then we should take it as 1 and then we should go for rows.
+-> group of elements : (how many variables less)
+	2		-> 	1
+	4		-> 	2
+	8		-> 	3
+	16		-> 	4
+	this is minimization techniques so for minimizeing the expression we should go for maximum group elements so that the expression will be minimum.
+ ->grouping should be from maximum to minimum.	
+ ->grouping in folding can also be done
+
+->IMPLICANTS : group of one's are called implicants
+->PRIME IMPLICANTS : largest group of one's.
+->ESSENTIALS PRIME IMPLICANTS : there is a one in prime implicant which we cannot combine in different way ! which prime implicant is called essential prime implicant.
+
+SIMPLIFYING THE BOOLEAN FUNCTION :
+	1.no of variables : a,b,c
+	2.no of cells : 2^n (where n is the number of combinations)
+	3.SOP or POS
+	4.Pair them in 8->4->2->1 whatever.
+	
+->canonical form is called when there are variable present in each term 
+like abc + a(bar)bc etc.
+
+->if variables are not in cannonical form then also we can solve it as per taking others as one 
+->for nand gate representation we have to double complement the expression both sides. then simplfy it using de morgans theorm and try to convert all elements into bar form and nand form as per shown in below example :
+	ex : F = A + C -> CONVERTING IT IN NAND
+		F'' = ((A+C)')'
+			= (A'*B')' 	//DEMORGAN THEORM
+		F	= this is two level nand gate -> all bar format can be represented as shorting nand gate to each and after last one is also a nand gate format. (F'' = F)
+	->the group which we dont needed to make is called redendent group
+	ex : F = A'D + AC 
+		F''= ((A'D)'*(A*C)')'
+		F	= total three nand gates and one short circuited nand for A
+		
+->Standard or Canonical SOP form : Each minterm having all variables
+->Minimal SOP form : Each minterm does not have all variables.
+			

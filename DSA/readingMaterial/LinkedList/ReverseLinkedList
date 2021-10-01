@@ -1,0 +1,23 @@
+There is two methods to reverse a linklist :
+	1.Iterative method
+	2.Recursive method
+	
+	1.Iterative method : 
+		->
+			t1 = t2 = NULL;
+			while(START != NULL){
+				t2 = START->link;
+				START->link = t1;
+				t1 = START;
+				START = t2;
+			}
+			return t1;
+EXPLANATION : 
+	->first we declared pointers t1 and t2 and assigned them as NULL.
+	->then running while loop till NULL come in start pointer.
+	->in loop, 
+		->first we will assign the address of next block in t2.
+		->then the first block which contains the address of next block, we have no need of it now as the address of next block is already in t2 then, we will assgin it to t1 [which contains NULL in starting and then the address of previous block for all other iterations]
+		->then the address of previous block is already present in the current node , we have no need of t1 then we will assign t1 to the address of current block which is present in start pointer.
+		->now start pointer's need is over so that we have no need of it, therefor we will assign the address of next block which is present in t2 and we will assign it to start.
+		->At the end of the function, we will return t1's address which is last node's address previously and now first node's address. so that we can access the first node through start pointer [we will put it in start pointer]

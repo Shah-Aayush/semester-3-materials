@@ -1,0 +1,59 @@
+Wavelength = (propagation speed) X period 
+λ = c/f
+
+bandwidth : Difference between the highest and the lowest frequencies contained in that signal : B = Fh - Fl
+
+
+example of a nonperiodic composite signal is the signal received by an old-fashioned analog black-and-white TV. A TV screen is made up of pixels. If we assume a resolution of 525 × 700, we have 367,500 pixels per screen. If we scan the screen 30 times per second, this is 367,500 × 30 = 11,025,000 pixels per second. The worst-case scenario is alternating black and white pixels. We can send 2 pixels per cycle. Therefore, we need 11,025,000 / 2 = 5,512,500 cycles per second, or Hz. The bandwidth needed is 5.5125 MHz.
+
+No. of Bits = log2(No. of Level)
+
+Assume we need to download text documents at the rate of 100 pages per sec. What is the required bit rate of the channel?
+Solution
+A page is an average of 24 lines with 80 characters in each line. If we assume that one character requires 8 bits (ASCII), the bit rate is 100 X 24 X 80 X 8 = 15.36 Mbps
+
+A digitized voice channel, is made by digitizing a 4-kHz bandwidth analog voice signal. We need to sample the signal at twice the highest frequency (two samples per hertz). We assume that each sample requires 8 bits. What is the required bit rate?
+-2*4000*8 = 64k bps  
+
+HDTV uses digital signals to broadcast high quality video signals. The HDTV screen is normally a ratio of 16 : 9. There are 1920 by 1080 pixels per screen, and the screen is renewed 30 times per second. Twenty-four bits represents one color pixel
+-1920*1080*30*24 = 1.5G bps
+
+Bit length = propagation speed X bit duration
+
+What is the required bandwidth of a low-pass channel if we need to send 1 Mbps by using baseband transmission?
+a.The minimum bandwidth, is B = bit rate /2, or 500 kHz. 
+b. A better solution is to use the first and the third    harmonics with  B = 3 × 500 kHz = 1.5 MHz.
+c. Still a better solution is to use the first, third, and fifth    harmonics with B = 5 × 500 kHz = 2.5 MHz.
+
+maximum bit  rate = first harmonic = 2*available bandwidth
+
+Measurement of Attenuation
+	-dB = 10log10(P2/P1)
+P1 - input signal
+P2 - output signal
+	-dB = 20log10(V2/V1)
+V1 - input voltage
+V2 - output voltage
+
+Noise Measurement : SIGNAL to NOISE ratio.
+SNRdB = 10log10SNR
+
+Noiseless channel: nyquist bit rate
+-BitRate = 2 X bandwidth X log2L
+where L is the no. of levels
+The number of signal levels = 2^n.
+-C = 2 B log2 n 
+C= capacity in bps
+B = bandwidth in Hz
+
+Noisy channel: Shannon capacity
+-Capacity = bandwidth X log2(1+SNR) bps
+
+when the SNR is very high,
+-C = B*SNRdb/3
+
+Throughput = (frames/second)*(avg carrying  bits)
+
+Latency = propagation time + transmission time + queuing time + processing delay
+Propagation Delay = Distance/Propagation speed
+Transmission time = (Message Size) / Bandwidth

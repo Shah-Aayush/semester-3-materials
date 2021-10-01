@@ -1,0 +1,103 @@
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+There is no contact in the list :(
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : Aayush
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : b
+Enter phone number : 1231232341
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : d
+Enter phone number : 1231231232
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : c
+Enter phone number : 2342342341
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : Aayush
+Phone Number : 1231231231
+
+Name : b
+Phone Number : 1231232341
+
+Name : c
+Phone Number : 2342342341
+
+Name : d
+Phone Number : 1231231232
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 5
+Name : d
+Phone Number : 1231231232
+
+Name : c
+Phone Number : 2342342341
+
+Name : b
+Phone Number : 1231232341
+
+Name : Aayush
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 2
+Enter name : Aayush
+Terminated due to signal: SEGMENTATION FAULT (11)

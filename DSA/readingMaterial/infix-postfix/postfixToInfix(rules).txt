@@ -1,0 +1,37 @@
+Algorithm POSTFIX : this alogrithm finds the value of an arithmetic expression P written in Postfix notation
+	1. [ADD SENTINEL] Add a right parenthesis ')' at the end of P.
+	2. [LOOP] Scan P from Left to Right and repeat steps 3 and 4 for each element of P until the sentinel ')' is encountered.
+	3. [HANDLING OF OPERANDS] If an operand is encountered, put it on STACK.
+	4. [HANDLING OF OPERATORS] If an operator '@' is encountered then 
+		a. Remove the two top elements of STACK, where A is the top element and B is the next to top element.
+		b. Evaluate B '@' A
+		c. Place the result of B '@' A back on STACK.
+			[End Of If Structure]
+			[End Of Step 2 Loop]
+	5. [RESULT] Set VALUE equal to the top element on STACK.
+	6. [FINISHED] Exit.
+	
+	expression : 
+		P : ABC+DE+F*+G/+
+		VALUE : 
+			
+->EVALUATION : 
+	ABC+DE+F*+G/+)
+	loop of scanning expression P
+		expression scanned			STACK
+		A							A
+		B							AB
+		C							ABC
+		+							(removing 2 elements from top of the stack and evoluating them) -> B+C = let the result of this is 'X'. then put it on the top of the stack
+		D							AXD
+		E							AXDE
+		+							D+E = 'Y'
+		F							AXYF
+		*							F*Y = 'Z'		stack-> AXZ
+		+							X+Z='W'		stack-> AW
+		G							AWG
+		/							W/G = 'V'		stack->AV
+		+							A+V='U'		stack->U
+		)				->end of loop
+		
+		VALUE : RESULT from Stack : U

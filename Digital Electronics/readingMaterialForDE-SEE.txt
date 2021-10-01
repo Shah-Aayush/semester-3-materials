@@ -1,0 +1,10 @@
+Maximum possible min terms and max terms = 2^n
+Total number of logical expressions : 2^[2^(n)]		[n = no. of variables]
+Max Self dual possible for n variables : 2^[2^(n-1)]
+m = no. of switches , n = no. of combinations : 2^m = n.
+implicants = group of 1s
+prime implicants = Largest group of 1s
+Essential prime implicants = prime implicants with atleast 1 minterm which cannot be combined in anyother way.
+r's complement of any number: (r^n)-N	[n = number of digits, N = given number , r = base]
+(r-1)'s complement of any number: (r^n)-N-1	[n = number of digits, N = given number , r = base]
+[(r-1)'s complement] + 1 = [r's complement]

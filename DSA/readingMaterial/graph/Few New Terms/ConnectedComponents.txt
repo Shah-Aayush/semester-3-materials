@@ -1,0 +1,38 @@
+/*
+	
+	Connected Components : How to find out connected components in graph.
+	
+	JENNY's lecture : https://youtu.be/9esCn0awd5k
+	->set of vertices which are reachable.
+	
+	->It is a subgraph in which every node/vertices is connected by path.
+	->No vertices is connected with any other vertices in super graph.
+	
+	->For finding this in computer : we need algo. which are basically two DFS and BFS.
+	
+*/
+	
+//DFS TRAVERSAL TO THE NUMBER OF FIND CONNECTED COMPONENTS
+Connected_Components(G){
+	for each vertex v (belongs to) E N
+		flag[v] = -1
+		count=0
+		
+		for(int v=0,v<N,v++){
+			if(flag[v]==-1){
+				DFS(v,flag)
+				count++
+			}
+		}
+		cout<<count
+			
+}
+DFS(int v, int flag){
+	flag[v]=1;
+	cout<<v;
+	for(each adjacent node u of v){
+		if(flag[u]==-1)
+		DFS(u,flag)
+	}
+}
+

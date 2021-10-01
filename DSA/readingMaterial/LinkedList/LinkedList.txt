@@ -1,0 +1,144 @@
+/*
+LINKED LIST : 
+	
+->Linked list is a data structure used for storing collections of data.
+->Linked list has the following properties : 
+	-Successive elements are connected by pointers
+	-Last element points to NULL
+	-It can grow or shrink size during execution of a program 
+	-It can be made just as long as required 
+	-It does not waste memory space
+	
+->Diagrammatic Representation : 
+	start/head pointer -> block 1 [contains element[which can contain one or more variable] along with pointer which points to the next element]->block 2 [contains element along with pointer which points to the next element]->....block n [contains element along with pointer which points to the NULL element]
+	-There are three main linked list operations
+		1.Insertion
+		2.Deletion
+		3.Traversing
+	
+What is NODE :
+	->When we talk about storing list of information, each information set is a node which also plays a role of connection point in the list.
+	Defining a node (Data Type)
+	struct node{
+		int info;	//we can make more variable
+		struct node *link;
+	};
+Start Pointer : 
+	struct node *START = NULL;
+	Why Start initially contains NULL ?
+	->Initially it will not contain anything because it doesnt point anything.if there is no value then it cannot point any node.If we dont put NULL there then it will contain some garbage value so that now it will point some block but since we doesnt created any block then why to put random values? so we will put NULL into it.
+	
+Operations : 
+	->Insertion
+		-At the end
+		-At the beginning
+		-After a node
+	->Deletion
+		-Last node
+		-First node
+		-Particular node
+	->Traversing	//visiting each and every node
+
+*/	
+//SAMPLE PROGRAM : 
+#include<stdio.h>	//includes NULL keyword
+#include<stdlib.h>	//for using malloc 
+struct node{
+	int info;
+	struct node *link;		//creating pointer of node type so that it can contain the address of another node block.
+};
+struct node *START = NULL;
+struct node* createNode(){		//return type : struct node	//function through which we can create a new node
+	struct node *n;		//creates pointer which will contains address of next block
+	n = (struct node*)malloc(sizeof(struct node));		//malloc 's return type is void so we have to type cast it in int so that we dont get warning.
+	return n;
+}
+void insertNode(){		//we can pass arguments to this function or simply asking value in this function as well
+	struct node *temp;
+	temp = createNode();
+	printf("Enter your Number :");
+	scanf("%d",&temp->info);
+	temp->link = NULL;	//if we create node at the end [INSERTION AT THE END]
+	/*
+	temp -> link = address of next block //insertion at the middle
+	temp -> link = NULL //insertion at the starting. because there is no node to point
+	to link this node [recently created] to our original link list there are two possiblities : 
+			1. nodes present already	[Insertion at ending/middle]
+			2. not a single node is present [Insertion at starting]
+	*/
+	if(START == NULL){		//Insertion at starting
+		START = temp;
+	}
+	else{		//Insertion at end/middle
+		//we have to get access to the last node[Insertion at end] or the node after which we want to add our node, for this we have to make a new pointer variable named 't'
+		struct node *t;
+		t = START;
+		while(t->link!=NULL){
+			t = t->link;		
+			/*
+				First of all... if start contains null than we assign our node's address to start as that was fist ever node we made through create()
+				then if Start doesn't contains null pointer then there should be always nodes or node present previously so that if we want to add a node at last then we have to find the pointer which's link variable contains null. for this we created a new pointer variable named t which first points to start . then it will check whether it contains null or not through while loop condition, if it doesn't contain null then we will assign t to next node's address  which is node after the node t [next node] 's address... this will continue through while loop till we get null 
+			*/
+		}
+		t->link = temp;
+	}
+}
+//DELETION OF STARTING NODE
+void deleteNode(){
+	struct node *r;
+	if(START == NULL)		//if linked list is empty
+	printf("List is empty");
+	else{
+		r = START;
+		START = START->link;
+		free(r);
+		//we created the new poniter variable r to delete the memory block of the first starting node, because if we dont make that r and directly assign start to its start->link then we cannot find the address of that starting node and it will be the wastege of the memory so that we put its address into r and then taken its address from start and assigning start to the second node and then after the work of that address is over, we deleted the r [which is also the address of first node and its memory will be erased]
+		//also as the function completed then r will also be deleted 
+		
+	}
+}
+//TRAVERSING : 
+void viewList(){
+	struct node *t;		//temp. variable
+	//why we created this temp. variable ? -> because we dont want to disturb the start pointer because if we assidently disturbed then we can lose the whole linklist.
+	if(START==NULL)
+	printf("List is empty :(");
+	else{
+		t = START;
+		while(t!=NULL){
+			printf("%d",t->info);
+			t = t->link;
+		}
+	}
+}
+//to make this program a MENU DRIVEN code : 
+
+int main(){
+	int choice = 0;
+	while(choice!=4){
+		printf("Add value to the list\n");
+			printf("Delete value from the list\n");
+			printf("View list\n");
+			printf("Exit\n");
+			printf("Enter your choice : ");
+			scanf("%d",&choice);
+		switch (choice) {
+				
+			case 1:
+				insertNode();
+				break;
+			case 2:
+				deleteNode();
+				break;
+			case 3:
+				viewList();
+				break;
+			case 4:
+				printf("*** THANK YOU ***\n");
+				break;
+			default:
+				printf("Invalid Choice :(\n");
+		}
+	}
+	return 0;
+}

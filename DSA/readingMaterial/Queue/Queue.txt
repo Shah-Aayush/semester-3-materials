@@ -1,0 +1,118 @@
+ADT - Abstruct Data Type
+Insertion -> Rear / Tail -> EnQueue
+Deletion ->	Front / Head -> DeQueue
+In EnQueue we have to pass data but in DeQueue as its removes the element in FIFO(First In First Out) manner we dont have to give it any data 
+front() or peek()
+isFull()
+isEmpty()
+
+front = -1		at EMPTY QUEUE
+rear = -1
+
+ENQUEUE function : 
+void enQueue(int x){
+	if(rear == N-1)
+		printf("OverFlow");
+	else if(rear == -1 && front == -1){
+		front = rear = 0;
+		queue[rear] = x;
+	}
+	else
+		queue[++rear] = x;
+}
+DEQUEUE function : 
+void deQueue(){
+	if(rear == -1 && front == -1)		//empty queue
+		printf("UnderFlow");
+	else if(rear == front)		//only one element in the queue
+		front = rear = -1;
+	else
+		printf("dequed element : %d",queue[front++]);
+		
+}
+DISPLAY function : 
+void display(){
+	for(int i=front;i<=rear;i++){
+		printf("%d ",queue[i]);
+	}
+}
+PEEK function :
+void peek(){
+	if(rear == -1 && front == -1)
+		printf("UnderFlow");
+	else
+		printf("%d",queue[front]);
+}
+
+
+CIRCULAR QUEUE : 
+	void enQueue(int x){
+		if(front == -1 && rear == -1){	//if Queue is empty then setting front and rear to 0
+			front = 0;
+			rear = 0;
+			queue[rear] = x;
+		}	
+		else if(front == ((rear+1)%n)){
+			printf("Queue is full (OVER FLOW)");
+		}
+		else{
+			rear = (rear+1)%n;
+			queue[rear] = data;
+		}
+	}
+	void deQueue(){
+		if(front == -1 && rear == -1){
+			printf("UNDER FLOW");
+		}
+		else if(front == rear)
+		 front = rear = -1;
+		else{
+			printf("dequed element : %d",queue[front]);
+			front = (front+1)%n;
+		}
+	}
+	void display(){
+		int i=front;
+		while(i!=rear){
+			printf("%d ",queue[i]);
+			i = (i+1)%n;
+		}
+		printf("%d",queue[rear]);
+	}
+	void peek(){
+		if(rear == -1 && front == -1)
+			printf("UnderFlow");
+		else
+			printf("%d",queue[front]);
+	}
+	
+Implimentation of QUEUE using STACK :
+	queue has FIFO manner
+	stack has LIFO manner
+	
+	->for this implimentation there are two approches :
+		1st method : enqueue(1) -> enqueue of timecomplexity 1
+					 dequeue(n) -> dequeue of timecomplexity n
+		2nd method : enqueue(n)	-> enqueue of timecomplexity n
+					 dequeue(1)	-> dequeue of timecomplexity 1
+		1st method : first of all push all queue elements in the stack 1 as they enqueued in the queue then if we want to dequeue then every element from stack 1 and then push them into stack 2 so the order of queue elements will be reversed in stack 2 from stack 1 now pop element from stack 2 which is same function as dequeue from queue and will give the same element as dequeue function.then pop all element from stack 2 and push them all to stack 1 again. repeat the same process whenever enqueue or dequeue is performed.
+
+sample program : 
+int s1[5],int s2[5];
+int count=0;
+int top1 = top2 = -1;
+void enqueue(int x){
+	push(s1,x);
+	count++;
+	
+}
+void push(struct stack s1*,int data){
+	if(top == n-1)
+	stackoverflow
+	else{
+		top++
+		s1[top]=data;
+	}
+	
+	
+}

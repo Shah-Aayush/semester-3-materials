@@ -1,0 +1,8 @@
+Finding All Bridges [cut edge] in a graph
+ Jenny's lecture : https://youtu.be/CsGP_s_3GWg
+
+->Its an edges, of which's removal will increase the number of connected components in a graph.
+
+->Algo will be used : DFS 
+
+	- 

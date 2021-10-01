@@ -1,0 +1,62 @@
+Given S is the Signal Rate, N is the Data Rate (bps)
+S = N / r
+3 cases are possible:
+c is case factor, which varies for the best, average and worst cases
+Best case - we need minimum signal rate
+Average case – we are interested in
+Worst case – we need maximum signal rate
+Signal rate (average) = c X N X (1/r) baud
+c = 1/2 for the avg. case as worst case is 1 and best case is 0
+
+Minimum Bandwidth can be given as – Bmin = c X N X (1/r)
+Maximum data rate is - Nmax = (1/c) X B X r
+average signal rate = minimum bandwidth 
+
+NRZ-L and NRZ-I both have an average signal rate of N/2 Bd.
+
+NRZ-I if one comes then change the previous position in graph. same funda in differential manchester.
+
+Group m data elements to produce a combination of 2m data patterns
+If 2m = Ln, each data pattern is encoded in one signal pattern
+If 2m < Ln, data patterns occupy only a subset of signal patterns
+Data encoding is not possible if If 2m > Ln, because some data patterns cannot be encoded.
+
+Codes are classified as mBnL
+m is length of binary pattern
+B means binary data
+n is length of signal pattern
+L is number of levels in the signalling
+2B1Q – two binary, one quaternary
+8B6T – eight binary, six ternary
+4D – PAM5 – four-dimensional five level pulse amplitude modulation
+Number of data patterns = 2^m
+signal patterns possible = L^n
+Redundant signals = L^n-2^m
+r = m/L
+
+Nyquist Theorem
+To reproduce the original analog signal, one necessary condition is that the sampling rate be at least twice the highest frequency in the original signal
+
+Minimum sampling rate for low-pass = 2*bandwidth
+Minimum sampling rate for low-pass = cannot find. because we do not know where the bandwidth starts or ends. We do not know the maximum frequency in the signal.
+
+zone width / height [TRIANGLE] ∆ = = (max - min)/L
+Normalized PAM values = actual amplitudes / ∆
+Normalized Quantized values = (mid point amplitude in each zone) / ∆ 
+Normalized error = Normalized Quantized values – Normalized PAM values
+ Quantization code – is based on the quantization levels at the left of the graph
+Encoded works – final products of the conversion
+
+SNRdb = 6.02 nb + 1.76 dB
+Nb = log 2 L
+
+Bit rate = sampling rate X number of bits per sample
+Bit rate N = fs x nb
+sampling rate = 2*maxFrequency./2*Banalog
+
+Minimum bandwidth of a line-encoded signal : Bmin = nb X Banalog
+Minimum bandwidth of digital signal is nb times greater than the bandwidth of the analog signal
+
+Hence, the maximum bandwidth is Nmax = 2 X B X log 2 L 		bps
+Minimum Required Bandwidth Bmin = N /(2 X log2L)		Hz
+

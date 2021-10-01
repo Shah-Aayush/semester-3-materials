@@ -1,0 +1,384 @@
+//error : when performing some insert operations it shows segmentation fault error
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : d
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : b
+Enter phone number : 1232343455
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : 
+c
+Enter phone number : 5675675677
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 5
+Name : d
+Phone Number : 1231231231
+
+Name : c
+Phone Number : 5675675677
+
+Name : b
+Phone Number : 1232343455
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : a
+Enter phone number : 2341212312
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 5
+Name : d
+Phone Number : 1231231231
+
+Name : c
+Phone Number : 5675675677
+
+Name : b
+Phone Number : 1232343455
+
+Name : a
+Phone Number : 2341212312
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : cd
+Enter phone number : 6786786789
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : cde
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : cde
+Phone Number : 1231231231
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 5
+Name : d
+Phone Number : 1231231231
+
+Name : cde
+Phone Number : 1231231231
+
+Name : cd
+Phone Number : 6786786789
+
+Name : c
+Phone Number : 5675675677
+
+Name : b
+Phone Number : 1232343455
+
+Name : a
+Phone Number : 2341212312
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : cde
+Phone Number : 1231231231
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : abc
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : abc
+Phone Number : 1231231231
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : cde
+Phone Number : 1231231231
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : ab
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : ab
+Phone Number : 1231231231
+
+Name : abc
+Phone Number : 1231231231
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : cde
+Phone Number : 1231231231
+
+Name : d
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : e
+Enter phone number : 1231231231
+Contact added to the list :)
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 4
+Name : a
+Phone Number : 2341212312
+
+Name : ab
+Phone Number : 1231231231
+
+Name : abc
+Phone Number : 1231231231
+
+Name : b
+Phone Number : 1232343455
+
+Name : c
+Phone Number : 5675675677
+
+Name : cd
+Phone Number : 6786786789
+
+Name : cde
+Phone Number : 1231231231
+
+Name : d
+Phone Number : 1231231231
+
+Name : e
+Phone Number : 1231231231
+
+MENU : 
+[1.] Insert contact
+[2.] Remove contact
+[3.] Search contact
+[4.] Ascending contact List
+[5.] Descending contact List
+[6.] Exit
+Enter Choice : 1
+Enter name : de
+Enter phone number : 1231231231
+Terminated due to signal: SEGMENTATION FAULT (11)
+

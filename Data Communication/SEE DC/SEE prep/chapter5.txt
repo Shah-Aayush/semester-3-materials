@@ -1,0 +1,45 @@
+r = log2 L [bits per signal element]
+r = N/S
+
+Bandwidth B = (1 + d) X S
+Bmin = S and Bmax = 2S
+
+Binary Phase Shift Keying (B FSK)
+B = (1 + d) X S + 2 TRIANGLEf
+where TRIANGLEf is the average frequency.
+
+number of levels L = 2^bits at a time.
+the baud rate S  = bit rate/levels.
+carrier frequency = Baud rate.
+
+
+For QPSK : 2 bits carried by one signal element. :  r = 2.
+
+Analog – to – Analog Conversion: 
+Amplitude Modulation (AM) : The required bandwidth is 2B, where B is the bandwidth of the modulating signal : Bam = 2B.
+
+Frequency Modulation : The total bandwidth required for FM can be determined from the bandwidth of the audio signal: Bfm = 2(1 + β)B. Here β is usually 4
+
+Phase Modulation : The total bandwidth required for PM can be determined from the bandwidth and maximum amplitude of the modulating signal: BPM = 2(1 + β)B.  Here β = 2 most often
+
+
+---ERROR DETECTION & CORRECTION
+To guarantee the detection of up to s errors in all cases, the minimum Hamming distance in a block code must be dmin >= s + 1.
+
+To guarantee correction of up to t errors in all cases, the minimum Hamming distance in a block code must be dmin >= 2t + 1.
+
+In a linear block code, the exclusive OR (XOR) of any two valid codewords creates another valid codeword.
+In a linear block code, the minimum Hamming distance is the number of 1s in the nonzero valid codeword with the smallest number of 1s.
+
+A simple parity-check code is a single-bit error-detecting code in which n = k + 1 with dmin = 2.
+A simple parity-check code can detect an odd number of errors.
+
+Two-dimensional parity-check can detect up to 3-bit errors, and correct 1 bit error
+
+for this type of questions : Error correction code: Hamming code C(7, 4)     C(n,k)  dmin=3 --->SEE error detection and correction ppt page 38
+
+Hamming code C(7, 4) can :
+	detect up to 2-bit error             (dmin -1)
+	can correct up to 1 bit error    (dmin-1)/2
+	
+Division in CRC encoder  : page 46 error detection and correction

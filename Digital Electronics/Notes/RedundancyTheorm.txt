@@ -1,0 +1,24 @@
+Redundancy Theorm : 
+	->Three variable
+	->Each variable is repeated twice
+	->One variable is complimented
+	->Take the complimented variable
+	
+	->Ex.:	 AB + A'B + BC
+		->Ans.: AB + A'C
+		
+	->Ex.:	 AB + AC + BC'
+		->Ans.: AC + BC'
+		
+	->Ex.:	 AB' + AC + BC
+		->Ans.: AB' + BC 
+		
+	->Ex.:	 (A+B) (A'+C) (B+C)
+		->Ans.: (A+B) (A'+C)
+		
+	->Ex.:	 (A+B) (A+C) (B'+C)
+		->Ans.: (A+B) (B'+C)
+		
+	->Ex.:	 (A'B') + (AC') + (B'C')
+		->Ans.: A'B' + AC'
+	

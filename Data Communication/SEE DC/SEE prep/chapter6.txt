@@ -1,0 +1,2 @@
+n*k	=>N/n crossbars		(N/n)*(N/n) =>k crossbars		k*n =>N/n crossbars
+The total number of crosspoints is 2kN+k(N/n)2

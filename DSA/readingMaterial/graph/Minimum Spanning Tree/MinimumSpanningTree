@@ -1,0 +1,26 @@
+->MINIMAL SPANNING TREE
+	
+->real world problem
+	-minimum cost in making road to connecting cities/wires in circuit
+	-all must be connected
+
+POINTS :
+	->We then wish to find an acyclic subset T that connects all of the vertices and whose total weight is minimized.
+	->Since T is acyclic[not cyclic] and connects all of the vertices, it must form a tree, which we call a spanning tree since it spans the graph G.
+	->We call the problem of determining the tree T the minimum spanning tree problem.
+	
+->For solving this : 
+	Two algorithms for solving the minimum spanning tree problem :
+		1.Krushkal's algorithm
+		2.Prim's algorithm
+		
+->A minimum spanning tree has (V – 1) edges where V is the number of vertices in the given graph. 
+
+	->IMP POINTS : 
+		-Removing one edge from the ST will make it disconnected.
+		-Adding one edge to the ST will create a loop.
+		-If each edge has distinct weight then there will be only one & unique MST.
+		-A complete undirected graph can have n^(n-2) no of ST.
+		-Every connected & undirected graph has atleast one ST.
+		-Disconnected graph doesnt have any ST.
+		-From a complete graph by removing maximum (e-n+1) edges, we can construct a ST.	(no. of edges - no. of vertices + 1)

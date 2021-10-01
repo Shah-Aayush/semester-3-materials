@@ -1,0 +1,23 @@
+You need to take 9 (1001), and add the 2's compliment of the 4-bit binary number that you want the 9's compliment of:
+
+To find the 9's compliment of 2 (0010) for example
+
+1. 1's compliment of 0010 = 1101
+2. Add 0001 to get the 2's compliment = 1110
+3. Add this to 1001 (9) = (1) 0111
+
+This  can be tested in decimal: 0111 = 7, and 9 - 2 = 7.
+Note that there was a carry bit (1) to the left. This indicates that the final answer is positive. For every 9's compliment up to 9, this carry bit will be 1.
+
+The 9's compliments for 10 and above requires an extra step: you need to calculate the two's compliment again on the result of step 3. In the following example, I work out the 9's compliment for 13:
+
+1. 1's compliment of 1101 = 0010
+2. Add 0001 to get the 2's compliment = 0011
+3. Add this to 1001 (9) = (0) 1100 (note that the carry bit = 0)
+4. 1's compliment of 1100 = 0011
+5. Add 0001 to get 2's compliment = 0100
+
+In decimal: 9 - 13 = -4.
+Note that there was no carry bit to the left (0). This means that the final answer is a negative value: -4.
+
+Whether or not there is a carry bit to the left, will determine whether you need to do a second 2's compliment calculation at step 3, and also whether the final answer is a positive or a negative value.

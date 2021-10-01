@@ -1,0 +1,86 @@
+FORMULA for SUMs : 
+
+UNIT 1
+	-Gross domestic capital formation = gross domestic fixed capital formation + Change in stock
+	-Net domestic capital formation = gross domestic capital formation - depreciation
+	-Net Export = Export - Import
+	-Net Indirect Tax = Indirect tax - subsidies
+	-GDP at market price = SIGMA P*Q = SIGMA Value Added.
+		where, P = market price of each final good or service
+		Q = Quantity of each final good or service produced.
+	-GDP at market price = C + Ig + G + (X-M)
+		where C = value of final consumer goods and services produced during an accouting year
+		Ig = Gross domestic private capital formation or investment during an accouting year
+		G = Value of purchases of goods and services by government during the accouting year
+		Net Export = Export (X) - Import (M) during an accouting year.
+	-Net Domestic Product (NDP) at market price = GDP at market price - Depreciation
+		=> NDP at market = C + Ig + G + (X-M) - D
+						 = C + (Ig - D) + G + (X-M)
+						 = C + In + G + (X-M)
+						where D is deprecation and In is net domestic capital formation or investment
+	-Gross National Product (GNP) at market price : GDP at market price + NFIA
+		where NFIA = Net foreign income from abroad
+		GNP at markte price = C + Ig + G + (X-M) + NFIA
+	-Net National Product (NNP) at markte price : 
+		GNP at market price - Deprecation
+		 = NDP at market price + NFIA
+		 = C + Ig + G + (X-M) + NFIA - D
+		 = C + (Ig-D) + G + (X-M) + NFIA 
+		 = C + In + G + (X-M) + NFIA
+where D is deprecation and In is net domestic capital formation or investment
+	-Domestic Factor income or Net domestic Product (NDP) at Factor cost : 
+		Domestic Factor income or NDP at factor cost = Wages and salaries in kind of case + contribution to social security + Rents including imputed rents + royalties + Interest + undistributed Profits + dividends + Mixed incomes or self- employed
+	-National Income (NI) or Net National Product (NNP) at Factor cost : 
+		NNP(fc) = Domestic Factor Income + Net Factor income from abroad 
+		= Wages and salaries in kind and case + contributaion to social securiy + rent including imputed rents + royalties + Interest + undistributed Profits + dividends + Mixed incomes of self-employed + Net Factor income from abroad (NFIA)
+		= = {(Private Consumption Expenditure + 	Gross Private Investment Expenditure + Public Investment Expenditure +	Public Consumption Expenditure + (Export – Import)}  – Capital consumption expenditure + NFIA – Indirect + subsidy
+	- [RELATION] Net Domestic Product (NDP) at factor cost [NDP(fc)] - subsidies = NDP at markte price -  Indirect Taxes
+	- NDP [Net domestic producion] at factor cost = NDP at market Price - indirect taxes + subsidies = NDP at market price - net indirect tax
+	- GDP [Gross domestic production] at factor cost = GDP at market price - indirect tax + subsidies 
+	- NNP [Net national production] at factor cost = NNP at market price - indirect tax + subsidies 
+	- GNP[gross national product] at factor cost = GNP at market price - indirect taxes + subsidies
+	-Valued added = value of output - Intermediate consumption
+		where values of output = Sales + Changes in stock + export. 
+		Intermediate consumption = Purchase of intermeddle goods from domestic firms + import of raw materials
+	-GDE (Gross Domestic Expenditure) = GDP at market price = Private final consumption expenditure + Gross domestic private capital formation + Government final expenditure + Net Exports 
+	-GNE = GNP at market price = GDE + NFIA
+	- Aggregate Demand = Private final consumption expenditure + Private  Domestic Investment Expenditure + Government expenditure on public goods and services + Net Exports 
+	- NNP at factor cost or National Income = NDP at factor cost + NFIA
+	-GDP/NDP at market price = ∑(SIGMA)Value added.	
+	-GNP at market price = GDP at market price + NFIA
+	-Net value added = Gross Value added – Depreciation 
+	-Net Investment = Gross Investment – Depreciation
+	-NFIA (Net factor Income from abroad) = Factor Income from Abroad – Factor income paid to abroad
+	-GNPfc [INCOME METHOD]   = NNPfc  + Consumption of fixed capital
+			 = NDP at factor cost + NFIA+ Consumption of fixed capital 
+		     = (Compensation of employees(i.e. wages and salaries) + Rent + Interest + Undistributed Profits + Dividend) + Net Factor Income from Abroad + Consumption of fixed capital 
+	=GNPfc [Expenditure method] = GNPmp - Net Indirect Taxes
+		   = Private Final consumption Expenditure + (Net Domestic capital formation + consumption of fixed capital) + Govt. Final consumption Expenditure + Net Exports + Net Factor Income from Abroad - Net Indirect Taxes
+	-GDP at factor cost = NDP at factor cost + Depreciation
+		=	Compensation of employees+ Rent+ Interest+ Profit +Mixed income+ (Gross domestic capital formation - Net domestic capital formation)    
+	- Depreciation = Gross domestic capital formation - Net domestic capital formation	
+	-National income (or NNP at factor cost)  = (GDP at market price – Capital consumption expenditure) + NFIA – Indirect + subsidy 
+	- [Value Added Method] : National income (or NNP at factor cost) = (GDP at market price – Capital   consumption expenditure) + NFIA – Indirect + subsidy 
+			= (Output of Primary sector + Output of secondary  sector + Output of tertiary  sector – value of intermediate goods)  – Capital   consumption expenditure + NFIA – Indirect Tax + subsidy
+	- National income or NNP at factor cost = NDPfc + NFIA
+	- National income or NNP at factor cost = GNPfc - Depriciation 
+	- NNP fc  = GNP MP – Indirect tax + subsidy - Depreciation
+
+
+	
+	
+	
+UNIT 2
+	-
+	
+	
+	
+	
+UNIT 3
+	-
+	
+	
+	
+	
+UNIT 4
+	-
