@@ -1,0 +1,3070 @@
+WEBVTT
+
+1
+00:09:47.759 --> 00:09:51.599
+Okay, so I think we should start with the session. I hope I'm audible.
+
+2
+00:09:51.599 --> 00:09:57.869
+Okay.
+
+3
+00:09:57.869 --> 00:10:03.629
+Can I get a reply? I hope I'm audible. Okay, great. So, let's start with the session.
+
+4
+00:10:03.629 --> 00:10:08.278
+Uh, if you remember in the last session, we have started with the concept of multithread.
+
+5
+00:10:08.278 --> 00:10:11.818
+We have seen some of the things like, main is.
+
+6
+00:10:11.818 --> 00:10:14.969
+The by default thread, which is always going to run in the background.
+
+7
+00:10:14.969 --> 00:10:20.849
+And that can be actually identified by calling some of the methods, which is defined for the thread.
+
+8
+00:10:20.849 --> 00:10:30.568
+Then we have started with how to create a thread. So we have seen 2 simple methods to create thread. The 1st, 1 is by implementing the renewable interface.
+
+9
+00:10:30.568 --> 00:10:33.599
+The 2nd 1 is by extending the threat class.
+
+10
+00:10:33.599 --> 00:10:39.269
+Both of them have a little bit difference in the syntax. So whenever you are implementing the.
+
+11
+00:10:39.269 --> 00:10:46.019
+You need to override 1 of the method, which is abstract into the interface and that Methodist public void run.
+
+12
+00:10:46.019 --> 00:10:50.759
+Inside that and method, you can write the task that a threat is supposed to do.
+
+13
+00:10:50.759 --> 00:11:03.359
+And if you are going to create a new thread, you need to define a class, which is implementing the interface. Hopefully, uh, you do not require to create the methods again. And again. So, what we do is, we simply create.
+
+14
+00:11:03.359 --> 00:11:08.369
+A construct inside the constructor, we create an object of the threat class. We.
+
+15
+00:11:08.369 --> 00:11:14.519
+Kickstart the current trade by writing thread T is equal to new thread. This common name of the thread.
+
+16
+00:11:14.519 --> 00:11:20.099
+Then, if you want to print the details, you can simply print the object of the threat class, which is going to return 3 things.
+
+17
+00:11:20.099 --> 00:11:29.729
+The 1st is name of the trade the 2nd, 1 is the priority, which is 5 by default and the last 1 is the 1 who is working the thread that is the threat group.
+
+18
+00:11:29.729 --> 00:11:35.999
+Then we have seen we need to start a thread with the help of a start method.
+
+19
+00:11:35.999 --> 00:11:42.239
+The start method is actually going to call the run method inside, which you have written all the tasks that is supposed to be done.
+
+20
+00:11:42.239 --> 00:11:51.538
+And then you have seen the 2nd way that is by extending the thread class. So here you do not need to create an object because you are extending a threat class, which is in class.
+
+21
+00:11:51.538 --> 00:11:56.489
+So, all the features are, the patient class can be used directly as if it belongs to its own class.
+
+22
+00:11:56.489 --> 00:12:00.269
+So, inside the constructor, we have called the.
+
+23
+00:12:00.269 --> 00:12:06.089
+Then we have used the start method directly without creating an object and rest of the things as it is.
+
+24
+00:12:06.089 --> 00:12:17.308
+Okay, then we have seen the importance of, uh, suspending a thread what we call with the help of a sleep method and the sleep method is actually going to throw an interrupted exception.
+
+25
+00:12:17.308 --> 00:12:23.428
+So, we prefer, I think it inside try and catch the sneak method is defined inside the thread class.
+
+26
+00:12:23.428 --> 00:12:26.668
+So, if you are using the implement interface.
+
+27
+00:12:26.668 --> 00:12:32.369
+Right implement Runnable then you need to write down the name of the class. That is thread. Sleep.
+
+28
+00:12:32.369 --> 00:12:47.158
+If you are extending a class thread, you can omit this, but usually it is always preferred writing thread or sleep. The reason is, this is a static class and 1 way to know whether the class is static or not is by the way in which we are using it.
+
+29
+00:12:47.158 --> 00:12:53.308
+So, if you use it with the help of name of the class, that would be much more clear that now the method is static.
+
+30
+00:12:54.629 --> 00:12:57.989
+Then we have seen that we can create multiple threads.
+
+31
+00:12:57.989 --> 00:13:03.538
+So you can create 1 class, which is going to extend the threat class or implementing the interface.
+
+32
+00:13:03.538 --> 00:13:11.219
+On that you can create multiple objects and if you want to distinguish among the multiple objects, you can actually pass a string as a parameter.
+
+33
+00:13:11.219 --> 00:13:18.239
+The string will help you to know that. Which of the current trade is running, or what is the task of the current thread? What it is printing.
+
+34
+00:13:18.239 --> 00:13:21.839
+right and what is the with the second third and so on .
+
+35
+00:13:47.519 --> 00:13:51.239
+To your program, instead of just extending it for a long time.
+
+36
+00:13:51.239 --> 00:13:58.048
+Okay, I have a question that what is a due date for practical change. So please do not worry about that.
+
+37
+00:13:58.048 --> 00:14:02.969
+A, we are actually not going to consider it as a lead submission for the timing.
+
+38
+00:14:02.969 --> 00:14:08.278
+Because we have not discussed all the topics so do not worry about that. We'll discuss it.
+
+39
+00:14:09.568 --> 00:14:17.038
+Okay, so I think now we are ready to share the screen. Let me share the screen and we'll continue with the next topic.
+
+40
+00:14:17.038 --> 00:14:20.489
+Silence.
+
+41
+00:14:20.489 --> 00:14:27.778
+Okay, I hope you can see the screen. Let me just take you through the.
+
+42
+00:14:27.778 --> 00:14:36.298
+So, we have seen that the thread class is going to define some of the methods. Let me just take you back to that.
+
+43
+00:14:36.298 --> 00:14:47.969
+Particular slight is, this is some of the inbound methods that we are frequently going to use into our program right? That is get name. Get priority is alive join, run, sleep and start.
+
+44
+00:14:47.969 --> 00:14:51.448
+So, we can actually make use of get name.
+
+45
+00:14:51.448 --> 00:14:55.048
+Get priority and we have seen run and start.
+
+46
+00:14:55.048 --> 00:15:03.293
+Right sleep we have already explored that how we are going to use. So, the next thing that we are going to see is what is is alive and join mental.
+
+47
+00:15:03.864 --> 00:15:17.964
+So, I think in the program, we have not used get name, but you can simply type system without the printer in the name of the thread whose name you want to identify certain dot get this will simply give you the name on the thread. Get priority is something that we are going to see in a while.
+
+48
+00:15:18.269 --> 00:15:22.318
+But we are going to focus on is alive and join method.
+
+49
+00:15:22.318 --> 00:15:32.969
+Both of these methods are invalid inside the thread class and on the right hand side, you can see that the, meaning of all the methods are written. So let's focus on. What is the importance of is alive and join.
+
+50
+00:15:32.969 --> 00:15:39.778
+So is alive the name itself says that you just want to know whether the current threat is still running or not.
+
+51
+00:15:39.778 --> 00:15:53.548
+Right. So, you know, that there are multiple stages of a thread that it can be in the ready State running stage, suspended blog, terminated, resumed and so on. So you need to know that whether the current thread is still running.
+
+52
+00:15:53.548 --> 00:16:04.979
+If it is still running, then is a live method is going to return something. Right? And, as I said, that it is going to tell you whether it is running or not. So the kind of value it is going to return is the.
+
+53
+00:16:06.028 --> 00:16:11.308
+The 2nd method is the joint method, which will wait for the other threats.
+
+54
+00:16:11.308 --> 00:16:20.068
+To complete. Okay, so we'll see an example before that, let's go through some of this in Texas, which is required to make a program.
+
+55
+00:16:22.528 --> 00:16:28.019
+As I said that in many of the situation, right? Please ignore this.
+
+56
+00:16:28.019 --> 00:16:35.999
+In many of the situation you want, the main method to finish at the end rate is not the end. This is.
+
+57
+00:16:37.109 --> 00:16:42.479
+I mean, okay, so what do you want? You want a main method to finish at the last.
+
+58
+00:16:42.479 --> 00:16:46.739
+Now, what we were doing is we were just introducing a larger.
+
+59
+00:16:46.943 --> 00:16:59.364
+Right and this delay was just to make sure that we're calculating. Right this is not actually the real calculation we are just trying to assume that if I have 3 threads, let's say each of them is sleeping for a 1000 milliseconds.
+
+60
+00:16:59.543 --> 00:17:02.663
+And we're just guessing that the context which may require, let's say.
+
+61
+00:17:02.938 --> 00:17:10.409
+2000 millisecond and coming back to that require again 2022nd. So, on an average, we were giving some, some value.
+
+62
+00:17:10.409 --> 00:17:16.019
+Inside the sneak metal, but now, you know, that this is not a good practice. Why it is not a good practice because.
+
+63
+00:17:16.019 --> 00:17:23.638
+We are not under the control of calculating the values of context switching and the time required for it to go back to the main.
+
+64
+00:17:23.638 --> 00:17:30.689
+So, rather what we should do is we should take care of these 2 methods. The 1st, 1 is is like, the 2nd, 1 is joined.
+
+65
+00:17:30.689 --> 00:17:37.528
+So, whenever a thread is still alive, then it is going to return true that he is the threat is working on something.
+
+66
+00:17:37.528 --> 00:17:51.719
+If it is not alive, it is going to return a false that now the, uh, the particular threat is terminated. Therefore, the false is going to be returned. And now you can do any other process. If it is not dependent on the thread on which we are calling, that is.
+
+67
+00:17:52.554 --> 00:18:03.114
+Right. So increasing a daily time is not a solution. This is not even a good programming practice, whether we should take help of the join method. So that the current thread should wait for another threat to join.
+
+68
+00:18:03.503 --> 00:18:08.663
+And if you need to know the status, you can simply check the is alive method, which is going to return the true or false.
+
+69
+00:18:09.509 --> 00:18:13.439
+So, let's talk about is aligned method 1st of all.
+
+70
+00:18:13.439 --> 00:18:18.568
+So, is a method is actually a final method so make sure that.
+
+71
+00:18:18.568 --> 00:18:24.388
+All the possibilities that we have seen on the final method, that is it cannot be overridden applied it.
+
+72
+00:18:24.388 --> 00:18:35.818
+This method as well now, is a live method is going to return through if the threat is still active right? Atom is it is still running and if it is not active, it is simply going to return a false.
+
+73
+00:18:35.818 --> 00:18:45.148
+But is alive is not the only method that we are going to use because why do we need to understand the status on the thread? The reason is I need to make certain decision.
+
+74
+00:18:45.148 --> 00:18:51.328
+Right if the threat is active, I need to make certain decision. If the threat is not active I need to follow some other path.
+
+75
+00:18:51.328 --> 00:19:00.959
+So is alive method is usually paired by the another method call, join method. And this join method is used to introduce certain amount of daily.
+
+76
+00:19:00.959 --> 00:19:09.209
+Right there is no exact amount, but the join method will simply tell you that at this point. Wait for the other threats to complete.
+
+77
+00:19:09.209 --> 00:19:16.138
+Right it is a meaning of join so let the other method complete and come back to this point and then I will resume from the.
+
+78
+00:19:16.138 --> 00:19:19.618
+A section through, which that I need to continue.
+
+79
+00:19:19.618 --> 00:19:28.318
+Right, the basics it takes of join is again same you know, that the joint is going to introduce certain dealing and whenever there is a delay.
+
+80
+00:19:28.318 --> 00:19:32.098
+It needs to throw an exception that is known as interrupted exception.
+
+81
+00:19:32.098 --> 00:19:35.909
+So the visits in Texas, this is again a final void.
+
+82
+00:19:35.909 --> 00:19:42.659
+Join method right the method is introducing certain delay. So I need to take care of the interrupted exceptions.
+
+83
+00:19:42.659 --> 00:19:46.528
+Right and I told you the important the importances.
+
+84
+00:19:46.528 --> 00:19:49.858
+The current method is going to wait for all the threats.
+
+85
+00:19:49.858 --> 00:19:58.048
+On which it is called when it is terminated. Right? So do not worry if this sentence, uh, does not give you the much more idea.
+
+86
+00:19:58.048 --> 00:20:01.318
+Because I think a program is always a helpful tool.
+
+87
+00:20:01.318 --> 00:20:06.388
+So, why do they call it as joined? So just in order for you to interpret that.
+
+88
+00:20:06.388 --> 00:20:12.209
+Its name comes from the concept of calling the thread waiting unless the specified thread joins it.
+
+89
+00:20:12.209 --> 00:20:17.848
+Okay, so this is important why the joint method is actually called joined it wants all the other.
+
+90
+00:20:17.848 --> 00:20:23.038
+Uh, threads to complete, come back to this particular point and then it can start continuous execution.
+
+91
+00:20:23.038 --> 00:20:29.729
+So, let me just take you to an example. Meanwhile, if you have any questions, please feel free to post it.
+
+92
+00:20:31.288 --> 00:20:38.398
+Silence.
+
+93
+00:20:40.648 --> 00:20:45.989
+Right, I hope you can see the code. Now what the code is doing is it is simply going to create.
+
+94
+00:20:45.989 --> 00:20:58.828
+A new trend by implementing the renewable interface so I'm not going to explain all these things all over again. We have different threats so we have different names inside the constructor. We have created the object and then we are starting the thread.
+
+95
+00:20:58.828 --> 00:21:03.148
+We are doing the same thing. We are simply printing out the value from 5 to 1.
+
+96
+00:21:03.148 --> 00:21:12.959
+We are introducing asleep on each and every thread individually, but unlike previous example, I do not want the main threat to wait for some buffer.
+
+97
+00:21:12.959 --> 00:21:19.648
+Right for some random amount of time I want to introduce the joint method so that.
+
+98
+00:21:19.648 --> 00:21:26.338
+It will give you the importance that why we are using join instead of just introducing the 10000 milliseconds of dealing.
+
+99
+00:21:26.338 --> 00:21:40.378
+Right and that method is actually going to make much more sense. So, till now, the things are, as it is implementing that enable interface, starting the thread printing it out along with the name. And then we are saying that which threat is exiting.
+
+100
+00:21:41.729 --> 00:21:49.979
+Now, this is the important point is alive is simply going to return true or false. It is not going to introduce any delay. So it should not be.
+
+101
+00:21:49.979 --> 00:21:57.719
+Return inside, trying to get. So here we are creating 3 objects let's say, or be 1 or 2 and 3.
+
+102
+00:21:57.719 --> 00:22:01.439
+We have given names to all the threats that is 1, 2 and 3.
+
+103
+00:22:01.439 --> 00:22:05.878
+What they need to do is we need to check the status of each and every thread.
+
+104
+00:22:05.878 --> 00:22:10.739
+Now, just look in the way in which we are calling it. We are writing it as 1.
+
+105
+00:22:10.739 --> 00:22:13.919
+Not T dot.
+
+106
+00:22:13.919 --> 00:22:21.388
+Is a line right similarly for the 2nd, we have written over to dot T. dot is alive and similarly for the 3rd.
+
+107
+00:22:21.388 --> 00:22:28.679
+Or we 3, that is a line and if it's empty, right or be 1 dot alive, it is not going to make any sense. The reason is.
+
+108
+00:22:28.679 --> 00:22:33.719
+What you can see that this is not extending the thread class. It is implementing an interface.
+
+109
+00:22:33.719 --> 00:22:37.229
+So, what do I need? I need a thread, which is going to bind.
+
+110
+00:22:37.229 --> 00:22:43.439
+The method, which is declared inside the thread class and the class on which you are supposed to invoke it.
+
+111
+00:22:43.439 --> 00:22:48.749
+So, if you are simply extending the threat class, you can call or be 1 dot is a line.
+
+112
+00:22:48.749 --> 00:22:55.828
+But you cannot call over is alive at this point of time. The reason being it is simply going to give you an error.
+
+113
+00:22:55.828 --> 00:23:07.769
+That you are not using the method for the 3rd class, you are actually using something which belongs to the interface Runnable and this method is not defined for the interface. So, make sure that you call it in this.
+
+114
+00:23:07.769 --> 00:23:11.068
+Right. Let's go further.
+
+115
+00:23:11.068 --> 00:23:16.318
+What next we are doing is, uh, we are checking the status of all the 3 threats.
+
+116
+00:23:16.318 --> 00:23:20.219
+And now we are waiting for all the 3 threats.
+
+117
+00:23:20.219 --> 00:23:24.028
+To complete, so you can see the print statement, which is written over here.
+
+118
+00:23:24.028 --> 00:23:30.659
+We are waiting for the threats to finish. So unless and until the threats 1, 2 and 3 are running.
+
+119
+00:23:30.659 --> 00:23:37.229
+You will not be able to proceed further from this point. Your program is going to stop when I say program, we are talking about main metal.
+
+120
+00:23:37.229 --> 00:23:42.749
+Right so your main method is actually waiting for obie 1 2 3 to complete.
+
+121
+00:23:42.749 --> 00:23:49.499
+Make sure that the order in which we have return, this statement is not going to make any effect on your output.
+
+122
+00:23:49.499 --> 00:24:00.028
+Right. It simply says that you wait for B1, 2 and 3 to complete. It doesn't say that 1st of all. Obi 1 should complete then will be 2 and then it'll be 3. it has no direct relation on this.
+
+123
+00:24:00.028 --> 00:24:03.209
+Right so the importance of join is.
+
+124
+00:24:03.209 --> 00:24:08.308
+The current method here, the current method is the main method is going to wait.
+
+125
+00:24:08.308 --> 00:24:12.598
+Unless all the threads on which.
+
+126
+00:24:12.598 --> 00:24:21.058
+Join is called, completes its task. Right. Let me just repeated. The current method is going to wait.
+
+127
+00:24:21.058 --> 00:24:30.868
+For all the threads on which the joint method has been called to complete the task. So now you are waiting all the 3 methods to complete their task.
+
+128
+00:24:30.868 --> 00:24:39.509
+And let the control come back to this point because, you know that this is a constructive. So, when a constructive has been called the control is anyway, is going to come back to this point.
+
+129
+00:24:39.509 --> 00:24:42.509
+Initially, the threads are alive, so you will get true.
+
+130
+00:24:42.509 --> 00:24:54.778
+But over here, the main thread is going to wait right? The rest of the threads are running. Fine. They are going to complete their task, their respective task, which has been assigned. But the main thread is not going to move further.
+
+131
+00:24:54.778 --> 00:24:58.648
+Unless, and until all the threats completes the execution.
+
+132
+00:24:58.648 --> 00:25:07.378
+And whenever the threads have completed the execution, then whatever statement return after destroy and catch is going to be executed.
+
+133
+00:25:07.378 --> 00:25:13.919
+So, here we have a T that is alive, we are again checking the status of each and every thread.
+
+134
+00:25:13.919 --> 00:25:19.348
+So, initially what we are trying to get an output, is that all the threats should be alive.
+
+135
+00:25:19.348 --> 00:25:22.949
+Right. The default type is true or false.
+
+136
+00:25:22.949 --> 00:25:33.749
+So, if all the trades are aligned, you should be getting a true and if you are waiting for the threats to complete the task, that means after completing the task, the thread will be terminated.
+
+137
+00:25:33.749 --> 00:25:46.769
+Right. It is not suspended. It is terminated so when the threat will be terminated, right? Or when it is going into some more, which is not active, then is alive is simply going to return Fox.
+
+138
+00:25:46.769 --> 00:25:51.989
+Right. So this is going to suspend your thread right? And after the suspension.
+
+139
+00:25:51.989 --> 00:25:56.489
+If you just try to check the status, the status will be false in all the cases.
+
+140
+00:25:56.489 --> 00:26:00.749
+Right. So, let me just try to run it.
+
+141
+00:26:03.058 --> 00:26:06.179
+Silence.
+
+142
+00:26:09.239 --> 00:26:17.878
+Okay, so let's go 1 by 1. so 1st of all the 3 threads are created with the help off the constructive, which is defined inside the new thread class.
+
+143
+00:26:17.878 --> 00:26:26.548
+So, with the 1st thing, the 2nd thread, and the 3rd, 3, all of them are active at the same time, make sure that we're not talking about the Internet communication until now.
+
+144
+00:26:26.548 --> 00:26:30.749
+What we want is we want multiple threats to run a piece of code.
+
+145
+00:26:30.749 --> 00:26:37.469
+And the 1 thing that his main threat should wait for all the threats to compete and then come back and resume its activity.
+
+146
+00:26:37.469 --> 00:26:42.298
+So, what we have done is we have created 3 traits 1, 2 and 3.
+
+147
+00:26:42.298 --> 00:26:46.798
+There in working group is main method and they are different priorities.
+
+148
+00:26:46.798 --> 00:26:53.398
+Now, what is the status of each and every thread? So initially 1 is aligned to is aligned and 3.
+
+149
+00:26:53.398 --> 00:26:57.118
+Of course, you may get a different sort of output. It may be possible that.
+
+150
+00:26:57.118 --> 00:27:02.939
+Uh, 3 of them are active at the same time and you get the status straight away for all of them.
+
+151
+00:27:02.939 --> 00:27:07.019
+But this is again going to depend on the time of your system.
+
+152
+00:27:07.019 --> 00:27:15.328
+So initially all the trends are alive now, you can see that thread. 1, 2, 3 are completing their task, although they are not synchronized.
+
+153
+00:27:15.328 --> 00:27:21.298
+Right. We are not actually going to control that which thread should come. 1st, and which threats should come later.
+
+154
+00:27:21.298 --> 00:27:26.548
+This is not in our control till now, but we know that all the 3 threads are active.
+
+155
+00:27:26.548 --> 00:27:30.388
+And once you have completed the task, once you come back to.
+
+156
+00:27:30.388 --> 00:27:36.838
+The color then you are exiting the code, right? So exiting 1 exiting 2 exiting 3.
+
+157
+00:27:36.838 --> 00:27:40.318
+You are done with the task and then you are coming back to the main middle.
+
+158
+00:27:40.318 --> 00:27:46.199
+And now, after coming back to the main method, you are no more doing any other task.
+
+159
+00:27:46.199 --> 00:27:50.519
+Right so you are either suspended, or you are terminated.
+
+160
+00:27:50.519 --> 00:28:00.538
+But when we are using a joint method, it is going to add a delay it is going to wait right? So usually should not say dominated. Right? So, even if I might have.
+
+161
+00:28:00.538 --> 00:28:04.229
+Statement or here, it should not be terminated. It should be updating state.
+
+162
+00:28:04.229 --> 00:28:15.088
+Right. And then when you try to identify whether the threat is alive or not right so make sure that the live word is attached with whether the thread is doing something or not.
+
+163
+00:28:15.088 --> 00:28:19.048
+That it is not related to whether it is suspended or blocked.
+
+164
+00:28:19.048 --> 00:28:27.058
+Right. Or it is terminated the alive is simply going to give you the status whether the threat is doing something or not doing something that is it.
+
+165
+00:28:27.058 --> 00:28:32.368
+We are not worried about whether it is blogs, suspended or terminated. It should be inactive for the timing.
+
+166
+00:28:32.368 --> 00:28:35.818
+This is a status, which is given by the is alignment 2.
+
+167
+00:28:35.818 --> 00:28:39.808
+Okay, I hope the things that are making sense to us.
+
+168
+00:28:39.808 --> 00:28:43.558
+If you have any of the question.
+
+169
+00:28:43.558 --> 00:28:56.098
+What, if we use a instead thread instead of just see if you use thread instead of T, for calling is a live without object. Okay. So the question is, do I need to call this?
+
+170
+00:28:56.098 --> 00:28:59.189
+Directly or I can call using.
+
+171
+00:28:59.189 --> 00:29:04.318
+Right. So I told you that this method is final.
+
+172
+00:29:04.318 --> 00:29:09.239
+It is not going to return anything, but it is not going to be a static.
+
+173
+00:29:09.239 --> 00:29:13.078
+It is actually associated with the object of the class.
+
+174
+00:29:13.078 --> 00:29:20.909
+Okay, so I think thread is not going to make sense why it is not making sense because this is a line method is not static.
+
+175
+00:29:20.909 --> 00:29:26.519
+It should not be call with the help of the class name, whether it should be call would be help of an object of.
+
+176
+00:29:26.519 --> 00:29:35.038
+The trade clubs, and if you're using the object of trade class, you need to refer it with the help of tea. Although the is defined over here.
+
+177
+00:29:36.148 --> 00:29:49.019
+Right Although the tea is defined over here, but still, we are able to get the value with the help of, or be 1 because Ovi is an object of which class thread class. So always already Initialized and just because this is a multithreading.
+
+178
+00:29:49.019 --> 00:29:52.409
+This is also working at the same time. This statement is also working.
+
+179
+00:29:52.409 --> 00:29:56.068
+So, we are actually taking the help of the concept of multi threading here.
+
+180
+00:29:56.068 --> 00:30:00.269
+Once it is, when Initialized, the object P is known to the main metal.
+
+181
+00:30:00.269 --> 00:30:03.989
+And therefore you can call will be 1 or it is.
+
+182
+00:30:05.788 --> 00:30:10.138
+Right, I hope it makes sense.
+
+183
+00:30:10.138 --> 00:30:14.009
+Any other questions.
+
+184
+00:30:14.009 --> 00:30:17.219
+So, would the methods have their own importance.
+
+185
+00:30:17.219 --> 00:30:25.348
+Is alive is simply going to tell you the status, whether the thread is active or not. If it is active, you will get a true if it is not, you will get a false.
+
+186
+00:30:25.348 --> 00:30:30.989
+The joint is actually been called inside the school of a particular metal.
+
+187
+00:30:30.989 --> 00:30:37.919
+So, here, that matter was main metal so we say that the main thread is waiting for will be 1 over 2 or 3.
+
+188
+00:30:37.919 --> 00:30:45.538
+To complete the task and then come back to this point. As soon as you come back to this point, the main is going to wait it is not going to do anything.
+
+189
+00:30:45.538 --> 00:30:51.388
+If you just call a thread without an object.
+
+190
+00:30:52.919 --> 00:30:56.548
+If you just called thread without an object, Rishabh, can you unmute yourself?
+
+191
+00:30:57.808 --> 00:31:01.138
+Without using it, or we need to.
+
+192
+00:31:01.138 --> 00:31:05.128
+Then, on which thread you want to know the status.
+
+193
+00:31:06.628 --> 00:31:12.179
+Okay, so we have to specify for which yes.
+
+194
+00:31:13.409 --> 00:31:23.669
+So, just because which is running, this is a threat for which I need to know the status. So, obie 1 is compulsory to write. Let's say, I just need to know the status of 2 of the threads.
+
+195
+00:31:23.669 --> 00:31:28.138
+2nd right are we gonna know B2? I'm not worried about what it is doing.
+
+196
+00:31:28.138 --> 00:31:32.848
+So make sure that this is a text that you follow. People usually make mistake over here.
+
+197
+00:31:32.848 --> 00:31:38.909
+That's why I'm pointing it out again. And again that the object is active at this point, which is a threat class.
+
+198
+00:31:38.909 --> 00:31:53.038
+Is a live can only be called on the 3rd class, but then this is been initiated with the help of object of a class, which is implementing an interface. So now here, the T is going to work as a junction between the object of interface.
+
+199
+00:31:53.038 --> 00:31:57.328
+And a method of 3, plus if you are simply using.
+
+200
+00:31:57.328 --> 00:32:00.328
+Extending thread you have all the liberty too.
+
+201
+00:32:00.328 --> 00:32:04.739
+Just omitted in that case, you can write obie 1 dot is a line.
+
+202
+00:32:04.739 --> 00:32:12.239
+Okay, so there it makes sense because this is a child class of which the object is created and you can directly call is.
+
+203
+00:32:12.239 --> 00:32:21.929
+Right. So, in the previous example, we have introduced the delay of some 10000 milliseconds instead of doing that. We are simply going to call the join.
+
+204
+00:32:21.929 --> 00:32:32.398
+Which is a method of thread, plus the threat class is created by the object of the class, which is implementing the interface. So, this is the syntax that you need to know.
+
+205
+00:32:32.398 --> 00:32:37.919
+Right I hope we are fine to this point. The importance of is alive and joined.
+
+206
+00:32:37.919 --> 00:32:41.999
+Why they are required and how we are going to follow the.
+
+207
+00:32:41.999 --> 00:32:45.598
+So, if you have any question, you can write it down in the inbox.
+
+208
+00:32:45.598 --> 00:32:53.128
+Amazing.
+
+209
+00:32:54.719 --> 00:33:00.509
+Okay.
+
+210
+00:33:01.648 --> 00:33:04.979
+So, we have been talking about the threat priorities a lot.
+
+211
+00:33:04.979 --> 00:33:13.558
+So, now, let's see that what priority is all about how we can change the priority of a thread how we can get the priority of a threat and so on.
+
+212
+00:33:13.558 --> 00:33:21.868
+Okay, so, as I said that whenever you are creating an object, a priority is attached to that particular object. The reason is.
+
+213
+00:33:21.868 --> 00:33:31.588
+If you are running a trend, right? If you are performing certain process, I need to know that. Where do I stand compared to all the other processes, which are supposed to run at the same time?
+
+214
+00:33:31.588 --> 00:33:40.169
+So this is actually a base through which you can identify that, which should be given higher importance, which should not be given.
+
+215
+00:33:40.169 --> 00:33:46.439
+Right, so priority is simple simply a measure to identify that. What is more important to me.
+
+216
+00:33:46.439 --> 00:33:49.769
+And therefore we have the threat priority concept.
+
+217
+00:33:49.769 --> 00:33:55.499
+So, if I need to set the priority of a trend, I need to simply.
+
+218
+00:33:55.499 --> 00:34:01.229
+Pass and teach and value and this teacher value is going to range from 1 to 10.
+
+219
+00:34:01.229 --> 00:34:12.148
+We are 10 is the maximum priority 1 is the minimum priority and 5 is the normal priority are what we call is average priority, but then there are keywords.
+
+220
+00:34:12.148 --> 00:34:16.739
+To get the values, there are key words to print them out. Let's go through that.
+
+221
+00:34:18.778 --> 00:34:24.358
+Right so the value of the level must be within the range of minimum priority and maximum priority.
+
+222
+00:34:24.358 --> 00:34:28.528
+So, if you write 1, or if you write main underscore priority.
+
+223
+00:34:28.528 --> 00:34:36.298
+Both of the things are going to return the same value. Similarly, writing 10 or writing maximum score priority is 1 of the same thing.
+
+224
+00:34:36.298 --> 00:34:39.628
+Right the default priority is 5.
+
+225
+00:34:39.628 --> 00:34:45.059
+And we can use it by writing normal. That is underscore priority.
+
+226
+00:34:45.059 --> 00:34:51.088
+Okay, and all these priorities are variables, which are defined as static.
+
+227
+00:34:51.088 --> 00:34:54.208
+Final variables within the thread.
+
+228
+00:34:54.208 --> 00:35:05.969
+So, if you have created a class, or, let's say, a thread using extending a threat class, you can directly call it with the help of object dot normal priority or you can call object dot dot.
+
+229
+00:35:05.969 --> 00:35:11.458
+Priority okay and this is going to give you the same thing, whatever you want to get the.
+
+230
+00:35:12.929 --> 00:35:16.079
+Similarly, if you need to know the priority of a thread.
+
+231
+00:35:16.079 --> 00:35:20.938
+Then there is again, a method, make sure that most of the methods that we are discussing is final.
+
+232
+00:35:20.938 --> 00:35:25.108
+So that by mistake, you do not overwrite those method and create your own.
+
+233
+00:35:25.108 --> 00:35:30.059
+So the end of the matter, which is present inside the threat classes, get priority metal.
+
+234
+00:35:30.059 --> 00:35:33.869
+And as you can see that the method is going to return and in teacher value.
+
+235
+00:35:33.869 --> 00:35:40.228
+Again, in the range of 1 and 10. okay so let's see an example.
+
+236
+00:35:43.228 --> 00:35:46.409
+We are talking about the trade priority.
+
+237
+00:35:47.639 --> 00:35:51.628
+Okay, so let's go through this program line by line.
+
+238
+00:35:51.628 --> 00:35:56.099
+The program is doing certain tasks of printing out the value.
+
+239
+00:35:56.099 --> 00:36:02.429
+Right these value are printed by 2 threads, which is, which is running on the same piece of code.
+
+240
+00:36:02.693 --> 00:36:12.474
+So 1 of them has the highest priority another 1 has the smallest priority, right? So we can set the priority. You can even write 3 or 4 as a priority, but make sure that they are always relative.
+
+241
+00:36:12.833 --> 00:36:19.554
+So a thread having priority 3 and the thread having priority 9 makes difference between the execution of your program.
+
+242
+00:36:19.829 --> 00:36:33.989
+Right. And also higher priority doesn't mean that it is going to get the more CPU. It is simply related to the time that how much fast that particular program is going to run. And if somebody interrupt your program.
+
+243
+00:36:33.989 --> 00:36:38.699
+The high priority thread will always be the importance to the.
+
+244
+00:36:38.699 --> 00:36:45.059
+Okay, so let's see, this we have long click is equal to 0T. This is simply a counter.
+
+245
+00:36:45.059 --> 00:36:53.608
+And a 30, right? The classes implementing the renewal interface. So, what we have is we simply have a constructor called Clicker.
+
+246
+00:36:53.608 --> 00:36:59.699
+Here we have 1 of the variable, which is declared as private military and 1000000000.
+
+247
+00:36:59.699 --> 00:37:13.889
+So although is the variable that we usually do not include in our program, but you should know that what is actually something which will help you to create your own copy inside a new or inside a method wherever it has been used.
+
+248
+00:37:13.889 --> 00:37:20.789
+Right, and hear the purpose of volatile is to examine the variable into each and every iteration into your program.
+
+249
+00:37:20.789 --> 00:37:31.798
+So, later on, we are going to make certain changes into this volatile variable, but make sure that they are creating their own copy. Right? What does it mean by own copy that let's say 2 threads are working on it.
+
+250
+00:37:31.798 --> 00:37:37.739
+Tread 1 and 3 2, let's say 3rd 1 is making it as true and thread.
+
+251
+00:37:37.739 --> 00:37:46.438
+2 is making it as false so when thread 1 is making it as true, then the changes are only reflected to the variable of the trend.
+
+252
+00:37:46.438 --> 00:37:49.918
+Whereas when we talk about the falls, they are actually going to be.
+
+253
+00:37:49.918 --> 00:38:01.469
+Reflected in their own copy. Okay. So you can explore what whenever required but usually we do not use such kind of variables because it does not serve the purpose of writing the code.
+
+254
+00:38:01.469 --> 00:38:07.228
+Here we are simply interested to identify that how many times the particular threat is going to run.
+
+255
+00:38:07.228 --> 00:38:11.070
+Again, depending on the CPU time, your program is very.
+
+256
+00:38:11.070 --> 00:38:15.269
+Okay, yeah, I'll put me very sorry. Yes, so.
+
+257
+00:38:15.269 --> 00:38:30.000
+We have a constructor, this constructed is going to take a value rights and this is something that we are supposed to take as a priority. So make sure that it should be restricted from 1 to 10, do not give a value, which is less than 1 or the value, which is built in.
+
+258
+00:38:30.000 --> 00:38:35.670
+We are starting a new trend, right? So easy question. You thread this we are not giving any name.
+
+259
+00:38:35.670 --> 00:38:40.019
+If you want to give a name, you can write comma inside double codes name of the thread.
+
+260
+00:38:40.019 --> 00:38:49.769
+And by the help of that, we are setting the priority. So we are writing T dot set priority with whatever digital value that you have passed as a parameter.
+
+261
+00:38:51.449 --> 00:38:54.719
+Right what happened next the next is.
+
+262
+00:38:54.719 --> 00:38:57.929
+Uh, there is a run method. Okay.
+
+263
+00:38:57.929 --> 00:39:02.519
+This run method is going to increment the value of.
+
+264
+00:39:02.519 --> 00:39:06.449
+Now, just because this running method is declared is.
+
+265
+00:39:06.449 --> 00:39:11.639
+The 1 variable, the changes in 1 thread is not going to be reflected on the 2nd 1.
+
+266
+00:39:11.639 --> 00:39:14.639
+Then we have a stop because.
+
+267
+00:39:14.639 --> 00:39:18.389
+The program is initially going to make a variable as true.
+
+268
+00:39:18.389 --> 00:39:27.929
+But I need to stop the program somewhere so if you need to stop the program, some where we are simply writing running is equals to false. This will help us to get some value corresponding to both the threats.
+
+269
+00:39:27.929 --> 00:39:32.909
+Okay, now you can see that there is a method call, public void start.
+
+270
+00:39:32.909 --> 00:39:39.449
+And it has nothing to do with this top. Okay, this is not going inside the.
+
+271
+00:39:39.449 --> 00:39:47.159
+So 1 thing that you can learn from this program is that you can have your own method named as start and this start is not going to affect it.
+
+272
+00:39:47.159 --> 00:39:51.659
+So, writing T, dot start will actually take you to the run method, which is going to do.
+
+273
+00:39:51.659 --> 00:40:00.840
+The task, which is expected by the right so what you can see that we have not started the thread inside the class, unlike the previous program.
+
+274
+00:40:00.840 --> 00:40:05.099
+So, what we are going to do is we are going to start this particular thread.
+
+275
+00:40:05.099 --> 00:40:08.400
+Inside the different metal, right inside the main metal.
+
+276
+00:40:08.400 --> 00:40:22.079
+So, let's see what we are going to do. So, 1st of all, we have written thread dot current thread set priority. Now, why the priority of main thread should be maximum. It makes sense for the timing. Why the reason is.
+
+277
+00:40:22.079 --> 00:40:32.965
+Main is main can be seen as in the top of the hierarchy of all the threads that we are going to create. So, just because all the trades are going to be created from the main thread.
+
+278
+00:40:33.295 --> 00:40:39.804
+The main threat should be in control to handle all the other threats. If I do not give the control to the main thread.
+
+279
+00:40:40.079 --> 00:40:46.170
+The program is actually free to do whatever it want without restricting its use. Right?
+
+280
+00:40:47.280 --> 00:40:58.949
+So the maximum priority is given to the current thread and it current thread is the main thread. Now, look at the statement of what we have done over here, we have written thread dot current thread.
+
+281
+00:40:58.949 --> 00:41:03.480
+You know, that this is going to return an object of type.
+
+282
+00:41:03.480 --> 00:41:09.030
+On the object of type thread, we are writing thread dot set priority.
+
+283
+00:41:09.030 --> 00:41:12.750
+And how much priority do I need to sit for the current rate?
+
+284
+00:41:12.750 --> 00:41:17.369
+It is a maximum priority, which should again be called with the help of the threat class.
+
+285
+00:41:17.369 --> 00:41:20.670
+Okay, so if you just go back to the.
+
+286
+00:41:20.670 --> 00:41:24.690
+And you can see that all the variables are static final.
+
+287
+00:41:24.690 --> 00:41:28.230
+So, if it is static, I can directly call with the help of the class name.
+
+288
+00:41:28.230 --> 00:41:35.820
+Right so this statement thread dot current threat set priority trend that mixed priority is going to set.
+
+289
+00:41:35.820 --> 00:41:41.159
+The main thread to the maximum priority, which is equal to 10. right? So, here.
+
+290
+00:41:41.159 --> 00:41:46.199
+Is.
+
+291
+00:41:46.199 --> 00:41:50.880
+The next time.
+
+292
+00:41:50.880 --> 00:41:54.179
+We are creating 2 objects of type Clicker.
+
+293
+00:41:54.179 --> 00:41:58.469
+And here we have picker passing and teacher value.
+
+294
+00:41:58.469 --> 00:42:03.300
+Right, so what and teach value we have passed, we have passed normal.
+
+295
+00:42:03.300 --> 00:42:08.099
+Plus 2, right? So here, the priority is 7.
+
+296
+00:42:08.099 --> 00:42:12.510
+Let's do fear the priority.
+
+297
+00:42:16.590 --> 00:42:25.349
+Is that is 5 minus 2? We are sending it to 3. so we have high, which has the competitively highest priority than the lower 3.
+
+298
+00:42:25.349 --> 00:42:30.000
+The lower thread has the priority equal to 3 what we have been here.
+
+299
+00:42:30.000 --> 00:42:35.550
+We are calling load start and stop. No matter in which sequence you are going to call it.
+
+300
+00:42:35.550 --> 00:42:39.150
+So, when you call start 1 thread.
+
+301
+00:42:39.150 --> 00:42:43.590
+Which is attached to the lower priority is going to run.
+
+302
+00:42:43.590 --> 00:42:58.110
+Right when I write, hide a priority. Oh, sorry. Hybrid start. The thread with the highest priority is going to take over here and start will call the run method. Now both of them are updating the variable. But in their own perspective in their own.
+
+303
+00:42:58.110 --> 00:43:06.329
+A local vicinity, right? So the 1st, 1 is going to make certain changes. The 2nd, 1 is going to make certain changes in their own local area.
+
+304
+00:43:06.329 --> 00:43:09.929
+Right. So, till now, the main thread is sleeping.
+
+305
+00:43:09.929 --> 00:43:19.349
+Doesn't want to interrupt again you can see that. This is not the correct way. What you should do is you should write a 1 dot dot join.
+
+306
+00:43:19.349 --> 00:43:23.369
+Hello, the John after this.
+
+307
+00:43:23.369 --> 00:43:28.409
+You are calling us stop so when you are calling a stop, both the variables will become false.
+
+308
+00:43:28.409 --> 00:43:32.969
+And hence the execution of the program is going to be stopped.
+
+309
+00:43:32.969 --> 00:43:37.949
+Right so here you can see there, the join method has been used at 1 dot data join.
+
+310
+00:43:37.949 --> 00:43:45.900
+Your joint why we are still waiting because you do not know that how much time has been required for the stop method to complete the execution.
+
+311
+00:43:45.900 --> 00:43:49.619
+Okay, so I need to call the joint method so that I do not.
+
+312
+00:43:49.619 --> 00:43:53.400
+Directly go on and print the value, I should read the stop.
+
+313
+00:43:53.400 --> 00:43:58.050
+The method, I should wait all the methods to complete the task and then I can come back.
+
+314
+00:43:58.050 --> 00:44:02.760
+Okay, I'm going to run the code, but before that, let me know if you are fine with this.
+
+315
+00:44:02.760 --> 00:44:07.050
+Join in sleep are same. The purpose is same.
+
+316
+00:44:07.050 --> 00:44:12.000
+Right, the purpose of join is to let all the other methods wait for it.
+
+317
+00:44:12.000 --> 00:44:18.119
+Right, the purpose of sleep is just suspend the current thread unless and until the time expires.
+
+318
+00:44:18.119 --> 00:44:22.349
+But the joint method is going to make much more logical sense.
+
+319
+00:44:22.349 --> 00:44:29.219
+Compared to the weight, the reason is weight is associated with the time and as soon as the timer expires, you do not have any control.
+
+320
+00:44:29.219 --> 00:44:32.519
+Where is joint method is not giving an estimation.
+
+321
+00:44:32.519 --> 00:44:35.880
+It is performing in a very logical way.
+
+322
+00:44:35.880 --> 00:44:42.300
+By waiting for the current thread, irrespective of how much time it's going to be required for the track to complete the task.
+
+323
+00:44:42.300 --> 00:44:52.800
+Okay, so the purpose is same. Yes, the purpose is same, but the way in which they behave is different is trying to save and run. Again as I said that.
+
+324
+00:44:52.800 --> 00:44:57.269
+The output totally depends upon how much time has been given by the.
+
+325
+00:45:00.570 --> 00:45:05.610
+Okay, right?
+
+326
+00:45:05.610 --> 00:45:18.300
+So, you can see that low priority thread. Let me does not count the value, but you can just compare the 1st, 2 digits. Right? So, here, although we have started it. 1st if you just remember, we have written low dot start and high dot stop.
+
+327
+00:45:18.300 --> 00:45:26.880
+Okay, but what you can see that this thread has the more priority and if it has the more priority, it will get more chance.
+
+328
+00:45:26.880 --> 00:45:38.909
+To work on the same piece of code on which the low priority thread is working. So, what we need to do is we need to take care of that. The 1 with the highest priority is always going to get more chances.
+
+329
+00:45:38.909 --> 00:45:42.929
+And it should always be the importance to the code compared to the low priority.
+
+330
+00:45:43.945 --> 00:45:55.974
+Okay, so how do we get the priority? You can simply use get priority is something that we have not used in this program, but I think we have not used it anyway, but you can just explore it. I can right get priority.
+
+331
+00:45:56.005 --> 00:45:59.184
+Let me just write it down over here so that we do not miss out something.
+
+332
+00:46:00.750 --> 00:46:06.030
+Just right.
+
+333
+00:46:06.030 --> 00:46:12.239
+Uh, get priority for the current.
+
+334
+00:46:13.739 --> 00:46:17.400
+And what I need to do is.
+
+335
+00:46:17.400 --> 00:46:20.400
+I need to get to the priority.
+
+336
+00:46:20.400 --> 00:46:26.610
+For the.
+
+337
+00:46:26.610 --> 00:46:34.469
+Okay, so I should know that what is the priority of the current trade? I can simply write get priority.
+
+338
+00:46:34.469 --> 00:46:41.820
+And this will give you what is a priority for the current right? You can see that 10 is already printed out. Let's not wait for the other things.
+
+339
+00:46:41.820 --> 00:46:45.449
+Right. So you can see that with the help of get priority.
+
+340
+00:46:45.449 --> 00:46:48.480
+I do need an object of the threat class. You can get the value.
+
+341
+00:46:48.480 --> 00:46:54.150
+If you want to send the priority, the syntax is same, but now it requires an teacher value as a parameter.
+
+342
+00:46:54.150 --> 00:47:02.909
+Make sure that although it is not allowing you to stop by giving any value greater than 10 or less than 1, but it doesn't make sense.
+
+343
+00:47:02.909 --> 00:47:16.320
+So, give the value, which is in the value range 1 to 10. okay you are free to do the automatic operations just like we have done over here, implementing the value by 2 for the normal priority and implementing by 2 for the normal priority is perfectly fine.
+
+344
+00:47:17.369 --> 00:47:24.869
+Right I hope you are good. Uh, if possible please explain the main again yeah.
+
+345
+00:47:26.429 --> 00:47:31.619
+Okay, let's see the main again. If you still have any doubt, let's go step by step.
+
+346
+00:47:31.619 --> 00:47:43.860
+The task of 1st step is to give the maximum priority to the main, because it should always be the last 1 to complete. Right? And it should have all the control of the threads, which has been created.
+
+347
+00:47:43.860 --> 00:47:47.909
+So, with the help of the statement, we are giving the maximum priority.
+
+348
+00:47:47.909 --> 00:47:52.800
+To the main thread, and then we have created 2 objects of Clicker clause.
+
+349
+00:47:52.800 --> 00:47:58.110
+High and low, and we are giving certain value as a parameter of engagement form.
+
+350
+00:47:58.110 --> 00:48:02.639
+So thread dot normal priority. Plus 2 is going to return in in value.
+
+351
+00:48:02.639 --> 00:48:06.090
+That integer value is actually passed as a parameter today.
+
+352
+00:48:06.090 --> 00:48:11.760
+Clicker constructor then we are calling the start metal, right?
+
+353
+00:48:11.760 --> 00:48:20.429
+This start my 3rd will call this start and this is actually the method that you have created, you want to give some of the name perfectly fine.
+
+354
+00:48:20.429 --> 00:48:23.519
+So you have it on start, which were directly take you 2.
+
+355
+00:48:23.519 --> 00:48:28.949
+The run method inside their method, you have a variable called running, which is a volatile variable.
+
+356
+00:48:28.949 --> 00:48:34.559
+And what and variable is something which is going to have their own local copy for both the threats.
+
+357
+00:48:34.559 --> 00:48:40.440
+So, whatever changes that you were doing in 1 thread is its own, irrespective of how many threads are going to run.
+
+358
+00:48:40.440 --> 00:48:44.760
+So this is simply going to implement. Now, how many times do you want to.
+
+359
+00:48:44.760 --> 00:48:52.320
+Make this particular changes so main thread is sleeping for 10000 milliseconds. So you have 10000 milliseconds to update the variable.
+
+360
+00:48:52.320 --> 00:49:01.590
+And then you were stopping it. Okay. So when you stop, you're simply making the running as falls, which was actually an infinite view inside that method.
+
+361
+00:49:01.590 --> 00:49:04.889
+And this is going to wait unless and until.
+
+362
+00:49:04.889 --> 00:49:08.579
+All the process of start and stop is going to be completed.
+
+363
+00:49:08.579 --> 00:49:12.539
+Finally, we are printing out that what is the click?
+
+364
+00:49:12.539 --> 00:49:17.610
+Value for the low priority thread and for the high priority threat.
+
+365
+00:49:17.610 --> 00:49:20.699
+Okay, yeah, you hope that makes sense.
+
+366
+00:49:22.650 --> 00:49:29.159
+Uh, finish I hope you are good. Okay.
+
+367
+00:49:29.159 --> 00:49:37.889
+Right. So, for the priority, there are 3 kinds of priority, minimum, maximum and normal.
+
+368
+00:49:37.889 --> 00:49:45.449
+Minimum value is 1 maximum value is 10 and for normal use and make sure that the variables are.
+
+369
+00:49:45.449 --> 00:49:50.670
+Static final, so you do not change the way in which we have return it.
+
+370
+00:49:50.670 --> 00:49:54.989
+These are the static variable call it with the help of the threat class itself.
+
+371
+00:49:54.989 --> 00:49:58.829
+And make sure that the value should be inside a proper range.
+
+372
+00:49:58.829 --> 00:50:09.420
+Between 1 and 10. okay. So if we are good, we can go to the next topic again. Very important. As far as the concept of threat is concerned.
+
+373
+00:50:09.420 --> 00:50:13.650
+But before that, let me just take you to an example.
+
+374
+00:50:13.650 --> 00:50:16.800
+Hello.
+
+375
+00:50:16.800 --> 00:50:28.230
+Okay, so let's try to go through this example later on we are going to do certain changes, which will help us to get the desired output.
+
+376
+00:50:28.230 --> 00:50:33.420
+So, I'll tell you what the program is all about. The main method is going to create.
+
+377
+00:50:33.420 --> 00:50:36.420
+Certain strings these strings.
+
+378
+00:50:36.420 --> 00:50:40.860
+Are given to the constructor and the task of this constructor is.
+
+379
+00:50:40.860 --> 00:50:44.340
+To create a thread after creating a thread.
+
+380
+00:50:44.340 --> 00:50:50.309
+You just call any other class, which is defined over here and this method.
+
+381
+00:50:50.309 --> 00:51:00.360
+Is simply trying to print the message inside the opening and closing record. So what is the string that you have passed over? Here should actually be returning opening bracket and closing packet.
+
+382
+00:51:00.360 --> 00:51:05.309
+Followed by synchronized opening bracket, closing ticket then word opening bracket closing.
+
+383
+00:51:05.309 --> 00:51:13.380
+Of course, we do not have control on which thread is going to be initiated. 1st, but whatever threat is initiated. Let's say that synchronized is something.
+
+384
+00:51:13.380 --> 00:51:20.070
+Which comes into the action 1st, but the words synchronized should be done inside the opening and closing bracket.
+
+385
+00:51:20.070 --> 00:51:28.739
+Whenever some other thread is coming, then the string, it should be printed inside the opening and closing bracket for the rest of the object. The thing is going to be as it is.
+
+386
+00:51:30.360 --> 00:51:34.500
+So, what we have done is we have divided the task into 2 classes.
+
+387
+00:51:34.500 --> 00:51:39.360
+1 of the classes class called me the 2nd classes class.
+
+388
+00:51:39.360 --> 00:51:43.050
+If you just look in the way in which we have created an object.
+
+389
+00:51:43.050 --> 00:51:47.489
+1st of all, we have created the object of call me class.
+
+390
+00:51:47.489 --> 00:51:52.710
+Why we have created it because this is something that we need as a parameter today column.
+
+391
+00:51:52.710 --> 00:52:02.760
+Right. So we have color or B1, B2 B3 these are the 3 objects that we have created for the plus and you can see the constructor.
+
+392
+00:52:02.760 --> 00:52:08.670
+The constructor expects 2 parameters. 1 of them is a reference variable of.
+
+393
+00:52:08.670 --> 00:52:13.440
+The call me class the 2nd, 1 is simply a string itself.
+
+394
+00:52:13.440 --> 00:52:17.340
+So, string is, let's say something that we want to print out to the console.
+
+395
+00:52:18.750 --> 00:52:24.090
+So, just because we need the object of only class, we are passing it as a parameter.
+
+396
+00:52:24.090 --> 00:52:29.519
+Now, when this particular constructor has been called, the task of this constructor is.
+
+397
+00:52:29.519 --> 00:52:34.530
+To create an object and give name to the current thread. And this is something that we already know.
+
+398
+00:52:34.530 --> 00:52:40.349
+Okay, so this target is actually required because later on you are going to.
+
+399
+00:52:40.349 --> 00:52:45.300
+All this particular constructor inside the run metal so we have created a string message.
+
+400
+00:52:45.300 --> 00:52:48.329
+We have created a call me target a reference variable.
+
+401
+00:52:48.329 --> 00:52:51.960
+This reference variable will take an object from the constructor.
+
+402
+00:52:51.960 --> 00:52:56.130
+At this point, so target, it will be equal to the target.
+
+403
+00:52:56.130 --> 00:53:01.289
+Whatever message that you want to give is inside the message variable and then you are starting the thread.
+
+404
+00:53:01.289 --> 00:53:06.059
+Right. So is equal to new thread this and then we have written stop.
+
+405
+00:53:06.059 --> 00:53:14.250
+Now, the steer start, considering that we have 1 thread, this T dot start will start this particular set of run method.
+
+406
+00:53:14.250 --> 00:53:17.400
+After initiating the run method, you can see that.
+
+407
+00:53:17.400 --> 00:53:22.019
+There is a connection between both the classes we have written target dot.
+
+408
+00:53:22.019 --> 00:53:26.489
+Call followed by message now, where is this call method?
+
+409
+00:53:26.489 --> 00:53:37.230
+This call is inside the call me class and, you know, that the 2 an independent method can call their respective constructors and method with the help of object. And this is what we are doing.
+
+410
+00:53:37.230 --> 00:53:46.230
+Right. So, just because I need an object, I have Initialized it. I have a signed certain memory to it by passing as a parameter. And then we are calling up on message.
+
+411
+00:53:46.230 --> 00:53:53.730
+Okay, so assume that we have just 1 object. So, 1 object is going to come at this point. Let's say the object is having string is hello?
+
+412
+00:53:53.730 --> 00:53:58.110
+The target is Initialized message will be well to hello.
+
+413
+00:53:58.110 --> 00:54:01.679
+Ti will be equal to start a thread. The current thread.
+
+414
+00:54:01.679 --> 00:54:05.190
+And then you write, stop the state of start.
+
+415
+00:54:05.190 --> 00:54:12.000
+The data control over the run method, target dot call along with the message.
+
+416
+00:54:12.000 --> 00:54:19.920
+Will take you over here where you have opening bracket, you are printing the message and then you are waiting for 1.
+
+417
+00:54:19.920 --> 00:54:23.099
+A, 2nd wait. Sorry 3rd.
+
+418
+00:54:23.099 --> 00:54:26.130
+For rest of the execution to proceed.
+
+419
+00:54:26.130 --> 00:54:30.539
+Now, while you were sleeping for 3rd, let's say we do not have any of the thread.
+
+420
+00:54:30.539 --> 00:54:34.559
+So, what happened you will have the closing bracket and things would be fine.
+
+421
+00:54:34.559 --> 00:54:39.690
+But the twist is, I do not have a single thread. I have 3 threads.
+
+422
+00:54:39.690 --> 00:54:47.760
+From main thread, which are going to take the control of all the run method and all the constructor that you are calling from this point.
+
+423
+00:54:47.760 --> 00:54:57.719
+So, can you tell me that the kind of awkward that I'm expecting that all the work should be written inside the opening and closing racket can be attained or not?
+
+424
+00:54:57.719 --> 00:55:04.500
+I just need answer. Yes. Or no, I'm not asking for the reason. You just need to guess that with this particular situation.
+
+425
+00:55:04.500 --> 00:55:10.949
+Where I'm expecting the string to be done inside opening and closing parenthesis can be attained or not.
+
+426
+00:55:10.949 --> 00:55:14.429
+I'll tell you the right answer along with the reason.
+
+427
+00:55:14.429 --> 00:55:19.769
+Okay, so we have somebody says, yes, it can be done. What about others?
+
+428
+00:55:25.170 --> 00:55:32.159
+The awkward I'm expecting is that any word, which is Initialized 1st of all should be written inside the parent is opening and closing.
+
+429
+00:55:32.159 --> 00:55:38.159
+So we need to know whether the expected output or the output. When I run the code is same or not.
+
+430
+00:55:38.159 --> 00:55:45.539
+So, what do you think if it did not understand just write it down that? I did not got it.
+
+431
+00:55:45.539 --> 00:55:49.199
+If you have the answer, it's fine, even if it is wrong or right.
+
+432
+00:55:49.199 --> 00:55:53.699
+We have not yet seen the concept, so it is. Okay.
+
+433
+00:55:55.679 --> 00:56:00.900
+Because no reply will give me the feeling that you are not understanding or do you are not listening.
+
+434
+00:56:00.900 --> 00:56:08.849
+How good 1 day is expected. Okay. Okay.
+
+435
+00:56:08.849 --> 00:56:12.750
+Okay.
+
+436
+00:56:12.750 --> 00:56:16.230
+So, those who still are not clear with the definition.
+
+437
+00:56:16.230 --> 00:56:19.739
+I just need to know that after processing the whole.
+
+438
+00:56:19.739 --> 00:56:26.730
+Code I need this particular word, any word, which has been Initialized 1st of all inside opening and closing bracket.
+
+439
+00:56:26.730 --> 00:56:30.420
+So before executing this program, let me just try to.
+
+440
+00:56:30.420 --> 00:56:40.500
+Call it on 1 object and then we will proceed. Okay. I hope we have commented out all the proper statements. Let me just try to.
+
+441
+00:56:42.539 --> 00:56:46.739
+Here we have just 1 of the statement and that statement is hello.
+
+442
+00:56:46.739 --> 00:56:51.420
+So, let's go through and praise everything, which is happening.
+
+443
+00:56:51.420 --> 00:56:57.539
+You have created an object you are calling a constructor. The spring is hello?
+
+444
+00:56:57.539 --> 00:57:03.539
+You are starting the thread inside the thread. You are calling the constructor of.
+
+445
+00:57:03.539 --> 00:57:11.550
+The target classified where target is the class of column so this is not a constructor. This is a method. So you are calling a method of callmeet class.
+
+446
+00:57:11.550 --> 00:57:15.059
+Inside called me, you have opening bracket, which has been printed.
+
+447
+00:57:15.059 --> 00:57:18.239
+Followed by the message, which was hello.
+
+448
+00:57:18.239 --> 00:57:25.320
+Right passing all over through this, this particular class caller and then you were sleeping for 3rd.
+
+449
+00:57:25.320 --> 00:57:29.849
+And then we are applying the closing bracket. Okay. Let me just try to save and run again.
+
+450
+00:57:29.849 --> 00:57:33.989
+Keep an eye on output window, opening record. Hello? Closing record.
+
+451
+00:57:33.989 --> 00:57:40.829
+Right now, let me just try to include the rest of the statements. Let me just try to include or we do.
+
+452
+00:57:40.829 --> 00:57:50.760
+And 3, right? So, at this point, we have 3 threads running simultaneously.
+
+453
+00:57:50.760 --> 00:57:59.010
+Hello synchronized world, right? All the objects that will be 1 of Adobe 3. we have 3 objects with a string. Hello? Synchronized and 1.
+
+454
+00:57:59.010 --> 00:58:07.289
+And, you know, that we have not restricted that if 1 of the thread is coming, let the thread complete the task. And then you go and call the other.
+
+455
+00:58:07.289 --> 00:58:11.610
+What we are doing is, it is just like, we have kept the method open.
+
+456
+00:58:11.610 --> 00:58:16.530
+Whoever wants to use it, just use that method, do whatever you want and then.
+
+457
+00:58:16.530 --> 00:58:22.019
+If you want to stay, stay there, if you want to leave, you just leave the control. The things are going to be as it is.
+
+458
+00:58:22.019 --> 00:58:27.239
+But what I want is that if 1 of the thread is entered into a method.
+
+459
+00:58:27.239 --> 00:58:35.010
+That particular threat should complete the task and unless and until that thread is completing the task. No other thread should be allowed to.
+
+460
+00:58:35.010 --> 00:58:39.630
+Enter it. Okay. So instead of.
+
+461
+00:58:39.630 --> 00:58:42.840
+Cutting a lot. Let me just tell you what is wrong with the.
+
+462
+00:58:42.840 --> 00:58:55.530
+Again, so we have hello at the same time, synchronized got active at the same time word got active. So, you know that Hello synchronized and word, although supposed to be printed as opening bracket. Hello? Closing packet.
+
+463
+00:58:55.530 --> 00:58:59.250
+Opening bracket synchronized closing bracket and same thing for the world.
+
+464
+00:58:59.250 --> 00:59:02.369
+But it is not happening why it is not happening.
+
+465
+00:59:02.369 --> 00:59:08.849
+Because now all the 3 threads are active, and they are free to utilize the methods in any order.
+
+466
+00:59:08.849 --> 00:59:15.659
+Right. So, even going lucky to get all the outputs in a proper way, but this may not be the situation all the time.
+
+467
+00:59:15.659 --> 00:59:18.929
+Okay, you may get synchronized 1st and hello later on.
+
+468
+00:59:18.929 --> 00:59:30.090
+Yep, you are getting word then. Hello then synchronize them closing bracket, closing record and closing record. It may happen that world is written inside opening and closing. Parentheses.
+
+469
+00:59:30.090 --> 00:59:34.050
+Then hello starts and synchronized starts so this totally depend upon.
+
+470
+00:59:34.050 --> 00:59:39.900
+How CPO is going to entertain your program but what I need to do is I need to.
+
+471
+00:59:39.900 --> 00:59:50.250
+Get some synchronization among the threads that if 1 of the thread is working on a particular instruction, the 2nd threat should not be allowed to do, or should not be allowed to make use of the.
+
+472
+00:59:50.250 --> 00:59:57.869
+Right and to create the situation of synchronization, we are 1st of all going to see the concept.
+
+473
+00:59:57.869 --> 01:00:03.059
+Then we are going to modify the same piece of code to see that how things are going to be different.
+
+474
+01:00:03.059 --> 01:00:06.599
+Okay, I hope you've got the problem that what is the problem over here.
+
+475
+01:00:08.880 --> 01:00:12.030
+Because it is important to know the problem. Otherwise.
+
+476
+01:00:12.030 --> 01:00:15.539
+Just simply jumping to the output is not a good thing.
+
+477
+01:00:15.539 --> 01:00:21.449
+Okay, so what we need to do is we need to create a synchronization among the thread.
+
+478
+01:00:21.449 --> 01:00:35.369
+Right. Not thread. Right? They're not talking about how 1 thread and seconds are going to communicate. We are simply going to make sure that the threads are synchronized. Synchronized means if 1 of the thread is working the 2nd threat should not.
+
+479
+01:00:35.369 --> 01:00:39.599
+This it should let the 1st rate complete the task and then you can.
+
+480
+01:00:39.599 --> 01:00:44.219
+Do your own task later on okay and again.
+
+481
+01:00:44.219 --> 01:00:49.650
+Uh, this topic is something that you are extensively going to use when we talk about the operating system.
+
+482
+01:00:49.650 --> 01:00:55.019
+So, let's go through it, considered a situation in which we have a shared resource.
+
+483
+01:00:55.019 --> 01:00:59.610
+Let's say printer, right? So what I want that the printer.
+
+484
+01:00:59.610 --> 01:01:05.699
+Should 1st of all complete the command, which is given by 1, use them. So, let's say I'm printing 10 pages.
+
+485
+01:01:05.699 --> 01:01:08.760
+In between some person, X is also giving the command.
+
+486
+01:01:08.760 --> 01:01:15.090
+Okay, and let's say that this is a printer which is printing on both the sites right? The 2 sides of the pages.
+
+487
+01:01:15.090 --> 01:01:28.170
+Now, if the printer is not synchronized, right? You can imagine the blender that the output will be independent is not synchronized. You know, that, let's say on the same page, the front command is been taken by me.
+
+488
+01:01:28.170 --> 01:01:37.469
+Right whatever command which is given by me is now, let's say, printed on the front page and let's say that the person X is using the printer at the same time.
+
+489
+01:01:37.469 --> 01:01:43.739
+And while the system is still in the process of printing, it is printing the command of the 2nd person.
+
+490
+01:01:43.739 --> 01:01:48.030
+Which should not happen because if 1 of the command is happening.
+
+491
+01:01:48.030 --> 01:01:55.710
+The 2nd command, even if it has been given at the same time, or let's say, in a fraction of 2nd should wait for the 1st command to complete.
+
+492
+01:01:55.710 --> 01:02:00.480
+And unless and until that is complete, you should not be able to entertain the 2nd, 1.
+
+493
+01:02:00.480 --> 01:02:07.139
+Right, and this situation is known as synchronization and the synchronization is attained.
+
+494
+01:02:07.139 --> 01:02:12.329
+With the help of the concept of monitor so now monitor can be seen as.
+
+495
+01:02:12.329 --> 01:02:16.469
+A box into, which at a time, only 1 object can enter.
+
+496
+01:02:16.469 --> 01:02:22.079
+And if the object is performing something, then the 2nd object cannot enter because there is no room.
+
+497
+01:02:22.079 --> 01:02:27.449
+So, there is only 1 room for 1 object. If you just keep it as simple, it will be easy for you to understand.
+
+498
+01:02:27.449 --> 01:02:33.269
+Right so the concept of monitor, which is actually ummute text, we call it as mutual exclusion.
+
+499
+01:02:33.269 --> 01:02:38.130
+The name itself says that if 1 of them is entering into a box.
+
+500
+01:02:38.130 --> 01:02:41.730
+Unless an entered that box is leaving there is no room for the 2nd 1.
+
+501
+01:02:41.730 --> 01:02:47.519
+If you're just able to visualize this concept back in your mind, the thing is very simple. It's just.
+
+502
+01:02:47.519 --> 01:02:50.610
+A game of a single keyword that is it.
+
+503
+01:02:50.610 --> 01:02:56.070
+Again, so you are actually creating a method as a monitor.
+
+504
+01:02:56.070 --> 01:03:06.239
+Right. Preferably we call it as a new tax, mutually exclusive method in which at a time only 1 thread can be entered and once a thread can be entered.
+
+505
+01:03:06.239 --> 01:03:13.889
+The monitor is locked, right after it has been logged, it will not be open unless and until the threat is leaving it.
+
+506
+01:03:13.889 --> 01:03:19.409
+Okay, so if you are calling the same method and multiple threads.
+
+507
+01:03:19.409 --> 01:03:25.260
+Any 1 of the thread can enter into the monitor, but once it is entered, no other thread.
+
+508
+01:03:25.260 --> 01:03:32.219
+Is entertained to enter into it and once the 1st object is leaving that monitor the 2nd object is.
+
+509
+01:03:32.219 --> 01:03:36.570
+Allowed to enter into the method right also.
+
+510
+01:03:36.570 --> 01:03:45.239
+If 1 of the object has entered inside the monitor, it can reenter it any number of times. But the only thing is, at a time 1 object is allowed that is it.
+
+511
+01:03:45.239 --> 01:03:49.110
+The 2nd object simply need to wait no matter how much time it is going to take.
+
+512
+01:03:49.110 --> 01:03:59.400
+Right. So this can be actually used with the hyper synchronized keywords. So, instead of just going through the list of points on the let me just take you to the program.
+
+513
+01:03:59.400 --> 01:04:03.179
+So now, can you just tell me that which method.
+
+514
+01:04:03.179 --> 01:04:07.170
+Should be synchronized which method should be synchronized.
+
+515
+01:04:08.610 --> 01:04:13.409
+There are multiple methods. They are constructors. What do you think? Which method should be? Synchronized?
+
+516
+01:04:13.409 --> 01:04:18.449
+Okay.
+
+517
+01:04:18.449 --> 01:04:23.190
+Yes, we need to synchronize the call method. Why call method? Because.
+
+518
+01:04:23.190 --> 01:04:26.820
+What do I need to do is once an object is entered at this point.
+
+519
+01:04:26.820 --> 01:04:32.460
+Then everything should be completed and unless, and until the object leave the scope, I should not be allowed to.
+
+520
+01:04:32.460 --> 01:04:39.659
+Give this control to another object. Okay. So there is just a single word, which is required and it is.
+
+521
+01:04:39.659 --> 01:04:42.960
+Synchronized.
+
+522
+01:04:42.960 --> 01:04:49.829
+Right. As soon as I write synchronized, it says that now this is going to work as a monitor.
+
+523
+01:04:49.829 --> 01:04:55.110
+If any of the object, I do not know which object I'm not even saying that your output will be in order.
+
+524
+01:04:55.110 --> 01:05:01.590
+We are talking about that, but once an object has become successful to enter into this method.
+
+525
+01:05:01.590 --> 01:05:05.969
+No matter whether how many objects are active, it will not be able to enter into it.
+
+526
+01:05:05.969 --> 01:05:13.679
+Because the previous 1 is still processing once the processing is done, it will leave the control as soon as it will leave the control.
+
+527
+01:05:13.679 --> 01:05:20.760
+The 2nd object is ready to enter into it. Okay. So let's try to run the code and see the difference in output.
+
+528
+01:05:25.914 --> 01:05:38.605
+Right. So better than what we were getting in the previous case by simply adding a keyword synchronized. So synchronized is going to make a method as monitor in, which only 1 object can be active at 1 time.
+
+529
+01:05:38.909 --> 01:05:44.130
+Again, what's required that will be printed 1st all the time.
+
+530
+01:05:44.130 --> 01:05:49.289
+Although not usually that lucky, but today, something is happening and we are getting the same sort of output.
+
+531
+01:05:49.289 --> 01:06:00.150
+Anyways, so this is how the output was expected and why we are getting in this particular order, because opening bracket followed by the Hello?
+
+532
+01:06:00.150 --> 01:06:04.260
+Followed by the closing bracket is required inside 1 method.
+
+533
+01:06:04.260 --> 01:06:15.090
+Okay, but we are talking about some real time application. Let's say that this particular method is being given to you inside a class by a 3rd party.
+
+534
+01:06:15.090 --> 01:06:20.519
+You do not have access to the metal in short. I modify the method, which has been given to, you.
+
+535
+01:06:20.519 --> 01:06:27.809
+So, there has to be a 2nd way because we are talking about object oriented programming. The things that are going to be divided in the interviews.
+
+536
+01:06:27.809 --> 01:06:34.050
+And, you know, what is about you, you are working on a project, you are working with a team of, let's say, 78 people.
+
+537
+01:06:34.050 --> 01:06:46.110
+So 1 of them is responsible to create this particular class. The 2nd person is responsible to create the 2nd class. But now I need to control this particular class monitor by the 2nd class.
+
+538
+01:06:46.110 --> 01:06:51.389
+So, they are to individual people, you do not know what is going on with the methods.
+
+539
+01:06:51.389 --> 01:06:54.630
+This method do not know that somebody else is going to utilize me.
+
+540
+01:06:54.630 --> 01:07:00.119
+So there has to be a settlement, right? There has to be a midway through which we can.
+
+541
+01:07:00.119 --> 01:07:11.730
+Try to synchronize the methods. So this is 1 of the way if you have the access to the method, go ahead, make the method as synchronized and you are done, but you may not get this situation all the time.
+
+542
+01:07:11.730 --> 01:07:22.409
+Right, so what you can do is you can actually create a synchronized block. Right? So, the synchronized blog is simply going to act like a monitor again.
+
+543
+01:07:22.409 --> 01:07:25.530
+As soon as you get inside the block.
+
+544
+01:07:25.530 --> 01:07:35.159
+You are actually not allowing any other object to enter into it now, which kind of object should not be entered. The target kind of object should not be.
+
+545
+01:07:35.159 --> 01:07:39.150
+So, if you just look at the syntax, it is very much straightforward.
+
+546
+01:07:40.500 --> 01:07:50.579
+Okay, so you're synchronize the object instead of the method because object is something that you usually have, because you have created it.
+
+547
+01:07:50.579 --> 01:07:54.329
+Right. So you can synchronize the object.
+
+548
+01:07:54.329 --> 01:08:01.139
+After synchronizing the object, you just write the set of statements, which are supposed to be synchronized inside the block.
+
+549
+01:08:01.139 --> 01:08:08.519
+Right so this is the 2nd way to add synchronization into your code just write synchronized keyword followed by.
+
+550
+01:08:08.519 --> 01:08:12.389
+The object of course, the objective here is the target.
+
+551
+01:08:12.389 --> 01:08:18.869
+Right, because this is something which is going to be executed for the rest of the duration is well.
+
+552
+01:08:18.869 --> 01:08:22.199
+So, we are just writing target inside the synchronized block.
+
+553
+01:08:22.199 --> 01:08:33.090
+The target is calling the call method. So this is actually the culprit, which was creating the synchronization into the program, put it inside the synchronized blog and you are done.
+
+554
+01:08:33.090 --> 01:08:40.170
+Let me just try to run it. Okay. So this time we got word then. Hello then synchronized.
+
+555
+01:08:40.170 --> 01:08:43.380
+But make sure that once and object is entered.
+
+556
+01:08:43.380 --> 01:08:48.720
+You complete the task finish whatever you want to do. Then only the 2nd object is allowed to enter.
+
+557
+01:08:49.859 --> 01:08:53.189
+Make sense the concept of synchronization.
+
+558
+01:08:57.750 --> 01:09:06.720
+Any other questions on this, so, synchronization is simply to synchronize the threads. We are not talking about the Internet communication. We're just going to start with that.
+
+559
+01:09:06.720 --> 01:09:10.439
+Synchronize means it is going to work like a box.
+
+560
+01:09:10.439 --> 01:09:15.359
+Right I should rather say a method into which only there is a space for an object.
+
+561
+01:09:15.359 --> 01:09:20.520
+As soon as the 2nd object enter, you need to wait for the 1st object to leave the control.
+
+562
+01:09:20.520 --> 01:09:26.189
+And then you can proceed if you want, why makes sense.
+
+563
+01:09:27.300 --> 01:09:34.350
+Any questions okay. So I think we are good to go.
+
+564
+01:09:34.350 --> 01:09:37.470
+Yes.
+
+565
+01:09:37.470 --> 01:09:41.789
+So this is like, uh, the crux of.
+
+566
+01:09:41.789 --> 01:09:45.869
+Multi thread. Right? The concept is known as inter thread. Communication.
+
+567
+01:09:45.869 --> 01:09:51.750
+And I always like to quote a simple example that let's say that.
+
+568
+01:09:51.750 --> 01:09:56.220
+2 of these students are waiting for the examination.
+
+569
+01:09:56.220 --> 01:10:04.319
+Right. Which usually, let's say, does not happen, but let's say that 2 of the people are waiting for the examination till the students are waiting for the examination and.
+
+570
+01:10:04.319 --> 01:10:09.119
+1 of the student, uh, just say that I'm going to sleep for an hour.
+
+571
+01:10:09.119 --> 01:10:16.109
+And please wake me up after some time, but just because the 1st orient is sleeping. The 2nd student.
+
+572
+01:10:16.109 --> 01:10:26.220
+Is also sleeping because, you know, this is what happened right those were in hostile can totally related. That is the 1st person is sleeping. There is no chance that you can stay back and continue with your studies.
+
+573
+01:10:26.220 --> 01:10:29.489
+Even the 2nd person is sleeping. So what happened.
+
+574
+01:10:29.489 --> 01:10:32.970
+Both of them are sleeping. The time of examination is.
+
+575
+01:10:32.970 --> 01:10:37.590
+Let's say, unfortunately is passed and nobody is there to wake them up.
+
+576
+01:10:37.590 --> 01:10:48.449
+Okay, so this is like a dangerous situation what we call is deadlock we are going to see it later on but before that we need to understand what is weight notify and notify.
+
+577
+01:10:48.449 --> 01:10:55.319
+So somebody is waiting the 1st student was waiting waiting for what waiting for the 2nd stood in to wake him up.
+
+578
+01:10:55.319 --> 01:11:01.859
+That please wake me up after an hour. So this is the message, which is given by the 1st student to the 2nd student.
+
+579
+01:11:01.859 --> 01:11:09.210
+And here is your student, you can just replace it with thread. So, 1 of the thread is waiting how long this thread is waiting.
+
+580
+01:11:09.210 --> 01:11:12.750
+Unless, and until some other threats comes again.
+
+581
+01:11:12.750 --> 01:11:27.744
+And make the thread up. Okay so this is that kind of communication always going to happen usually from 2 different threads you are waiting, you're waiting to get a notification from the other thread that wake up and continue with the rest of your execution.
+
+582
+01:11:29.220 --> 01:11:37.020
+The modification of notify notify all. So, let's say that everyone is sleeping, but then somebody who has already woke up.
+
+583
+01:11:37.020 --> 01:11:40.770
+Is now responsible to make all the students who are sleeping.
+
+584
+01:11:40.770 --> 01:11:45.930
+So, notify all is actually going to make all the remaining threats, which is waiting for the notification.
+
+585
+01:11:46.949 --> 01:11:54.390
+Right and all these methods are implemented as the final method into a class, which is known as the object class.
+
+586
+01:11:54.390 --> 01:11:57.989
+So, they did not belong to the threat class. They belong to the.
+
+587
+01:11:57.989 --> 01:12:06.119
+Objectives right and these methods are actually going to make sense when you need to include synchronization into your program.
+
+588
+01:12:06.119 --> 01:12:10.350
+So, they are used only if you have synchronized metals. Okay.
+
+589
+01:12:10.350 --> 01:12:17.489
+So, I think with the help of an example, it might be much more clear, but still, let's go through it. So it tells.
+
+590
+01:12:17.489 --> 01:12:21.420
+The calling thread to give us the monitor and go to the sleep.
+
+591
+01:12:21.420 --> 01:12:28.170
+It is waiting for a notification to wake him up. The notifying is going to wake up another threat.
+
+592
+01:12:28.170 --> 01:12:35.789
+Who is waiting for it that is wait and notify all wakes up all the thread that is waiting for the current threat to.
+
+593
+01:12:35.789 --> 01:12:45.090
+Given notification, so that is known as notify all and all these methods are declared as the final method. And just because, you know that.
+
+594
+01:12:45.090 --> 01:12:48.630
+The way it is something which is going to.
+
+595
+01:12:48.630 --> 01:12:54.630
+Stop the execution for the time so it actually throws the interrupted exception.
+
+596
+01:12:54.630 --> 01:13:02.399
+So, it grows and interrupted exception, because this method is actually waiting for it.
+
+597
+01:13:02.399 --> 01:13:06.239
+So, let's see an example quickly.
+
+598
+01:13:06.239 --> 01:13:09.600
+And then we will try to go later on.
+
+599
+01:13:10.979 --> 01:13:15.149
+Okay.
+
+600
+01:13:17.039 --> 01:13:20.250
+So this is something which is not utilizing the concept of.
+
+601
+01:13:20.250 --> 01:13:25.800
+Our interest rate communication so let's see what can be the blender at this point. I hope you can see this.
+
+602
+01:13:27.300 --> 01:13:37.829
+Right so I tell you, what is the definition is all about, then we will come to this. So, in this definition, we want to.
+
+603
+01:13:37.829 --> 01:13:47.159
+Implement the producer consumer problem now when we talk about produce a consumer problem, there are a few things, which is very common. The 1st thing is.
+
+604
+01:13:47.159 --> 01:13:56.399
+A consumer cannot consume something unless it has been produced obvious thing. Right? I feel if I want to consume something, which has not yet been produced, it is not possible.
+
+605
+01:13:56.399 --> 01:14:00.810
+Right. So 1st of all the producer should produce something.
+
+606
+01:14:00.810 --> 01:14:08.069
+Which need to be consumed by the consumer. Okay. And we are going to keep track of all the data.
+
+607
+01:14:08.069 --> 01:14:11.130
+Inside of cheap white is inside a queue because.
+
+608
+01:14:11.130 --> 01:14:15.720
+This is Boston 1st, top 1st of all the producer is going to produce something.
+
+609
+01:14:15.720 --> 01:14:22.500
+Then consumer is going to consume and if meanwhile, the producer is still busy producing something that is going to be inside a queue.
+
+610
+01:14:22.500 --> 01:14:25.649
+Okay, so we have a common queue.
+
+611
+01:14:25.649 --> 01:14:31.109
+Which is keeping all the data which has been produced or to be consumed at 1 place.
+
+612
+01:14:31.109 --> 01:14:34.859
+So, this class queue is going to have.
+
+613
+01:14:34.859 --> 01:14:41.520
+The item number read, let's call it N. S. some item number, which has been reduced by the producer, but to be consumed.
+
+614
+01:14:41.520 --> 01:14:47.699
+So, what do we have is we have a synchronized into get so synchronized and get says that.
+
+615
+01:14:47.699 --> 01:14:51.119
+If you are calling this get method on multiple thread.
+
+616
+01:14:51.119 --> 01:14:55.350
+Then only 1 of the thread is allowed to get into this. The 2nd, 1 need to wait.
+
+617
+01:14:55.350 --> 01:14:59.250
+Right. Then it will simply print the message that we have got it.
+
+618
+01:14:59.250 --> 01:15:06.930
+Print it out and return from the middle. The 2nd, 1 is put method so the producer will be responsible.
+
+619
+01:15:06.930 --> 01:15:13.739
+To produce something and put it inside the queue. So I need to give certain value on this. That what value you are producing.
+
+620
+01:15:13.739 --> 01:15:17.010
+So, let's say, in teacher end, we are assigning it.
+
+621
+01:15:17.010 --> 01:15:23.039
+To the local variable, and then we are writing it that we are done with this and you can go and get the particular value.
+
+622
+01:15:23.039 --> 01:15:29.760
+Now, let's see, what is about producer and consumer so, producer and consumer are 2 threats.
+
+623
+01:15:29.760 --> 01:15:36.210
+Which are going to run in parallel, and now we need to actually work on the interest right? Communication.
+
+624
+01:15:36.210 --> 01:15:41.159
+Before oh, sorry after we see what is wrong with this particular code. Okay.
+
+625
+01:15:41.159 --> 01:15:45.180
+So, just because both of them are working on the same queue. I need a reference variable.
+
+626
+01:15:45.180 --> 01:15:48.810
+I have taken a reference variable inside the constructor.
+
+627
+01:15:48.810 --> 01:15:52.529
+Q is equals to queue for the current object.
+
+628
+01:15:52.529 --> 01:15:56.399
+And then we are starting it, so when we are starting it.
+
+629
+01:15:56.399 --> 01:16:01.800
+We are what we are doing is we are simply putting 1 by 1, all the values into the queue.
+
+630
+01:16:01.800 --> 01:16:08.340
+Right. Make sure that the method is synchronized. So only 1 of the put can come at this point. The 2nd put need to wait unless.
+
+631
+01:16:08.340 --> 01:16:11.760
+Uh, the data has been put by 1 of them.
+
+632
+01:16:12.779 --> 01:16:19.140
+The same thing is going to happen with the consumer the consumer is creating a reference variable queue.
+
+633
+01:16:19.140 --> 01:16:22.439
+Inside the constructor, this dot Q becomes equal to queue.
+
+634
+01:16:22.439 --> 01:16:26.460
+And then you were starting the train inside the run.
+
+635
+01:16:26.460 --> 01:16:31.409
+You are calling, you don't get so no matter how many times this run is going to be there.
+
+636
+01:16:31.409 --> 01:16:35.489
+This get method will take only 1 of the object at 1 time.
+
+637
+01:16:35.489 --> 01:16:39.720
+So, 1 object is allowed inside get 1 object is allowed inside put.
+
+638
+01:16:40.800 --> 01:16:46.439
+What we are doing in Maine, we are simply creating an object and just because they are doing this activity inside.
+
+639
+01:16:46.439 --> 01:16:49.979
+Uh, the infinite loop, right? Why true.
+
+640
+01:16:49.979 --> 01:16:55.739
+This is all is true. So, while this activity is going inside the, I just need to create an object of queue.
+
+641
+01:16:55.739 --> 01:17:01.079
+Pass them as a parameter and if you need to stop, you need to press control C.
+
+642
+01:17:01.079 --> 01:17:04.739
+So, can somebody quickly tell me that.
+
+643
+01:17:04.739 --> 01:17:12.060
+What should be the output and what is wrong with the quote? There is something wrong I already said, but what is wrong with the.
+
+644
+01:17:12.060 --> 01:17:23.279
+Quickly the matter is synchronized so, at a time, when you 1 of them can put at a time, only 1 of them can get.
+
+645
+01:17:24.359 --> 01:17:29.609
+Great. Okay. Just try to save and run so that it is.
+
+646
+01:17:29.609 --> 01:17:33.779
+Okay.
+
+647
+01:17:33.779 --> 01:17:37.710
+If you just look at the output that we have over here.
+
+648
+01:17:37.710 --> 01:17:43.289
+Gate is going to start with certain value. Of course, it is going to start with let's say 0.
+
+649
+01:17:43.289 --> 01:17:50.279
+We have Initialized it. Okay. So what we have is.
+
+650
+01:17:50.279 --> 01:17:53.880
+We are having a lots of God at the same time.
+
+651
+01:17:55.050 --> 01:18:05.310
+The same thing is going to be for put. Right? So you can see that put 39111 2 1, 3 1 for it is keep on going and you can have multiple got for the same product.
+
+652
+01:18:05.310 --> 01:18:10.409
+And why it is happening. The reason is you have synchronized the method.
+
+653
+01:18:10.409 --> 01:18:15.359
+But you have not taken care of the thread communication, which is the most important thing.
+
+654
+01:18:15.359 --> 01:18:22.079
+Right and in order to talk about in the threat, communication, 1 of the thread should complete the production.
+
+655
+01:18:22.079 --> 01:18:30.779
+And it should notify this particular thread. The get thread that now I'm done with putting the data inside the queue, consume it.
+
+656
+01:18:30.779 --> 01:18:35.550
+After consumption, the consumer should notify that I have done with the consumption.
+
+657
+01:18:35.550 --> 01:18:40.859
+Put someone at the value, this put value is going to execute the code.
+
+658
+01:18:40.859 --> 01:18:44.789
+And once it is done execution, it will notify the consumer.
+
+659
+01:18:44.789 --> 01:18:49.229
+And this should keep on going in a sequence so that we do not end up with some.
+
+660
+01:18:49.229 --> 01:18:54.930
+Trouble right so here we have taken the help of into threat communication.
+
+661
+01:18:54.930 --> 01:18:58.500
+We have taken a 1M value, which is initially false.
+
+662
+01:18:58.500 --> 01:19:02.609
+This is actually the root, which will identify when to.
+
+663
+01:19:02.609 --> 01:19:07.319
+Take the value and when to wait. Okay so we have in get.
+
+664
+01:19:07.319 --> 01:19:11.760
+Get should actually get the value after the production is done.
+
+665
+01:19:11.760 --> 01:19:14.970
+Right. So initially it should wait unless and until.
+
+666
+01:19:14.970 --> 01:19:20.819
+Somebody is coming and changing the variable. So Boolean values said is equal to false.
+
+667
+01:19:20.819 --> 01:19:27.270
+Why not value said the condition is true if the condition is true. You just wait here, right?
+
+668
+01:19:27.270 --> 01:19:31.560
+Once you are waiting, the producer is busy, producing something.
+
+669
+01:19:31.560 --> 01:19:36.960
+Okay, so you can see that you have opposite condition inside the code.
+
+670
+01:19:36.960 --> 01:19:44.819
+This is actually initially forms read initially it is false. If it is initially false, the control will come to this point.
+
+671
+01:19:44.819 --> 01:19:49.109
+This will give certain value, which has been passed as a parameter to the local variable.
+
+672
+01:19:49.109 --> 01:19:52.590
+The value set will become equal to true after this point.
+
+673
+01:19:52.590 --> 01:19:56.819
+When it is becoming true, you know, that this is going inside.
+
+674
+01:19:56.819 --> 01:20:01.739
+The weird situation, right after it is going inside the wait situation.
+
+675
+01:20:01.739 --> 01:20:06.630
+You are simply printing 1 value and then you notify for the thread, which is waiting for it.
+
+676
+01:20:06.630 --> 01:20:10.529
+And who is waiting for it? The gate method is waiting.
+
+677
+01:20:10.529 --> 01:20:13.739
+So, as soon as it becomes equal to true.
+
+678
+01:20:13.739 --> 01:20:18.750
+The control will come here, the consumer will get the value, and it will print this out.
+
+679
+01:20:18.750 --> 01:20:22.529
+So, here, you can see that with the help of wait, modify.
+
+680
+01:20:22.529 --> 01:20:28.170
+And a 1B variable, you are actually controlling the way in which the methods are supposed to be invoked.
+
+681
+01:20:28.170 --> 01:20:32.340
+Let's go through it 1 more time you have in teacher variable and.
+
+682
+01:20:32.340 --> 01:20:35.460
+Initially you have a bullion value, which is false.
+
+683
+01:20:35.460 --> 01:20:40.920
+And, you know, that, in case of put in, get put should execute 1st, followed by get.
+
+684
+01:20:40.920 --> 01:20:44.760
+So this value is false so get method is not doing anything.
+
+685
+01:20:46.470 --> 01:20:50.489
+We will directly come to this point right? While this condition is true you are waiting.
+
+686
+01:20:50.489 --> 01:20:53.970
+Right Meanwhile the condition through.
+
+687
+01:20:53.970 --> 01:20:58.319
+For the push method is going to be executed if it is true.
+
+688
+01:20:58.319 --> 01:21:03.539
+What I need to do, I need to go inside the way, but the value of value set is initially false.
+
+689
+01:21:03.539 --> 01:21:07.020
+So, you will not go inside this particular set of instruction.
+
+690
+01:21:07.020 --> 01:21:12.510
+Rather you will assign the value to and which is a local variable.
+
+691
+01:21:12.510 --> 01:21:17.609
+And then you make value set is equal to form so that you do not end up producing multiple values.
+
+692
+01:21:17.609 --> 01:21:24.510
+Once you have created 1 value immediately make the flag is false or 2, whatever it is requirement of the problem.
+
+693
+01:21:24.510 --> 01:21:28.979
+After that you are printing the value, put in and then you notify.
+
+694
+01:21:28.979 --> 01:21:36.449
+Whenever you are notifying the 1, which is having rate is going to become active. So this is again going to check the value.
+
+695
+01:21:36.449 --> 01:21:42.720
+The values that becomes equal to true. Right? The condition is false. So, do not go inside this point.
+
+696
+01:21:42.720 --> 01:21:46.140
+Rather write down God is equal to 1.
+
+697
+01:21:46.140 --> 01:21:50.729
+Continue with the flight set and then notify now who was waiting.
+
+698
+01:21:50.729 --> 01:21:57.510
+This particular statement was waiting, so now you can see that there is some sort of intertwined communication between 2 of them.
+
+699
+01:21:57.510 --> 01:22:02.010
+Which is going to handle the situation. Let me just try to run the code.
+
+700
+01:22:03.930 --> 01:22:11.460
+And you can see the patent the put, and God is always being in sequence. Why it is being sequence because.
+
+701
+01:22:11.460 --> 01:22:20.939
+Initially, the port is going to put the value, it will assign the value to the local variable and this will go inside the sleep mode unless, and until something is going to break it up.
+
+702
+01:22:20.939 --> 01:22:24.390
+If it is not getting wake, then.
+
+703
+01:22:24.390 --> 01:22:28.590
+The program is going to stop at that point, but then we have fortunately a got method.
+
+704
+01:22:28.590 --> 01:22:31.680
+Which is waiting for the flag to turn.
+
+705
+01:22:31.680 --> 01:22:37.260
+Box right if it is false, you are simply going to wait if it is true.
+
+706
+01:22:37.260 --> 01:22:50.550
+You get the value in the data again, go inside the wait and this is always happening in a sequence. So, the kind of output that you will get will always be synchronized with the help of inter, thread communication.
+
+707
+01:22:50.550 --> 01:22:56.430
+Make sure that the method should be synchronized. Otherwise there is no meaning of integrate communication.
+
+708
+01:22:56.430 --> 01:23:01.710
+Inside producer and consumer the things I've seen, you create a reference variable of queue.
+
+709
+01:23:01.710 --> 01:23:06.239
+Start the thread the thread is going to implement the value of Friday from 0T onwards.
+
+710
+01:23:06.239 --> 01:23:10.050
+Inside the consumer start the thread.
+
+711
+01:23:10.050 --> 01:23:16.949
+It is always going to call the get method and the inside the main you are simply creating a constructor and executing rest of the task.
+
+712
+01:23:16.949 --> 01:23:21.600
+Yeah, I hope you actually got an idea of what is happening.
+
+713
+01:23:21.600 --> 01:23:28.199
+Because I will upload everything inside the drive for your reference, but for the timing, you should be knowing that.
+
+714
+01:23:28.199 --> 01:23:31.739
+Why synchronization is different from into communication.
+
+715
+01:23:31.739 --> 01:23:36.750
+So, in synchronization, you are just taking care of that. 1 of the thread is entering into the system.
+
+716
+01:23:36.750 --> 01:23:40.439
+When the 2nd, 1 is waiting, there is no communication among the threats.
+
+717
+01:23:40.439 --> 01:23:45.510
+Where is when we talk about into communication, the 1 thread is responsible to do 1 task.
+
+718
+01:23:45.510 --> 01:23:55.470
+It is going to wait for the 2nd task to complete. Once that task is complete. It is your responsibility to call that particular method that wake up and do the rest of the executions.
+
+719
+01:23:55.470 --> 01:24:03.989
+Okay, and as I said that 1 of the problems that, in the thread communication is deadlock. So this is something which is a.
+
+720
+01:24:03.989 --> 01:24:11.310
+Falling inside your 10% self study topic, but what I'll do is, I will upload the program.
+
+721
+01:24:11.310 --> 01:24:14.880
+Into the drive for your reference so indirect communication.
+
+722
+01:24:14.880 --> 01:24:21.420
+Is done, we are talking about the deadlock that what happened when a condition of deadlock has been arise.
+
+723
+01:24:21.420 --> 01:24:27.930
+And how you are going to fix it, followed by how you can actually suspend and resume a thread by yourself.
+
+724
+01:24:27.930 --> 01:24:35.220
+So this is just about creating a method and calling it so I will upload both of them into the drive. You can refer to it later.
+
+725
+01:24:35.220 --> 01:24:40.229
+And, uh, this is all about the multi. Okay.
+
+726
+01:24:40.229 --> 01:24:46.319
+I, as far as the lab component is concerned, I think somebody has requested me to discuss it after 25.
+
+727
+01:24:46.319 --> 01:24:50.729
+So, if you are fine, we will meet upon 26 morning for all the batches.
+
+728
+01:24:50.729 --> 01:24:58.560
+To start with the discussion on lab session. Okay. So meanwhile, if you have any questions, you can write it down in the chat.
+
+729
+01:25:00.420 --> 01:25:12.300
+Otherwise we'll meet up again. You have any question you can stay back otherwise we'll leave the session.
+
+730
+01:25:14.250 --> 01:25:20.640
+In the synchronized block.
+
+731
+01:25:20.640 --> 01:25:24.779
+Could you explain that once? Yes. Yes. The targeted.
+
+732
+01:25:24.779 --> 01:25:29.189
+Yes.
+
+733
+01:25:29.189 --> 01:25:32.970
+In the swelling side is.
+
+734
+01:25:32.970 --> 01:25:38.939
+Yes, so see what we had to option, right? Either I can go with a synchronized method.
+
+735
+01:25:38.939 --> 01:25:43.020
+And if I do not have the access to the method, I can create a synchronized block.
+
+736
+01:25:43.020 --> 01:25:47.310
+So, this synchronized block has a syntax that you write synchronized.
+
+737
+01:25:47.310 --> 01:25:51.000
+Followed by the object on which you need to call the synchronization.
+
+738
+01:25:51.000 --> 01:25:54.779
+So, here, we know that all method is something, which should be synchronized.
+
+739
+01:25:54.779 --> 01:25:58.350
+Who is calling the call method? The target is calling the call method.
+
+740
+01:25:58.350 --> 01:26:07.050
+And now this target should be synchronized so whenever an object of target is coming at this point, just 1 of the target is allowed to go inside the block.
+
+741
+01:26:07.050 --> 01:26:11.430
+Although the method can entertain any much object as they want.
+
+742
+01:26:11.430 --> 01:26:18.899
+But now the object, if the object is not targeted to go ahead.
+
+743
+01:26:18.899 --> 01:26:29.850
+Now, what I didn't share the screen. No. Can you see we had 2 option that either we can.
+
+744
+01:26:29.850 --> 01:26:32.970
+Uh, right synchronized in front of this call method.
+
+745
+01:26:32.970 --> 01:26:36.930
+But let's say that that call is not available. So what I need to do.
+
+746
+01:26:36.930 --> 01:26:43.020
+I need to synchronize it from some other class because this is the class from where you are calling the call. Me.
+
+747
+01:26:43.020 --> 01:26:49.020
+Okay, so while you are doing this and the column is not synchronized, then what you have to do is.
+
+748
+01:26:49.020 --> 01:26:56.460
+You just synchronize the object, which is calling the all metal. So, here, the object is target synchronize this method.
+
+749
+01:26:56.460 --> 01:27:01.979
+Later on, when you go inside the call, the call is ready to entertain any number of object as possible.
+
+750
+01:27:01.979 --> 01:27:05.640
+But the point from where you are calling, it is giving some restriction.
+
+751
+01:27:05.640 --> 01:27:17.250
+Okay, yes, so simply the object on which you are supposed to make the synchronized, just moved that object as synchronized and write it inside the parent offices.
+
+752
+01:27:17.250 --> 01:27:23.130
+Yeah, could it be multiple multiple objects here?
+
+753
+01:27:23.130 --> 01:27:33.390
+If you are taking the multiple objects, then you need to create certain synchronized block. I cannot write synchronized target comma. So, 1 synchronize. Okay.
+
+754
+01:27:33.390 --> 01:27:40.439
+Yes, thank you.
+
+755
+01:27:40.439 --> 01:27:44.460
+Silence.
+
+756
+01:27:44.460 --> 01:27:55.500
+Now, is it feasible to synchronize the run method? Okay see, if you're synchronizing the run method, then at 1 time, only 1 of the thread is going to call it.
+
+757
+01:27:55.500 --> 01:28:00.060
+So, if you want, you can definitely try this.
+
+758
+01:28:00.060 --> 01:28:08.399
+It will not give you an header, but make sure that you are restricting a lot on to the trend from the starting point itself. You are saying that only 1 of the thread can run.
+
+759
+01:28:08.399 --> 01:28:14.909
+So, now there is no meaning of multi so it's better that you start 1 thread, complete the task and go to the 2nd 1.
+
+760
+01:28:14.909 --> 01:28:19.229
+So now the purpose of multi thread is not being sold all the you can do so yes.
+
+761
+01:28:20.909 --> 01:28:31.680
+Silence.
+
+762
+01:28:32.970 --> 01:28:36.840
+Case, so if you do not have any other question, we can call you today.
+
+763
+01:28:36.840 --> 01:28:41.189
+We'll meet up again on Thursday to discuss the lack component of.
+
+764
+01:28:41.189 --> 01:28:49.350
+Uh, this practical number 10, right? So meanwhile, just try to go through the definition. Let's see how much you can complete. I'll share the recordings.
+
+765
+01:28:49.350 --> 01:28:53.189
+Along with the programs, right? And you just keep a track on it.
+
+766
+01:28:53.189 --> 01:28:56.189
+Okay, so.
+
+767
+01:28:56.189 --> 01:28:59.699
+And then the session.
+

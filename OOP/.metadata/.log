@@ -1,0 +1,29 @@
+!SESSION 2019-10-11 20:50:56.378 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/aayush/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/aayush/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-11 20:51:18.995
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2019-10-11 20:54:06.954 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/aayush/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/aayush/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-11 20:54:36.119
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.intro 4 0 2019-10-11 20:55:00.205
+!MESSAGE Intro tried accessing a NULL bundle.
+
+!ENTRY org.eclipse.ui.intro 4 0 2019-10-11 20:55:04.085
+!MESSAGE Intro tried accessing a NULL bundle.
+
+!ENTRY org.eclipse.ui.intro 4 0 2019-10-11 20:55:06.993
+!MESSAGE Intro tried accessing a NULL bundle.

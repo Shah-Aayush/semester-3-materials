@@ -1,0 +1,3246 @@
+WEBVTT
+
+1
+00:10:02.668 --> 00:10:06.328
+All right, so good morning everyone I hope I'm audible.
+
+2
+00:10:07.678 --> 00:10:11.308
+Can I get a quick reply in the chatbox?
+
+3
+00:10:11.308 --> 00:10:16.198
+Yes, okay. So we're going to start with, uh, 1 of the most important.
+
+4
+00:10:16.198 --> 00:10:21.269
+And the basic concept of Java programming language, what we call is multi threaded programming.
+
+5
+00:10:21.269 --> 00:10:25.678
+So, we're not going to wait for other participants. Let's start with the session itself.
+
+6
+00:10:25.678 --> 00:10:28.678
+Let me just try to share the screen.
+
+7
+00:10:33.869 --> 00:10:37.649
+Okay, so I hope you can see this.
+
+8
+00:10:37.649 --> 00:10:50.188
+So, the concept of multi target programming is really important and at the same time, it decides that the core of Java programming language, and how this is going to be different from the programs that we have seen earlier.
+
+9
+00:10:50.188 --> 00:11:01.614
+What are the things which are going to be added when we talk about multi programming and how Java implement this? Right? So this is the aim of the session today that how we are going to implement it.
+
+10
+00:11:01.673 --> 00:11:07.313
+Why it is important and how Java is going to take advantage of this over the other programming languages.
+
+11
+00:11:07.558 --> 00:11:22.109
+So before we start with the concept of multi thread, we are all aware about the word, which is known as multitasking. Right? So, when we talk about multitasking, uh, the meaning of the word is, when you are doing multiple tasks at the same time.
+
+12
+00:11:22.403 --> 00:11:36.894
+Right. And when we talk about the concept of programming and the concept of process, then they are going to be of 2 different type of multi tasking. The 1 of the kind of multi tasking that we are already aware about is known as process based multitasking.
+
+13
+00:11:37.229 --> 00:11:46.948
+And the 1 that we are going to discuss today is thread based multitasking. So, multi threading is simply under the name of thread based multitasking. So they are 1 of the same thing.
+
+14
+00:11:46.948 --> 00:11:52.288
+So, let's see what we know about process based multitasking so.
+
+15
+00:11:52.288 --> 00:12:04.469
+Just because you are using an operating system, which comes with the Inbal feature of process based multitasking, imagine a situation in which you are writing something in your editor. Let's say text editor.
+
+16
+00:12:04.469 --> 00:12:07.649
+And at the same time, you are playing the music in the background.
+
+17
+00:12:07.649 --> 00:12:13.859
+Right. So all the, there are multiple process which can be executed at the same time. But here.
+
+18
+00:12:13.859 --> 00:12:18.448
+For the sake of understanding, consider that we have 2 processes running simultaneously.
+
+19
+00:12:18.448 --> 00:12:26.009
+So 1 of the process is in which you are writing something into the text editor and the 2nd process is in which you are, let's say.
+
+20
+00:12:26.009 --> 00:12:31.589
+Uh, playing some music in the background with the help of some music player. So.
+
+21
+00:12:31.589 --> 00:12:44.249
+The 2 processes are running simultaneously. Right? And it is giving you the illusion that both of them are independent. And at the same time, whatever you are doing with 1 process is not going to be effected by the another.
+
+22
+00:12:44.249 --> 00:12:55.918
+Right. So we know that at the background, there are not 2 processes running at the same time, but the switching happens so quickly that it gives you the illusion that multiple processes are running at the same time.
+
+23
+00:12:55.918 --> 00:13:01.769
+The same thing is going to be applied now to the threats. So 1st of all, we need to understand that. What is thread.
+
+24
+00:13:01.769 --> 00:13:08.668
+Then we will see what is multithread and what are the difference between the process based multitasking and thread based multitasking.
+
+25
+00:13:08.903 --> 00:13:23.693
+Right. So till now whatever program that we have written were actually going in some manner. Right? So, let's say I'm starting with taking some input from the user, then we perform certain processing and let's say that on the basis of that, we are going to take some decision.
+
+26
+00:13:24.028 --> 00:13:31.889
+But then this program was totally running in a single thread. So, when I say thread it is simply a part of a program.
+
+27
+00:13:31.889 --> 00:13:35.369
+So, we have not logically divided the program into threats.
+
+28
+00:13:35.369 --> 00:13:44.369
+We were actually having a single program, which was taken decision on the basis of statements that you have written the codes that you have returned. And then it was going to the next step.
+
+29
+00:13:44.693 --> 00:13:58.884
+Right. So this is like a single thread. You are not running the same program in certain parts you're running the same program, uh, in a sequential manner when it's a sequential we are ignoring the concept of control flow and junk Vanessa sequential.
+
+30
+00:13:58.913 --> 00:14:01.673
+That means a single control. Is handling the whole program.
+
+31
+00:14:01.979 --> 00:14:10.528
+Right. So, for the sake of understanding, let's say that I need to perform some arithmetic operations on 2 numbers, which is taken from the user.
+
+32
+00:14:10.528 --> 00:14:16.349
+Right so how the program is going to start 1st of all you are going to initialize the variable.
+
+33
+00:14:16.349 --> 00:14:25.708
+You are going to take the value from the user, then you are going to select that which arithmetic operation that you need to perform. And then that operation will be performed along with the output.
+
+34
+00:14:25.708 --> 00:14:38.729
+Right. So you can see that no matter what kind of input you are giving no matter which kind of automatic expression you were choosing to perform the operations that you are going to do in your program is actually in some manner.
+
+35
+00:14:38.729 --> 00:14:44.609
+Right so you are going to start with the 1st step then you go to the 2nd, 1 and then you take the decision and finally the answer.
+
+36
+00:14:44.609 --> 00:14:51.359
+So this is not a single thread. Your program is actually running in some logical sequence what we call is thread.
+
+37
+00:14:51.359 --> 00:14:56.249
+Right now we can relate it to the multi threat. The multithread says that.
+
+38
+00:14:56.249 --> 00:14:59.458
+The 2 are more parts of your program can run concurrently.
+
+39
+00:14:59.458 --> 00:15:07.798
+Now you mentioned that 1 of the thread is taking some input. The another thread is, let's say, printing out some intermediate steps.
+
+40
+00:15:07.798 --> 00:15:12.839
+Right. So there are 2 things which are running at the same time. We do not call it as process.
+
+41
+00:15:12.839 --> 00:15:26.339
+We call it is thread because processes actually handling some bigger picture, right? They are handling the bigger processes whereas when we talk about multi threading, we are simply handling the small part of your program at 1 time.
+
+42
+00:15:26.339 --> 00:15:30.119
+Right. So multithreading is like the concurrent.
+
+43
+00:15:30.119 --> 00:15:34.979
+Things or the competent set of instructions, which are running in your same program.
+
+44
+00:15:34.979 --> 00:15:40.109
+Whereas, in case of process based program, there are multiple processes, which is running concurrently.
+
+45
+00:15:40.109 --> 00:15:51.839
+Right. So I hope we are fine with, at least the basic introduction to what is multithreading. So, 1st of all the thread is a piece of code into your program and when the different.
+
+46
+00:15:51.839 --> 00:15:58.438
+Threats are going to run a different piece of code into the same program. We call it as multi threaded programming.
+
+47
+00:15:59.183 --> 00:16:13.703
+Right and we are going to give the sufficient time to understand the basic, because it is worth it. If I take you to the program, this will be very difficult for us to understand. Right? So, let's go through some of the things, some of the advantages and then slowly we will jump to the programs.
+
+48
+00:16:13.918 --> 00:16:27.208
+Right. So, as I said that in the process based multi programming, there are multiple processes, which is running at the same time. Whereas in case of multi threaded programming, you are talking about a single program. But then.
+
+49
+00:16:27.208 --> 00:16:33.089
+There are different controls, which are going to handle the same program as their behavior might be different.
+
+50
+00:16:34.229 --> 00:16:48.354
+Okay, so, in case of process based multitasking, the smallest unit is the process itself, whereas if we talk about the multi thread based multitasking, right. Or thread based multitasking, then thread is the smallest unit. Right?
+
+51
+00:16:48.354 --> 00:17:02.634
+Although we are not going to talk about this in detail because, uh, the process and threat is something that you will understand in more detail. When we go to the operating system subject there, we are going to see so many jargons, which are associated with the multitask.
+
+52
+00:17:04.409 --> 00:17:09.659
+Okay, so the interesting thing about multi threading is that you have a single program.
+
+53
+00:17:09.659 --> 00:17:14.038
+But that single program is capable to do multiple tasks at the same time.
+
+54
+00:17:14.038 --> 00:17:24.449
+Right and this was something which was working in the favor of Java programming language and this made the programming language much more powerful than what we had earlier.
+
+55
+00:17:24.449 --> 00:17:35.398
+Right so the earlier programing language were not that much, uh, handling the multi threaded concept. Whereas when we talk about Java programming language, this was a newly added concept.
+
+56
+00:17:35.398 --> 00:17:43.618
+Right and it shows the power of programming language that now you have a piece of code right for they are calling it as program. But this program.
+
+57
+00:17:43.618 --> 00:17:49.739
+Are going to perform multiple tasks at the same time without interrupting the 2nd 1.
+
+58
+00:17:49.739 --> 00:18:02.729
+Okay, so let's say that I have given you the program now, there are 2 individuals who are controlling it. So, let's say that 1 of them is simply counting the number of statements. The 2nd, 1 is simply performing the logical things, which is written inside it.
+
+59
+00:18:02.729 --> 00:18:05.969
+Right so this is much more going to December.
+
+60
+00:18:05.969 --> 00:18:16.138
+Uh, the 2 you going to perform some task on the same program, but now we have, we do not have the human, whether we have the different threats right? Which are going to perform.
+
+61
+00:18:16.138 --> 00:18:19.528
+As many task as you want, but in the same program.
+
+62
+00:18:20.334 --> 00:18:31.223
+Okay, so many of the time, uh, if you just look at the basics of multi threading, they ask you to differentiate between the process based multitasking and thread based multitasking.
+
+63
+00:18:31.523 --> 00:18:43.794
+So, although I have not, uh, created a tabular information, but I think you will be able to just grasp what is required. And then it would be better. If you just discriminate between these 2 in the telephone.
+
+64
+00:18:44.098 --> 00:18:58.019
+Right. So that the things will be very much clear for you. So, as I said, that the process based multitasking is going to deal with the bigger picture. Right? Why bigger picture? Because it is not performing multiple tasks.
+
+65
+00:18:58.019 --> 00:19:01.618
+Inside the same process it is performing multiple tasking with.
+
+66
+00:19:01.618 --> 00:19:06.388
+The different processes, right? Whereas when we talk about threat based multitasking.
+
+67
+00:19:06.388 --> 00:19:09.388
+We are handling the single program.
+
+68
+00:19:09.388 --> 00:19:14.669
+Right and we are allowing that program to do multiple tasks without interrupting the another 1.
+
+69
+00:19:15.749 --> 00:19:22.409
+Fine, so if you talk about the process based and multi based a certain multi based, then we know that.
+
+70
+00:19:22.409 --> 00:19:29.489
+The 1, which is going to deal with the bigger picture has much more overhead because in case of process.
+
+71
+00:19:29.489 --> 00:19:35.278
+Whenever you are performing a switching range, when it says switching, you are allowing certain.
+
+72
+00:19:35.278 --> 00:19:38.909
+Uh, let's say resources to be given from 1 process to 1 another.
+
+73
+00:19:38.909 --> 00:19:46.019
+So, when we switch from 1 process to another, then it is going to take much more time or much more overhead.
+
+74
+00:19:46.019 --> 00:19:49.888
+Compared to the trade, which is running inside the same program.
+
+75
+00:19:49.888 --> 00:19:58.618
+Right. So when we talk about multi programming, we are actually going to deal with the smaller picture. But at the same time, the overhead is very less.
+
+76
+00:19:58.618 --> 00:20:04.558
+Okay, so this is something which is going to differentiate between the process.
+
+77
+00:20:04.558 --> 00:20:12.959
+And right I will just upload it on the train. You can go through the, uh, the most important thing about here is that what is context switching.
+
+78
+00:20:12.959 --> 00:20:20.338
+Okay, so, uh, context, which is again a detailed topic operating system but let me just try to give you an example.
+
+79
+00:20:20.338 --> 00:20:26.429
+So, let's say that, uh, for the timing, you are listening to this session and you are sitting inside your room.
+
+80
+00:20:26.429 --> 00:20:30.778
+But at the same time, let's say somebody knock the door and brings you the food.
+
+81
+00:20:30.778 --> 00:20:34.858
+Right, so your priority is just listening to the lecture.
+
+82
+00:20:34.858 --> 00:20:42.388
+Right this is what I hope that your priority is to listen to the lecture. So what you are going to do, you are not allowing anybody else to take over.
+
+83
+00:20:42.388 --> 00:20:49.618
+That it might be any resource, it might be anything, but let's say that now, instead of listening to the lecture, you are going to take that food.
+
+84
+00:20:49.618 --> 00:21:02.364
+Right so what happened in that case, you are switching from 1 task to another task and this is the concept of context switching. So when we talk about the entire process communication, then context switching is very expensive.
+
+85
+00:21:02.814 --> 00:21:07.733
+Whereas when we talk about the thread communication, then this is comparatively.
+
+86
+00:21:08.009 --> 00:21:16.558
+A lightweight and cheap, right? So if you have any questions, so far, you can just let me know, give me a 2nd.
+
+87
+00:22:17.429 --> 00:22:23.189
+Okay, so I cannot see any questions. So I think we are fine at this point.
+
+88
+00:22:23.189 --> 00:22:27.239
+Let's.
+
+89
+00:22:28.618 --> 00:22:36.659
+Right. So, as I said, then the interface communication is not that expensive and they are lightweight compared to the.
+
+90
+00:22:36.659 --> 00:22:44.213
+Process based communication, so why it happens 1 of the reason is that when we are talking about the address space, right?
+
+91
+00:22:44.213 --> 00:22:51.894
+So, 1st of all, you know, what is space that whenever we are starting with any process, that process requires certain memory into your system.
+
+92
+00:22:52.199 --> 00:23:04.378
+Right. And when we talk about the different process, then they are working on some different address space. So let's say that, uh, you are writing something in your text editor and you are playing something in your let's say.
+
+93
+00:23:04.378 --> 00:23:16.763
+Uh, music player, then both of them are going to require some different intraspace to perform their operations, but when we talk about multi threading programming, then they are going to share the same address location.
+
+94
+00:23:17.034 --> 00:23:19.614
+The reason is we are talking about a single program.
+
+95
+00:23:19.919 --> 00:23:29.398
+Right and you know that when the program is going to be Initialized all the variables, all the methods, and whatever things that you have created, would require certain memory.
+
+96
+00:23:29.398 --> 00:23:33.929
+And that memory is going to be Initialized when you are compiling the code.
+
+97
+00:23:33.929 --> 00:23:43.348
+Right of course the objects are going to be Initialized when you run the code, but all the memory, which is static is actually going to be stored into some space.
+
+98
+00:23:43.348 --> 00:23:47.818
+And the space is something which is going to be common for a program.
+
+99
+00:23:47.818 --> 00:24:02.578
+So, when we are talking about that, why multi threading is cheaper or why it is inexpensive compared to the multi process. Then 1 of the reason is that multi threaded environment, share the address space. Where is.
+
+100
+00:24:02.578 --> 00:24:07.409
+In case of multiple process environment, you have a different space.
+
+101
+00:24:07.409 --> 00:24:14.669
+Therefore, in case of different space, it requires a lot of overhead while switching from 1 process to another process.
+
+102
+00:24:14.669 --> 00:24:22.679
+Fine, this is just about the introduction to the difference between the multi thread environment and the.
+
+103
+00:24:22.679 --> 00:24:33.719
+Process based environment right so what happened when multiple process are running and what happened when multi threads are running now, let's see that. What is the advantage of multi thread over single.
+
+104
+00:24:33.719 --> 00:24:40.588
+So, what are the programs that we have done till now? But actually the single thread environment, because, you know that.
+
+105
+00:24:40.588 --> 00:24:44.788
+1 program was capable of giving you 1 kind of output.
+
+106
+00:24:44.788 --> 00:24:57.959
+And there was a logical sequence that you are supposed to follow, whereas if you talk about the multi thread environment, then you have multiple things, which are going to perform some task into the same program.
+
+107
+00:24:57.959 --> 00:25:06.269
+Right so 1 of the advantage of using multithread is that you are utilizing the CPU at its maximum level.
+
+108
+00:25:06.269 --> 00:25:09.749
+Okay, let me just give you an example. Let's say that.
+
+109
+00:25:09.749 --> 00:25:18.358
+I am working on a program which required to take certain input from the user. Okay. So, let's say a variable a I have variable B.
+
+110
+00:25:18.358 --> 00:25:23.128
+So, we are waiting for the user to give the input.
+
+111
+00:25:23.128 --> 00:25:27.689
+And unless and until the user is giving the input, the CPU is idle.
+
+112
+00:25:27.689 --> 00:25:36.479
+Okay, so let's say that I have executed a program. I am running the code and the system is asking me to give certain value to the variables.
+
+113
+00:25:36.479 --> 00:25:46.048
+Now, let's say that I have given value to the 1 variable and then I went out to do certain things. And then when I came back, you know that the CPU is sitting.
+
+114
+00:25:46.048 --> 00:25:51.328
+The reason is, it is expecting you to give the values to both the variables.
+
+115
+00:25:51.328 --> 00:25:56.038
+And unless and until you give the values, you will not be able to proceed further.
+
+116
+00:25:56.038 --> 00:26:04.108
+Right. So now you can see that for most of the time, if your program is interactive program, because this is what the real time program will be.
+
+117
+00:26:04.108 --> 00:26:12.148
+Right that if you are taking certain input and output. So unless and until the user is giving an input, the CPS sitting.
+
+118
+00:26:12.923 --> 00:26:27.624
+Right. Whereas in case of multi threading programming, it may be possible that 1 of the thread is responsible to take the input. Where is some other thread is busy, doing certain computations. And if the thread is busy doing computations, then it is actually utilizing.
+
+119
+00:26:27.898 --> 00:26:33.118
+The CPU at the same time while you are waiting for the user to give an input.
+
+120
+00:26:33.118 --> 00:26:43.679
+So, the advantage of using multi threaded is that it is going to utilize the CPU at this maximum level. Whereas in case of single threaded programming.
+
+121
+00:26:43.679 --> 00:26:48.388
+Now, most of the time the CPU is sitting idle and therefore you are not utilizing it.
+
+122
+00:26:48.388 --> 00:26:52.439
+Right. So, for the timing, the requirement is to have the speed.
+
+123
+00:26:52.439 --> 00:26:55.528
+Right if you have a CPU, then you should utilize.
+
+124
+00:26:55.528 --> 00:27:02.459
+The maximum amount of CPU as possible compared to it idle and wait for the user to give an input.
+
+125
+00:27:02.459 --> 00:27:13.318
+So this is 1 of the advantage, the another advantages that your program will not be dominated by a certain set of instructions. So, as a.
+
+126
+00:27:13.318 --> 00:27:25.648
+Give you an example that we are asking some value to be given from the user. So, you know, that now, that part is dominating because unless and until you are passing certain values to the variables, you are.
+
+127
+00:27:25.648 --> 00:27:31.558
+Stopping or you are just making your program to sit idle unless and until.
+
+128
+00:27:31.558 --> 00:27:41.068
+The input variables are having certain values right? So, this is like some piece of program is dominating and it is preventing the other piece of instructions to be executed.
+
+129
+00:27:41.068 --> 00:27:46.378
+And they did not want this. We, we just want that there are 2 different rates.
+
+130
+00:27:46.378 --> 00:27:54.509
+And these different threats should actually be working at the same time without any part of the program dominating the another 1.
+
+131
+00:27:54.509 --> 00:28:00.719
+Okay, again it is possible that.
+
+132
+00:28:00.719 --> 00:28:06.628
+Let's say that while running the code and you have given certain input and that input is blocking the program.
+
+133
+00:28:06.628 --> 00:28:16.798
+So, if the system is blocking a program and single communication, then you are simply waiting for some resources, or you are just waiting for the program to stop.
+
+134
+00:28:16.798 --> 00:28:25.558
+Whereas, in case of multi threaded programming, you do not have the blocking problem. If 1 of the thread is blocked. The 2nd, 1 might be running.
+
+135
+00:28:25.558 --> 00:28:30.868
+Right whereas in case of single threaded programming, if your 3rd is blocked, you are just.
+
+136
+00:28:30.868 --> 00:28:34.858
+Uh, terminated from the program, and you will not be able to run it again.
+
+137
+00:28:34.858 --> 00:28:47.669
+Okay, so this is about, uh, the difference between the single thread and multi thread. Now, let's get back to the original topic that what is multithread.
+
+138
+00:28:47.669 --> 00:28:54.719
+What are the states of the multi thread how we are going to create a thread? And what are some of the threats that we already know.
+
+139
+00:28:54.719 --> 00:29:02.128
+Right so these are the very important things to understand that. What are the different states of a threat.
+
+140
+00:29:02.128 --> 00:29:13.078
+So these are actually some important States, right? This might be having some different name when you refer to some different resources. But these are going to remain common.
+
+141
+00:29:13.078 --> 00:29:27.058
+The 1st, 1 is the ready state, right? So, before your thread is running, your threat should be ready and why it should be ready so that you will understand that which resources should be given and which resources should be kept hold.
+
+142
+00:29:27.058 --> 00:29:30.209
+So, the 1st state for the thread is.
+
+143
+00:29:30.209 --> 00:29:35.338
+That the threat should be in a ready state and once the threat is in ready state.
+
+144
+00:29:35.338 --> 00:29:39.808
+And you are initiating the thread, then thread will go to the running state.
+
+145
+00:29:39.808 --> 00:29:44.009
+Right now the thread is working its own task, which has been given to it.
+
+146
+00:29:44.009 --> 00:29:55.973
+And meanwhile, let's say that you want your thread to suspend, right? Suspend means your thread is not terminating, but it is hyphenated. It is just sleeping or it is just waiting for some other resources, or so on.
+
+147
+00:29:56.544 --> 00:30:00.324
+So, when a thread is running, it can either be suspended.
+
+148
+00:30:00.598 --> 00:30:05.308
+But it can be terminated, but now there is a difference between suspension.
+
+149
+00:30:05.308 --> 00:30:08.489
+And termination, so, suspension is temporary.
+
+150
+00:30:08.489 --> 00:30:20.189
+Right. You adjust allowing those activity to stop for some time whereas when we talk about terminated, that means the threat is not terminated. You cannot restart the thread. You need to create another thread.
+
+151
+00:30:20.189 --> 00:30:24.118
+You start with a whole new fresh process, and then you will be able to proceed.
+
+152
+00:30:24.118 --> 00:30:32.848
+Okay, so the threat has to be initially ready when the thread is ready and you create an object, then thread will go into the running state.
+
+153
+00:30:32.848 --> 00:30:37.409
+After the running state, the thread can either be terminated.
+
+154
+00:30:37.409 --> 00:30:43.409
+It can be blogged or it can be suspended, but you should know the difference between suspended and terminated.
+
+155
+00:30:43.409 --> 00:30:49.439
+The next 1 is resuming the thread. So if you are temporarily suspending the thread.
+
+156
+00:30:49.439 --> 00:30:57.298
+Then the thread can be resumed, it can again come back to the action. In that case. The 3rd will be going to the running state.
+
+157
+00:30:57.298 --> 00:31:03.179
+Then we have a block state, right? The block state is a very important to understand.
+
+158
+00:31:03.179 --> 00:31:11.489
+So, let's say that, but let me just give you an example. Let's say that you, you are listening to the session and you want to write some notes.
+
+159
+00:31:11.489 --> 00:31:15.269
+Right, but you have a pen, but you do not have a paper.
+
+160
+00:31:16.134 --> 00:31:30.173
+Okay, so if you do not have a paper, you are actually blocking the pen, which might be utilized by somebody else. So, let's say that your friend is sitting right next to you and he just require a pen to write a note. So, now you can see that 1 of them have a pen.
+
+161
+00:31:30.479 --> 00:31:33.598
+The 2nd 1 has a paper, so if.
+
+162
+00:31:33.598 --> 00:31:37.469
+I have a pen, I can actually give him a pen to somebody else so that.
+
+163
+00:31:37.469 --> 00:31:42.179
+The person can complete writing the notes and then you can get your pen back.
+
+164
+00:31:42.179 --> 00:31:52.888
+Unless and until you have the people, right? So blocking means you are just waiting for certain resources and once that resources is free, you will be able to resume.
+
+165
+00:31:52.888 --> 00:31:58.138
+Right. And finally we have dominate where the thread is simply going to stop.
+
+166
+00:31:58.138 --> 00:32:08.699
+So, there is a beautiful flow diagram. This will help you to understand a different state and right after this, we are going to see that how the threads are created.
+
+167
+00:32:08.699 --> 00:32:13.588
+Before that will just see some of the basic threats, which are already present in Java.
+
+168
+00:32:13.588 --> 00:32:17.848
+Okay, so 1st of all the threat has to be in to.
+
+169
+00:32:17.848 --> 00:32:20.848
+The ready stayed before we start running it.
+
+170
+00:32:20.848 --> 00:32:25.048
+Right so new is actually something which is going to create an object.
+
+171
+00:32:25.048 --> 00:32:28.979
+And while creating an object, you are actually initializing the thread.
+
+172
+00:32:28.979 --> 00:32:34.499
+Right what we have seen that after initializing the thread it will go into the running state.
+
+173
+00:32:34.499 --> 00:32:38.759
+Right. Which is known as running a thread is running. So when you say.
+
+174
+00:32:38.759 --> 00:32:42.419
+That means the thread is able to start with its task.
+
+175
+00:32:42.419 --> 00:32:46.108
+So, we're going to start with initializing an object.
+
+176
+00:32:46.108 --> 00:32:51.689
+With the help of new keyword, as soon as you create an object, the thread will start running.
+
+177
+00:32:51.689 --> 00:32:55.679
+Right so non trade is Runnable and finally it will start running.
+
+178
+00:32:55.679 --> 00:32:59.128
+When you are going to this state running.
+
+179
+00:32:59.128 --> 00:33:06.028
+The 3rd can either be blocked, or it can be temporarily suspended using sleep.
+
+180
+00:33:06.028 --> 00:33:12.058
+It can wait for some other resource right? And it can be later on.
+
+181
+00:33:12.058 --> 00:33:17.759
+Terminated right so you can see the certain branches which is coming out of running. So a running thread can be blocked.
+
+182
+00:33:17.759 --> 00:33:23.909
+It can go to the sleep temporarily suspended. It can wait for some other thread.
+
+183
+00:33:23.909 --> 00:33:29.548
+Or it can be terminated. Right? So, when the thread is going to be blocked.
+
+184
+00:33:29.548 --> 00:33:33.239
+When the thread is blocked, that means it is either uh.
+
+185
+00:33:33.239 --> 00:33:36.538
+Let's say in the deadlock, because you can not proceed further.
+
+186
+00:33:36.538 --> 00:33:44.308
+And if you are somehow able to get the resources, which is required to unblock it, then you can again, go back to the renewable.
+
+187
+00:33:44.308 --> 00:33:49.229
+So anybody means now, that thread is ready to start since execution.
+
+188
+00:33:49.229 --> 00:33:54.209
+Similarly, sleep is something which is going to suspend the threat temporarily for some time.
+
+189
+00:33:54.209 --> 00:33:59.159
+Again from sleep, you can go back to the Runnable and the thread can run again.
+
+190
+00:33:59.159 --> 00:34:05.308
+The same thing is going to be applied for waiting because now the thread is waiting for some, let's say, other threat to complete.
+
+191
+00:34:05.308 --> 00:34:09.809
+Okay, we are going to see a very exciting example of.
+
+192
+00:34:10.704 --> 00:34:24.684
+A consumer and producer problem, which is 1 of the basic problem when we talk about the threat system. So in that case, you cannot consume the data unless and until it has been produced. So that is known as the waiting state you are waiting for some other process to complete.
+
+193
+00:34:24.989 --> 00:34:28.438
+Again, you can go back to the renewable state and you can.
+
+194
+00:34:28.438 --> 00:34:36.838
+Run the thing, but you can see that as soon as you go to the terminated state, you do not have any way to come back to the.
+
+195
+00:34:36.838 --> 00:34:46.829
+So make sure that what has to be done with the head at what time is really important. If you want your thread to do certain tasks later on, you can select either of them.
+
+196
+00:34:46.829 --> 00:34:53.938
+But now, if you think that the task of thread is completed, you can actually take this running threat to the terminated 3.
+
+197
+00:34:53.938 --> 00:34:58.768
+Fine, I hope we are till now, let me if you have any questions.
+
+198
+00:34:59.998 --> 00:35:04.018
+I hope you are getting the concept, but is it between blogs and waiting.
+
+199
+00:35:04.018 --> 00:35:11.818
+Okay, so, for the timing, when we talk about the programming language, we are not going to use the keyword block and waiting.
+
+200
+00:35:11.818 --> 00:35:20.878
+Right all the time we are going to use some of the inward method, which includes sleep or join. But there is a basic difference between waiting and blocking.
+
+201
+00:35:20.878 --> 00:35:25.858
+So, when I'm waiting for someone, I'm doing it relinquish right by myself.
+
+202
+00:35:25.858 --> 00:35:34.829
+I'm not blocked because somebody else was doing certain other task. So what I am waiting for, I'm waiting for, let's say some other process to complete.
+
+203
+00:35:34.829 --> 00:35:41.128
+Right so I'm waiting because of my willingness I'm not waiting because somebody has suspended me.
+
+204
+00:35:41.128 --> 00:35:55.108
+But when we talk about block, then block can happen to multiple reasons. It may happen. Because, uh, let's say that the resources you want is actually taken by somebody else, because it is having some higher priority.
+
+205
+00:35:55.108 --> 00:36:04.079
+Right. We'll talk about priorities later, but you imagine the importance of priority. So the 1, which has the higher priority, has taken your resources and utilizing it.
+
+206
+00:36:04.079 --> 00:36:15.628
+So, now you are, you are not waiting, but when we talk about waiting, then you are doing it by yourself. Right? You are explicitly stopping your execution because you are waiting for some other process to complete.
+
+207
+00:36:15.628 --> 00:36:26.248
+So this is 1 of the basic difference again, in the programming language, this may not be effected directly, but the things are going to be very much clear when you start with the rating system subject.
+
+208
+00:36:29.219 --> 00:36:32.878
+Any other question.
+
+209
+00:36:35.219 --> 00:36:42.088
+I hope you are able to get at least the basics of multi trading that what we are going to do with the help of program.
+
+210
+00:36:42.088 --> 00:36:45.088
+Why are we are talking about the concept of multi threading.
+
+211
+00:36:45.088 --> 00:36:51.478
+What is multitasking and so on right? I do not want you to recite all the concept or recite on the States.
+
+212
+00:36:51.478 --> 00:36:56.699
+Whether you should be able to understand it so that you can rewrite it whenever you want.
+
+213
+00:36:57.838 --> 00:37:03.088
+Okay, I'll refine. Shall we move further? Can I get a yes.
+
+214
+00:37:05.668 --> 00:37:13.438
+If you have questions, feel free to post it. Okay. So, yeah, so let's move.
+
+215
+00:37:16.014 --> 00:37:29.963
+Okay, so threat priorities is something that we need to talk about the reason is, if there are multiple threads, which is controlling the program, we cannot let everything to come to the program and then do whatever you want. We need to control it.
+
+216
+00:37:30.239 --> 00:37:36.148
+Right, and why we need to control it because you want some of the activities to be completed. 1st.
+
+217
+00:37:36.148 --> 00:37:42.148
+Before the 2nd activities start, but at the same time you are completing the task concurrently.
+
+218
+00:37:42.148 --> 00:37:55.648
+So, there is a lot of things which is going on into the program and you cannot just keep them flowing right away. Right? What do you need? You need to control them and 1 of the way to control the thread is with the help of priority.
+
+219
+00:37:55.648 --> 00:38:01.228
+So, whenever you create the thread, it is automatically assigned some priority.
+
+220
+00:38:01.228 --> 00:38:06.989
+And here, the priority is an in teacher value, ranging from 1 to 10.
+
+221
+00:38:06.989 --> 00:38:09.989
+So, 10 means something having the highest priority.
+
+222
+00:38:09.989 --> 00:38:14.550
+1 means, and the lowest priority and 5 is the average priority.
+
+223
+00:38:14.550 --> 00:38:22.199
+Okay, so the priority determines that which thread should be completed. 1st.
+
+224
+00:38:22.199 --> 00:38:25.559
+Right. So some of the that I'm going to have higher priority.
+
+225
+00:38:25.559 --> 00:38:33.239
+Some of them have lower priority, but the higher priority thread will be executed. 1st, compared to the lower priority thread.
+
+226
+00:38:33.239 --> 00:38:44.969
+Okay, again to understand the concept of priority, let me just take back to the example in which I have told you that we are listening to the session at the same time. Somebody knock the door and brings you the food.
+
+227
+00:38:44.969 --> 00:38:48.059
+Right. So at that time, your priority is.
+
+228
+00:38:48.059 --> 00:38:55.110
+To listen to the session, right? So what you are going to do is you are going to decline the request of accepting the food.
+
+229
+00:38:55.110 --> 00:38:59.639
+Rates and now, for the timing, the highest priority is listening to the session.
+
+230
+00:38:59.639 --> 00:39:04.530
+But now imagine that some day you were at the restaurant with your friends.
+
+231
+00:39:04.530 --> 00:39:12.780
+Unfortunately, unfortunately, I go back to the same restaurant, and if I just start taking marker and board and start teaching you the concept of thread.
+
+232
+00:39:12.780 --> 00:39:23.550
+It is something which is not acceptable. Why it is not acceptable because when you are at the restaurant, your priority is to have food not listening to somebody who is teaching on the mood.
+
+233
+00:39:23.550 --> 00:39:34.349
+Make sense, so the higher priority thread will be executed and it has all the rights to take over the resources and decline the request of the lower priority thread.
+
+234
+00:39:34.554 --> 00:39:49.255
+Right again, the priority is relative. Right? So, just now when you the example that listening to the concept and having a food, these are 2 different tasks but at some time having food is the priority at some time. Listening to the session is the priority.
+
+235
+00:39:49.530 --> 00:39:58.440
+So, priority can keep on changing, depending upon what sort of data that you have, or what sort of thread is actually coming in picture.
+
+236
+00:39:58.440 --> 00:40:11.909
+Right. So again it is possible that 2 2 threads have the same priority, right? So if 2 threads at the same priority, then CPO is going to decide which 1 should be executed. 1st, and which 1 should be executed next.
+
+237
+00:40:11.909 --> 00:40:15.179
+Right, but the higher priority threat has.
+
+238
+00:40:15.179 --> 00:40:18.690
+All the power to decline the request.
+
+239
+00:40:18.690 --> 00:40:29.789
+Of the lower priority threat. Okay. And how we are going to decide on context switching. Now, I hope, you know, what is context switching when you are going from 1000 to another.
+
+240
+00:40:29.789 --> 00:40:33.750
+So, the context switching can happen in 2 days.
+
+241
+00:40:33.750 --> 00:40:39.960
+1 way that we have seen is the higher priority thread comes into your system and it takes all the resources.
+
+242
+00:40:39.960 --> 00:40:45.750
+And just because let's say I am a low priority thread, then I will not be able to stop that. The reason is.
+
+243
+00:40:45.750 --> 00:40:52.289
+The 1, which has the highest priority will always be executed no matter what you are doing with the lower priority threat.
+
+244
+00:40:52.289 --> 00:40:59.820
+So, even if you are in between certain process, you need to stop right away and then you have to give the control to the higher priority thread.
+
+245
+00:40:59.820 --> 00:41:03.420
+So this is 1 of the way in which the context which happens.
+
+246
+00:41:03.420 --> 00:41:07.019
+The another way is that you are willing to really giving away the control.
+
+247
+00:41:07.019 --> 00:41:13.260
+Okay, so let's say, even if I'm a higher priority thread, I do not want the execution for the timing.
+
+248
+00:41:13.260 --> 00:41:19.139
+So, what I'll do, I, we're going to the sleep mode, right? Or what we call us in the hibernate.
+
+249
+00:41:19.139 --> 00:41:25.289
+Meanwhile, rest of the thread, even if it is a lower priority thread, can keep on doing its work.
+
+250
+00:41:25.289 --> 00:41:34.650
+So, all the control is with the higher priority thread if it wants, it can take away your resources. If it doesn't want it will go and wait for some time. Unless, and until.
+
+251
+00:41:34.650 --> 00:41:38.219
+You complete the process, right?
+
+252
+00:41:38.219 --> 00:41:42.030
+So, let's take an example 1st of all. So that.
+
+253
+00:41:42.030 --> 00:41:46.559
+You just do not keep on talking about the thread we need to understand it. How does it work?
+
+254
+00:41:46.559 --> 00:41:53.070
+So, I hope you remember from the initial lectures, when I said that we have multiple.
+
+255
+00:41:53.070 --> 00:41:59.699
+Drugs, which are in somebody need to, on mute, please.
+
+256
+00:42:01.014 --> 00:42:14.784
+Okay, so 1st of all we need to understand what is a concept of thread that we have gone through now. Let's try to see that. What are the basic threads that we have. Okay, so if you remember initially, we have talked about some of the anvil thread, which is present in Java.
+
+257
+00:42:15.090 --> 00:42:19.019
+Right so those threads are the matrix.
+
+258
+00:42:19.019 --> 00:42:23.400
+Right because, you know, that main thread is something which is going to start with the control.
+
+259
+00:42:23.400 --> 00:42:28.829
+And this is the threat, which always keeps on running the 2nd, kind of thread that we know is.
+
+260
+00:42:28.829 --> 00:42:31.829
+Uh, the garbage collection.
+
+261
+00:42:31.829 --> 00:42:38.880
+Right the garbage collection happens automatically because you are creating some data and you are not freeing it by yourself.
+
+262
+00:42:38.880 --> 00:42:49.650
+Right, so what we need to do, we need some thread which will always run in the background to collect the garbage that is garbage collection thread. And now you can relate that. Why we are calling it as threat.
+
+263
+00:42:49.650 --> 00:42:55.949
+Because the main is running the garbage collection thread is running at the same time working on the same program.
+
+264
+00:42:55.949 --> 00:43:04.019
+Right apart from that you also have a priority thread, which will set the priority if it is not been done explicitly.
+
+265
+00:43:04.019 --> 00:43:07.980
+Okay, so let's say that before freeing up the memory.
+
+266
+00:43:07.980 --> 00:43:16.050
+And let's say that you have enough memory into your program garbage collection thread is running, but at the same time, the battery of your system is going low.
+
+267
+00:43:16.050 --> 00:43:23.639
+So, what is the priority at that time that I need to save the battery of the system? Because if it is not running, there is no meaning of running the.
+
+268
+00:43:23.639 --> 00:43:37.650
+Garbage collection thread. Okay. So there are these are not the only 3 threads. If you try to explore there are so many different threads, depending upon what version of we are using. But these are the main threats which require all the time.
+
+269
+00:43:37.650 --> 00:43:50.219
+To handle your program fine I hope the things that are making sense. So, let's start with our visit thread, which is known as mainframe. We are not creating it rather it already exist.
+
+270
+00:43:50.219 --> 00:43:57.690
+Right. And when we say that we are creating a thread, or we are utilizing the thread we are talking about a class.
+
+271
+00:43:57.690 --> 00:44:04.110
+Right so everything in Java, you know, is a plus so threat is again a, plus we are going to dig into the details of threat.
+
+272
+00:44:04.110 --> 00:44:07.230
+Just after completing this program itself.
+
+273
+00:44:07.230 --> 00:44:15.239
+So thread itself is a plus, which provides a lot of method, a lots of features, which can be utilized by your own program.
+
+274
+00:44:16.074 --> 00:44:30.324
+But before that, let me just take you to an example of how to get the information from the main thread, and make sure that we are not creating a threat. Main thread is already running. So I'm not going to initiate the threat. I'm just going to take the details of the.
+
+275
+00:44:30.840 --> 00:44:36.210
+Right. So let's start with the main so we have public static void, main.
+
+276
+00:44:36.210 --> 00:44:40.260
+Our basic main function now you can see that. We have.
+
+277
+00:44:40.260 --> 00:44:49.679
+We are actually using a method, right? That method is current thread and not creating an object and just utilizing the method and storing it into a variable.
+
+278
+00:44:49.679 --> 00:44:54.659
+Although the current thread is a method, which is defined in the threat class.
+
+279
+00:44:54.659 --> 00:45:05.849
+Here we are not extending it, we are not utilizing any feature of the English class, but just because by default main is a threat class. We can actually come here and take the information.
+
+280
+00:45:05.849 --> 00:45:10.079
+Right. So 30 can be it on display dot current thread.
+
+281
+00:45:10.079 --> 00:45:14.460
+Now, trade, current thread is going to return the current.
+
+282
+00:45:14.460 --> 00:45:21.929
+Right. So, after returning the current thread, you need to store it into an object of type thread and then we are simply.
+
+283
+00:45:21.929 --> 00:45:27.840
+Printing it out, so the.
+
+284
+00:45:30.239 --> 00:45:34.559
+They're going to change that we are going to see in a while. Just give me a minute.
+
+285
+00:45:34.559 --> 00:45:35.099
+Huh.
+
+286
+00:46:10.139 --> 00:46:13.769
+Okay.
+
+287
+00:46:13.769 --> 00:46:17.730
+Okay, so let's see.
+
+288
+00:46:17.730 --> 00:46:23.219
+Do we have a question? Okay. Okay.
+
+289
+00:46:25.554 --> 00:46:39.474
+So, we were talking about the getting the information from the current thread. So we'll get the information from the current thread and just because this method is going to return an object of thread. We are going to store it somewhere in a thread reference variable right?
+
+290
+00:46:39.715 --> 00:46:44.364
+We have not created an object. We have created a reference variable, which is going to refer to the current.
+
+291
+00:46:44.940 --> 00:46:54.239
+And then we are going to print it out so when I print any information of the thread, we will just execute the program. And we will see that. There will be.
+
+292
+00:46:54.239 --> 00:46:57.269
+3 different data, which will be printed out.
+
+293
+00:46:57.269 --> 00:47:02.460
+1st of all the name of the thread followed by the priority of the thread.
+
+294
+00:47:02.460 --> 00:47:05.550
+Followed by to which thread group it belongs to.
+
+295
+00:47:05.550 --> 00:47:11.579
+So we know what the name of the thread we know the priority, but we will talk about thread groups in a while.
+
+296
+00:47:11.579 --> 00:47:14.670
+At the same time, let's say I do not like the name.
+
+297
+00:47:14.670 --> 00:47:18.750
+Of the thread so what I can do is I can change the name of the thread.
+
+298
+00:47:18.750 --> 00:47:22.199
+By using 1 of the method called the dot set name.
+
+299
+00:47:22.199 --> 00:47:29.940
+Now, the type of fee is thread, right? Because we have created a reference variable. So, the type of is trade.
+
+300
+00:47:29.940 --> 00:47:34.170
+And with the help of set name, we can simply give the name of this.
+
+301
+00:47:34.170 --> 00:47:42.360
+Right. So, after changing the name, if you try to print it, this will not give you the default value whether this will give you.
+
+302
+00:47:42.360 --> 00:47:47.369
+The name that you have tried to sit here. Okay. So things are very simple.
+
+303
+00:47:47.369 --> 00:47:52.440
+Do not confuse yourself if at all you have any question, please put it down in the chat box.
+
+304
+00:47:52.440 --> 00:47:56.550
+Now, what do you want to do is be 1 this thread.
+
+305
+00:47:56.550 --> 00:48:10.860
+To sleep for a while and give you the output. Okay and whenever you are using any method for a threat to wait or to sleep, then it is going to give you an exception. What we call is interrupted exception.
+
+306
+00:48:10.860 --> 00:48:22.619
+So, all the sleep method that you are going to utilize is by default, going to throw and interrupted exception, therefore, it has to be return in try and catch because this is the capability to generate an exception.
+
+307
+00:48:22.619 --> 00:48:26.159
+If you do, not write it down, you are simply going to get a.
+
+308
+00:48:26.159 --> 00:48:39.059
+Right, so what we are doing is, we are writing try for and is equal to 5, 2 and greater than 0T. So this is a documenting loop inside the documenting loop. We are going to print the value.
+
+309
+00:48:39.059 --> 00:48:43.619
+And we are going to allow this method to sleep for a while.
+
+310
+00:48:43.619 --> 00:48:47.280
+Okay, so when this method is going to sleep for a while.
+
+311
+00:48:47.280 --> 00:48:58.920
+This thread will be suspended temporarily. This is what we have seen as 1 of the state. The thread is going to be suspended temporarily and here, we just have a single thread. So we will not see the effect of multi thread till now.
+
+312
+00:48:58.920 --> 00:49:03.929
+They're just going to see the definition or the information that we can extract from the mainframe.
+
+313
+00:49:03.929 --> 00:49:07.590
+So you will have thread that sleep is equal to 10000.
+
+314
+00:49:07.590 --> 00:49:12.599
+Which will allow your thread to suspend temporarily. Again, go back to the loop.
+
+315
+00:49:12.599 --> 00:49:19.320
+Change the value print it out and suspend and this is going to be happen for 5 number of times.
+
+316
+00:49:19.320 --> 00:49:26.099
+And later on, we can get the name of the current threat. So set name is going to take a parameter.
+
+317
+00:49:26.099 --> 00:49:30.269
+The Git name is going to give you the new name that you have said.
+
+318
+00:49:30.269 --> 00:49:37.469
+Right. So, let me just try to save and run and then we will try to relate the output with the code.
+
+319
+00:49:39.119 --> 00:49:46.110
+Okay, so just see the output you have 5, it is going to wait for 10000 milliseconds.
+
+320
+00:49:46.110 --> 00:49:51.090
+Right. And then it will come back to your program and this will print for.
+
+321
+00:49:51.090 --> 00:49:55.199
+Again, the thread is suspended, right? You can see that. There is some time.
+
+322
+00:49:55.199 --> 00:50:00.869
+While printing out the values. Okay so this will print 5, 4, 3, 2 and 1.
+
+323
+00:50:00.869 --> 00:50:05.010
+But not directly, it is going to suspend for a while.
+
+324
+00:50:05.010 --> 00:50:08.489
+Right.
+
+325
+00:50:11.099 --> 00:50:18.210
+Okay, let me just not wait for this to complete. Let's come back to what is printed 1st of all. So, 1st of all you have current thread.
+
+326
+00:50:18.210 --> 00:50:23.070
+This current thread is going to put in something I told you that it is going to print 3 things.
+
+327
+00:50:23.070 --> 00:50:29.219
+1st of all the name of the current thread and because we have not changed it by default. The name of the 3rd is main.
+
+328
+00:50:29.219 --> 00:50:34.590
+The default priority of any threat is the average priority, which is equal to 5.
+
+329
+00:50:35.699 --> 00:50:43.650
+Okay, so if you're not giving priority to any threat, and if you need to know the priority by default, this will be equal to the average value that is equal to 5.
+
+330
+00:50:43.650 --> 00:50:47.460
+Followed by who is responsible for this train.
+
+331
+00:50:47.460 --> 00:50:52.920
+So, here, the main is responsible for its own thread later on. We will see that if some.
+
+332
+00:50:52.920 --> 00:50:58.530
+Other thread has been created by the main thread you will get that name of the threat.
+
+333
+00:50:58.530 --> 00:51:01.860
+Followed by the priority followed by me, but here.
+
+334
+00:51:01.860 --> 00:51:09.929
+We are not creating any other thread. So main threat is created is responsible for that main is responsible for that. As simple as this 1.
+
+335
+00:51:11.159 --> 00:51:16.019
+Now, what you have done in next statement, you have written T dot set name. My friend.
+
+336
+00:51:16.019 --> 00:51:21.329
+So, now you can see that this is the thread group that who is responsible for creating a thread.
+
+337
+00:51:21.329 --> 00:51:27.869
+Still mean is responsible this is the only thread the priority is going to be as it is. That is 5 here.
+
+338
+00:51:27.869 --> 00:51:31.230
+And what is the name of the thread? So you can see that.
+
+339
+00:51:31.230 --> 00:51:34.800
+We are able to control the 1st thing. That is the name of the thread.
+
+340
+00:51:34.800 --> 00:51:45.510
+We cannot control who is invoking it because this is the logical things and is responsible to identify that. However, the name of the thread can be different because.
+
+341
+00:51:45.510 --> 00:51:49.980
+Let's say that we are going to see an example in which you have multiple threats.
+
+342
+00:51:49.980 --> 00:51:53.639
+3 or 4 things, how you are going to distinguish them.
+
+343
+00:51:53.639 --> 00:52:03.510
+You're going to distinguish them by the name of the trade right? So you have the flexibility to give a new name to the threat, but make sure that you cannot change the thread group.
+
+344
+00:52:03.510 --> 00:52:10.409
+So, what are the 3 things, which is going to be printed when you print a thread? The 1st, 1 will be name of the thread.
+
+345
+00:52:10.409 --> 00:52:16.139
+The 2nd, 1 will be the threat priority and a 3rd 1 will be the threat group.
+
+346
+00:52:16.139 --> 00:52:20.880
+We can have control over 2 things. The name of the thread we can change.
+
+347
+00:52:20.880 --> 00:52:24.000
+The priority of the thread we can change, but.
+
+348
+00:52:24.000 --> 00:52:28.739
+The thread group that who is responsible for this thread is actually taken care by the.
+
+349
+00:52:28.739 --> 00:52:33.389
+Compiled itself gbm right? What next? We have done.
+
+350
+00:52:33.389 --> 00:52:38.940
+We have written the statement inside try and catch the reason is they are going to utilize.
+
+351
+00:52:38.940 --> 00:52:43.590
+1 of the invalid method of thread class that is thread dot sleep.
+
+352
+00:52:43.590 --> 00:52:52.530
+Right now the sleep method is going to suspend the thread for some time. How many time here we have 10000 millisecond.
+
+353
+00:52:52.530 --> 00:52:55.739
+Right software every 10 seconds you will get the output.
+
+354
+00:52:55.739 --> 00:53:02.940
+What next we have done just because this is throwing an exception we have enclosed everything inside try and catch.
+
+355
+00:53:02.940 --> 00:53:10.050
+The kind of exception, which is generated by the sleep method is interrupted. Exception. Therefore we have caught. They did a print exception.
+
+356
+00:53:10.050 --> 00:53:19.469
+You can write any statement that you want, but just to understand the importance of sleep here we have tried to print the value from 5 to 1.
+
+357
+00:53:19.469 --> 00:53:23.699
+And when the 1st value is printed, it is going to wait for 10 seconds.
+
+358
+00:53:23.699 --> 00:53:27.000
+Again, the control will go back, you will update the variable.
+
+359
+00:53:27.000 --> 00:53:31.739
+Check the condition come inside the loop and this is going to run unless, and until.
+
+360
+00:53:31.739 --> 00:53:35.579
+The condition becomes false, and after that.
+
+361
+00:53:35.579 --> 00:53:39.449
+Uh, let me just comment is out because we have not utilized it.
+
+362
+00:53:39.449 --> 00:53:42.449
+After that what we have done, we have simply.
+
+363
+00:53:42.449 --> 00:53:49.260
+Completed our set of execution and therefore you will have 503 2, 1, which will give you.
+
+364
+00:53:49.260 --> 00:53:52.889
+The details of numbers that you have printed inside the thread.
+
+365
+00:53:53.969 --> 00:53:57.630
+So, here, we have not created any new threat. We have done 2 things.
+
+366
+00:53:57.630 --> 00:54:07.949
+We have got the information of the current thread 2nd thing we are suspending the current threat for some time so that we can see that. What are the power of trades, which is given to you.
+
+367
+00:54:07.949 --> 00:54:14.190
+Right. So although this is not a good example, but just to understand that main is in Bill threat.
+
+368
+00:54:14.190 --> 00:54:22.380
+You can get the information off the thread by using thread dot current threat. And this is going to be true for any kind of thread that you are going to use.
+
+369
+00:54:23.579 --> 00:54:27.090
+Right I hope you're fine. Any questions.
+
+370
+00:54:28.739 --> 00:54:31.949
+A wide print statement of catch.
+
+371
+00:54:31.949 --> 00:54:42.719
+Is not printed because see why we are writing this inside, try and catch because this thread has the capability to be interrupted by some, another thread.
+
+372
+00:54:42.719 --> 00:54:49.860
+Right, and what are the examples that we are going to see here will not actually be catching the interrupted exception.
+
+373
+00:54:49.860 --> 00:54:55.800
+The reason is the sort of program that we are working for the timing are theoretical concepts, right?
+
+374
+00:54:55.800 --> 00:55:02.519
+And these theoretical concepts actually emphasize us to write a program, which should not get interrupted and.
+
+375
+00:55:02.519 --> 00:55:10.409
+I'm writing, as I told you that it is going to generate an interrupted exception, but something is not interrupting it.
+
+376
+00:55:10.409 --> 00:55:15.030
+Right. You have a single thread. It's running. Fine. So nobody is there to interrupt it.
+
+377
+00:55:15.030 --> 00:55:21.989
+So, we are just writing it to be safe into our program, but let's say that some other thread running somewhere else interrupted.
+
+378
+00:55:21.989 --> 00:55:25.559
+Then you will directly get inside the kit statement.
+
+379
+00:55:25.559 --> 00:55:30.090
+Silence.
+
+380
+00:55:30.090 --> 00:55:34.980
+Right, I hope you are. Okay.
+
+381
+00:55:36.150 --> 00:55:41.849
+Any other question, so we have seen 3 important things with the help of the program.
+
+382
+00:55:41.849 --> 00:55:47.849
+The 1st thing is the main method, although not extending the threat class itself is a thread.
+
+383
+00:55:47.849 --> 00:55:51.750
+So main thread is something which is embedded in your program.
+
+384
+00:55:51.750 --> 00:55:59.730
+The 2nd thing is, if you need the information of the current threat, it might be main thread. We are going to create our own thread in some time.
+
+385
+00:55:59.730 --> 00:56:06.179
+So, even if it is your own thread, so if you need to get the information about any 3rd, you are going to use.
+
+386
+00:56:06.179 --> 00:56:11.969
+The thread dot current thread. This current thread is going to return.
+
+387
+00:56:11.969 --> 00:56:23.130
+An object of type thread, so you need to store it somewhere inside the variable of a thread. And when you try to print T, you will get information like 3 things.
+
+388
+00:56:23.130 --> 00:56:27.179
+The name of the trade, the priority on the thread and red group.
+
+389
+00:56:27.179 --> 00:56:35.190
+The 1st, 2 can be handled by the user as a programmer. You can handle it, but the trend group is something that should not be handled.
+
+390
+00:56:37.019 --> 00:56:40.230
+Okay, if you need to change the name of the thread, you can write.
+
+391
+00:56:40.230 --> 00:56:48.090
+The object dot set name followed by the string is apprentices. This is 1 of the inbuilt method of threat class. We are going to see some other is well.
+
+392
+00:56:48.090 --> 00:56:52.260
+Hey, I'll be fine. Any other questions.
+
+393
+00:56:59.010 --> 00:57:09.570
+Okay, so if you got the things that we have discussed, in the last example in the last program, uh, we are ready to go to.
+
+394
+00:57:09.570 --> 00:57:20.250
+The most important are the core thing of creating a thread that is the steps how we are going to create a thread. What are the 2 different ways, which 1 is favorable and which 1 is not.
+
+395
+00:57:20.250 --> 00:57:27.090
+So, please get yourself ready and pay attention to each and every detail that we are going to start from. Now.
+
+396
+00:57:28.739 --> 00:57:43.320
+So, the 1st example that we have seen, that example, was not a practical example of multiple threading because just 1 thread was running and we were trying to change certain data. We were trying to suspend the threat for certain while, or we were getting the information.
+
+397
+00:57:43.320 --> 00:57:48.150
+But the main task of multithreading programming is to create a thread of your own.
+
+398
+00:57:48.150 --> 00:57:53.699
+Right. So if you need to create your own thread, there are 2 different ways.
+
+399
+00:57:53.699 --> 00:57:57.840
+1 of the way is using a thread class. The 2nd way is.
+
+400
+00:57:57.840 --> 00:58:04.110
+Using a Runnable interface. Both of these are the ways to create your own thread.
+
+401
+00:58:04.110 --> 00:58:09.030
+And if you are using some interface that is enabled interface, then you need to know that.
+
+402
+00:58:09.445 --> 00:58:17.215
+I need to take care of some of the methods, which might be abstract. Right which might be declared inside interface, but then I need to utilize it.
+
+403
+00:58:18.054 --> 00:58:24.445
+Right, so what we are going to do is we are going to start with the 1st, important thing that how to create.
+
+404
+00:58:24.750 --> 00:58:27.989
+A thread plus right how to create a class.
+
+405
+00:58:27.989 --> 00:58:35.010
+Create a thread of our own we are going to see 2 examples using enable interface and using the.
+
+406
+00:58:35.010 --> 00:58:40.260
+Right. So 1st of all, let's start with renewable and then we will go towards the threat.
+
+407
+00:58:40.260 --> 00:58:44.309
+So, if you need to create your own thread, right? A new thread.
+
+408
+00:58:44.309 --> 00:58:48.449
+Then you either extend a threat because this is a concrete class.
+
+409
+00:58:48.449 --> 00:58:52.019
+Or you can implement an interface. The interface name is.
+
+410
+00:58:52.019 --> 00:58:58.530
+Valuable and the thread class defined so many methods, but we do not need to go through each of them.
+
+411
+00:58:58.530 --> 00:59:02.849
+Whenever it is required, you can all those methods in utilize the feature.
+
+412
+00:59:02.849 --> 00:59:06.719
+So, we have so many methods.
+
+413
+00:59:06.719 --> 00:59:11.789
+Right. We have get name, get priority is a live joint run, sleep and start.
+
+414
+00:59:11.789 --> 00:59:16.860
+We are going to see each of them when we advance in our topics.
+
+415
+00:59:16.860 --> 00:59:26.369
+Right and you will be able to understand the importance of each of them. So we have discussed main thread. I think, uh, I do not need to go through it again.
+
+416
+00:59:26.369 --> 00:59:29.610
+Yes, let's start with creating a new thing.
+
+417
+00:59:29.610 --> 00:59:36.300
+So, we'll start with the 1st topic that is how we are going to create a thread by implementing.
+
+418
+00:59:36.300 --> 00:59:40.139
+Right. So is an interface.
+
+419
+00:59:40.139 --> 00:59:45.150
+And it has only 1 method that method is called public void run.
+
+420
+00:59:45.150 --> 00:59:48.929
+So, whenever you are implementing the renewal interface, what you have to do is.
+
+421
+00:59:48.929 --> 00:59:53.730
+You have to override this method and you have to give certain information into that.
+
+422
+00:59:53.730 --> 00:59:55.375
+Just hold on for a 2nd,
+
+423
+01:00:17.695 --> 01:00:19.795
+so the 1st way is that we can.
+
+424
+01:00:19.889 --> 01:00:26.460
+Implement or enable interface right? So whenever interface has just 1 method that is called public void, run.
+
+425
+01:00:26.460 --> 01:00:30.090
+And if you are implementing this interface, what you need to do is.
+
+426
+01:00:30.090 --> 01:00:38.070
+You need to give some definition inside this method so that your program is a valid program so that the class, which is implementing the interface Runnable.
+
+427
+01:00:38.070 --> 01:00:44.099
+Should be a valid plus right? And inside run, you can write any data that you want.
+
+428
+01:00:44.099 --> 01:00:48.210
+Right. It is not restricted to only a few kind of instruction that you need to do.
+
+429
+01:00:48.210 --> 01:00:51.239
+This is actually free to write any code that you want.
+
+430
+01:00:52.829 --> 01:00:57.389
+Okay, and once you are using the interface.
+
+431
+01:00:57.389 --> 01:01:07.409
+You can create an object.
+
+432
+01:01:07.409 --> 01:01:11.639
+Right, so what you can do is you can create an object of class.
+
+433
+01:01:11.639 --> 01:01:15.539
+Within the class in which you are creating a enable interface.
+
+434
+01:01:15.539 --> 01:01:19.500
+Right. So things will be clear when we go through the code itself.
+
+435
+01:01:19.500 --> 01:01:24.599
+But if I directly take you through the code, this will be very overwhelming because there are so many things.
+
+436
+01:01:24.599 --> 01:01:32.369
+And you should be at least knowing the basics. Right? So, whenever you are creating an object of type thread within that particular class.
+
+437
+01:01:32.369 --> 01:01:35.699
+Then the enable interface is going to make an important.
+
+438
+01:01:35.699 --> 01:01:41.940
+The rule is at the time of creation of an object, you are going to pass 2 parameters.
+
+439
+01:01:41.940 --> 01:01:44.969
+The 1st, 1 is a parameter of.
+
+440
+01:01:44.969 --> 01:01:50.010
+Right so here you can actually use the current class, which is implementing.
+
+441
+01:01:50.010 --> 01:01:53.159
+Because, you know, that the reference variable of an interface.
+
+442
+01:01:53.159 --> 01:01:56.639
+Can refer to the object, which is going to implement it.
+
+443
+01:01:56.639 --> 01:02:01.829
+So using that logic, we can take 1 of the parameter as the current object.
+
+444
+01:02:01.829 --> 01:02:07.469
+So, for the current object, I can use this. The 2nd thing is we can give the name of the.
+
+445
+01:02:07.469 --> 01:02:11.550
+No, this is important because you can give any name that you want.
+
+446
+01:02:11.550 --> 01:02:16.409
+And at the same time, you have the flexibility to differentiate among the.
+
+447
+01:02:16.409 --> 01:02:22.260
+Right, I hope you are getting this.
+
+448
+01:02:24.210 --> 01:02:27.239
+Right. So I hope you are getting this. The next thing is.
+
+449
+01:02:27.239 --> 01:02:32.340
+Whenever we are creating an object of threat, we need to store it somewhere inside.
+
+450
+01:02:32.340 --> 01:02:36.300
+The thread object itself, right? Because we are creating an object using.
+
+451
+01:02:36.300 --> 01:02:47.730
+Trend this is a constructor, which is going to take 2 parameters. Now, these 2 parameters having 2 different instances, or 2 different variables need to restore somewhere in the type of.
+
+452
+01:02:47.730 --> 01:02:52.199
+So they are going to write, we can write thread. T is equals 2.
+
+453
+01:02:52.199 --> 01:02:57.000
+Red enable interface object, followed by the name of the string.
+
+454
+01:02:57.000 --> 01:03:00.989
+Right and when they start with this.
+
+455
+01:03:00.989 --> 01:03:04.260
+You need to give a kickstart to your friend.
+
+456
+01:03:04.260 --> 01:03:12.030
+Right. You have created an object, but creating an object doesn't solve the purpose. You need to start that thread. Right? We have seen that. It is.
+
+457
+01:03:12.030 --> 01:03:17.849
+So anybody means you have created a thread, but that thread should start doing certain task.
+
+458
+01:03:17.849 --> 01:03:21.150
+And for that, we have a very basic method called stop.
+
+459
+01:03:21.150 --> 01:03:26.280
+So, you need to call the start method on the thread object and the start. My 3rd.
+
+460
+01:03:26.280 --> 01:03:29.340
+Is going to call, or is going to execute.
+
+461
+01:03:29.340 --> 01:03:33.539
+The run method that you are going to define, because you were implementing an interface.
+
+462
+01:03:33.539 --> 01:03:37.199
+All right, so let's try to bring all the things together.
+
+463
+01:03:37.199 --> 01:03:44.190
+Plus can be responsible to create a thread by using 2 different ways.
+
+464
+01:03:44.190 --> 01:03:47.429
+1 of the way is extending the class thread.
+
+465
+01:03:47.429 --> 01:03:56.159
+The 2nd way is by implementing an interface renewable, we are going to pick the 2nd option that how implementing renewable is going to be helpful.
+
+466
+01:03:56.159 --> 01:04:01.139
+So, when you are implementing an interface, there will be some invalid method.
+
+467
+01:04:01.139 --> 01:04:05.309
+Inside an interface that you need to define into your own program.
+
+468
+01:04:05.309 --> 01:04:11.940
+And here, that method is run method. So you are going to define it you are going to define it as a public void run.
+
+469
+01:04:11.940 --> 01:04:17.550
+Inside the, and method, you will write all the tasks, which is required for your program.
+
+470
+01:04:17.550 --> 01:04:21.929
+To do right so inside run method, you have all the task of the current.
+
+471
+01:04:23.070 --> 01:04:28.284
+Now, just because you need to create an object 1st of all. Right? You need to create a threat 1st of all.
+
+472
+01:04:28.585 --> 01:04:39.264
+So, when you are implementing an interface, you need to create an object of threat class because thread can be created with the help of the object of threat class no matter whether you are implementing any interface.
+
+473
+01:04:39.480 --> 01:04:44.130
+Or you are extending the trend, so if you are going to create an object of thread clause.
+
+474
+01:04:44.130 --> 01:04:53.550
+Using the implement Runnable, then what we have to do is we have to pass 2 parameters. 1 of the parameter is the.
+
+475
+01:04:53.550 --> 01:04:59.610
+The reference variable off the Runnable the 2nd, 1 is the name of the strength that you need to give.
+
+476
+01:04:59.610 --> 01:05:03.030
+So, here you can pass actually the current class itself.
+
+477
+01:05:03.030 --> 01:05:07.050
+And here you can give the name off a string.
+
+478
+01:05:07.050 --> 01:05:13.980
+After this to start a thread, you need a method called start, which will be called on the thread class.
+
+479
+01:05:13.980 --> 01:05:20.969
+This start is going to execute the run method and inside the and method, you have all the details of.
+
+480
+01:05:20.969 --> 01:05:24.510
+The tasks that need to be performed with the help of the trend.
+
+481
+01:05:24.510 --> 01:05:34.019
+Right. So now we are aware about the renewable interface, the start method and run method. Let's go to an example.
+
+482
+01:05:34.019 --> 01:05:38.670
+Before that, let me know if you have any questions. Okay.
+
+483
+01:05:38.670 --> 01:05:43.679
+You can see people leaving the session. I hope this is not getting boring.
+
+484
+01:05:46.500 --> 01:05:52.349
+Okay, so let's pay attention to all the things that we have return.
+
+485
+01:05:52.349 --> 01:05:56.550
+So, whenever you are creating a threat, it is actually a class.
+
+486
+01:05:56.550 --> 01:05:59.579
+Right thread is nothing, but simply a class.
+
+487
+01:05:59.579 --> 01:06:04.469
+And whenever you are creating your own thread to have 2 options, either, you implements valuable.
+
+488
+01:06:04.469 --> 01:06:09.929
+Or you extend threat class, we are going towards implementing the renewable interface.
+
+489
+01:06:11.099 --> 01:06:21.090
+Here we have a constructor, not always required if you want, you can create a method, but just to give more sense to the program that whenever I write a thread.
+
+490
+01:06:21.090 --> 01:06:29.579
+Let's let's say whenever I write new thread, Obi 1 is the 1st to new thread then, you know, then the constructor will be invoked and this is going to start a new trade.
+
+491
+01:06:29.579 --> 01:06:32.940
+Right although if you want, you can create your own method.
+
+492
+01:06:32.940 --> 01:06:36.300
+And that method will be responsible to create a new thread.
+
+493
+01:06:36.300 --> 01:06:48.059
+But usually you will find the constructor what I need to do, just because this is something which will be utilized even later on into your program. We have kept it as.
+
+494
+01:06:48.059 --> 01:06:53.610
+A reference variable inside the scope of trade instead of creating a threaded this point.
+
+495
+01:06:53.610 --> 01:07:07.980
+Right. So this program might not be utilizing that facility, but I can use this piece somewhere else into the class. So we have kept it as a reference variable, which can be accessible throughout the class. So now it is directly declared.
+
+496
+01:07:09.269 --> 01:07:18.690
+Now, to create a new thread, I told you that we need an object of threat class. So T is equals to new thread. We are creating a new thread, which require.
+
+497
+01:07:18.690 --> 01:07:22.889
+2 parameters. 1 of the parameters is of renewable type.
+
+498
+01:07:22.889 --> 01:07:29.699
+Right. So either I can write renewal and just because I need the current thread to start what we have run.
+
+499
+01:07:29.699 --> 01:07:33.690
+We have returned the current class reference variable. This.
+
+500
+01:07:33.690 --> 01:07:36.750
+And what is the type of this variable? This is again.
+
+501
+01:07:36.750 --> 01:07:43.920
+Because it is implementing the renewable interface. So most of the time you will find that it is going to start, which thread.
+
+502
+01:07:43.920 --> 01:07:49.289
+The current rate, what is the current trend? New trend and this is again a type of.
+
+503
+01:07:49.289 --> 01:07:56.369
+Right if you just remember the topics from the interfaces, the interface reference variable can refer to the class, which is implementing it.
+
+504
+01:07:56.369 --> 01:08:00.719
+So here, instead of Runnable, I can write this now, this.
+
+505
+01:08:00.719 --> 01:08:03.780
+Is actually going to start the current thread.
+
+506
+01:08:03.780 --> 01:08:09.989
+Right, the name of the thread is demo thread. This is what we have selected, you can give any string that you want.
+
+507
+01:08:09.989 --> 01:08:14.340
+And then what we are doing, we are printing out the details of child.
+
+508
+01:08:14.340 --> 01:08:17.789
+Now, this is important that why we are calling it as a child.
+
+509
+01:08:17.789 --> 01:08:23.760
+So make sure that all the threads are going to be initiated by the main method.
+
+510
+01:08:23.760 --> 01:08:38.279
+Right. And meanwhile is responsible to create all the other threats that's why we call it as a child thread. So there is 1 important thing that main thread is always the 1st to start and this will always be the last to end.
+
+511
+01:08:38.279 --> 01:08:44.909
+Okay, so main thread is always going to start 1st, because inside the main thread, you are creating an object.
+
+512
+01:08:44.909 --> 01:08:48.899
+So unless and until you initiate an object, this thread is not going to start.
+
+513
+01:08:48.899 --> 01:08:57.090
+At the same time, the main method is responsible to complete all the things and it will be the last thread to complete.
+
+514
+01:08:57.090 --> 01:09:00.960
+Right because it need to take care of all the method returns.
+
+515
+01:09:00.960 --> 01:09:08.220
+All the data which was required here, so when everything is going to unwind, the new thread will unwind before the main.
+
+516
+01:09:08.220 --> 01:09:14.130
+And Maine will start before the new thread. So it is like, between the main.
+
+517
+01:09:14.130 --> 01:09:23.640
+Right the new between the me. Okay so we are printing out the details of the now, you know, that T is going to print 3 things.
+
+518
+01:09:23.640 --> 01:09:28.949
+Right. So can somebody somebody quickly tell me what are the 3 things, which will be printed out.
+
+519
+01:09:28.949 --> 01:09:33.899
+I mean, the 3 things which will be printed out for this program.
+
+520
+01:09:35.579 --> 01:09:39.630
+So, when you print tea, what output will be expected.
+
+521
+01:09:39.630 --> 01:09:46.439
+Anyone yeah, that will be named priority and threat group but what is name priority and in this case.
+
+522
+01:09:46.439 --> 01:09:52.529
+What is the name of the trade?
+
+523
+01:09:52.529 --> 01:09:56.399
+Demo 3 yes. What will be the priority.
+
+524
+01:09:59.699 --> 01:10:04.829
+What will be the priority 5 and what will be the group.
+
+525
+01:10:09.569 --> 01:10:13.020
+Uh, demonstrate 5 Runnable not Runnable.
+
+526
+01:10:13.020 --> 01:10:17.489
+The name of the 3rd is demo thread for sure because we have set the name.
+
+527
+01:10:17.489 --> 01:10:21.989
+Priority will be default that is 5 and what will be the threat group.
+
+528
+01:10:21.989 --> 01:10:35.010
+What is thread group if you remember main? Yes. So, 3 things which will be printed out will be demo tread com or 5 common main because now, Maine is responsible to call this.
+
+529
+01:10:35.010 --> 01:10:43.409
+All right, so now that becomes the thread group, right? And then we have data start so this will.
+
+530
+01:10:43.409 --> 01:10:49.020
+Oh.
+
+531
+01:10:49.020 --> 01:10:55.890
+Right so, to call the and the 3rd, I do not need T dot run. I need to start the start is going to.
+
+532
+01:10:55.890 --> 01:11:01.590
+Run this method is going to involve the method and we have written the same thing here.
+
+533
+01:11:01.590 --> 01:11:07.800
+Right we have return is equal to 5 to 0T child thread. I, and then we have given 10000.
+
+534
+01:11:07.800 --> 01:11:21.479
+This is up to you this is going to wait for 1 millisecond or once a. sorry. 3rd, this is 1000. very. 2nd, so this is going to wait for 3rd, and then again, keep on printing the data. So this is something that we are aware about with the help of last example.
+
+535
+01:11:21.479 --> 01:11:25.619
+Our concentration is over this, right? Implement to enable.
+
+536
+01:11:25.619 --> 01:11:29.039
+Create an object of threat class pass to parameters.
+
+537
+01:11:29.039 --> 01:11:34.500
+1 should be a tiger enabled 2nd, should be string. If you print it out, you will get 3 things.
+
+538
+01:11:34.500 --> 01:11:38.699
+Name of the trend it is demonstrate priority. That is 5.
+
+539
+01:11:38.699 --> 01:11:42.090
+And the thread group that is me.
+
+540
+01:11:42.090 --> 01:11:46.949
+And start will take the control and start this.
+
+541
+01:11:46.949 --> 01:11:51.060
+Run metal, so this run will be involved and finally.
+
+542
+01:11:51.060 --> 01:11:57.210
+If there is some interrupt, then fine again, there will be no interrupt and you will have exiting child.
+
+543
+01:11:57.210 --> 01:12:02.789
+Now, let's see what is main up too, right? So, here we are creating a new thread.
+
+544
+01:12:02.789 --> 01:12:06.060
+So, when you call new thread, this control, we'll go to this place.
+
+545
+01:12:06.060 --> 01:12:12.390
+But make sure that this main thread is going to complete its own task if we just give 10000. so that.
+
+546
+01:12:12.390 --> 01:12:20.579
+You can see the basic difference right now you have 1 of the thread, which is running. That is new thread. And you also have main, which is running.
+
+547
+01:12:20.579 --> 01:12:26.159
+So, at this point of time, you will have.
+
+548
+01:12:26.159 --> 01:12:33.300
+Right. 1 is the new trick and it is.
+
+549
+01:12:33.300 --> 01:12:37.289
+Right so new thread is going to run as well as the main is going to run.
+
+550
+01:12:37.289 --> 01:12:48.810
+What we have done here again the same thing I is equal to 5 less than 0T print out the values when I print I, the value of I is going to be printed out.
+
+551
+01:12:48.810 --> 01:12:56.789
+And if there is an exception, exception, will be caught again no exception will be called over here. And finally you will have and of mainframe.
+
+552
+01:12:56.789 --> 01:13:02.100
+Okay, so let's try to run. Let's see how 2 threads are working at the same time.
+
+553
+01:13:02.100 --> 01:13:11.010
+You will have main thread. You will have child thread and both the process are running simultaneously.
+
+554
+01:13:11.010 --> 01:13:15.630
+Right, and why they are running simultaneously because at this point of time.
+
+555
+01:13:15.630 --> 01:13:21.600
+You have created 2 traits. 1 of the thread is responsible to process the child, right?
+
+556
+01:13:21.600 --> 01:13:24.689
+Another 1 is main threat, it always keeps on going.
+
+557
+01:13:24.689 --> 01:13:32.550
+Unless, and until the task is over, right? So you can see that the details of child thread is printed out.
+
+558
+01:13:32.550 --> 01:13:36.899
+You have thread demo thread the name of the threat that we have given.
+
+559
+01:13:36.899 --> 01:13:40.739
+The default priority 5 and who is calling this method.
+
+560
+01:13:40.739 --> 01:13:47.310
+Maine is calling this metal, right? And who is calling this trade of course mean is calling this thread. So it is responsible to print it out.
+
+561
+01:13:47.814 --> 01:13:58.914
+Then main thread is always the 1st 1 to start, but that doesn't mean that this will be the 1st to be printed when you try to execute the program again, it may happen that the child is printed out.
+
+562
+01:13:58.914 --> 01:14:05.034
+1st, but now there is a logic that white child thread is printed. The reason is main thread has started.
+
+563
+01:14:06.539 --> 01:14:10.680
+Right so there is no logic of having the main child printed. 1st.
+
+564
+01:14:10.680 --> 01:14:18.659
+Before the child threads start printing because the child thread has been spawned, it has been created from this point. So, yes, Maine is always running.
+
+565
+01:14:19.710 --> 01:14:30.300
+Okay, then you have metric 5, you have child 35432, 1, and then main thread. 54321 make sure that file has printed before.
+
+566
+01:14:30.300 --> 01:14:35.579
+4, 3, 2, 1 has printed before and if you just try to play with this time.
+
+567
+01:14:35.579 --> 01:14:42.840
+Right the 1, which is written in millisecond, you may end up getting some different combinations. Right of Charles remains right?
+
+568
+01:14:42.840 --> 01:14:48.750
+You would have exiting you have exiting mentoring and this is how the 2 trades are running.
+
+569
+01:14:48.750 --> 01:14:53.489
+Competent the right. The only thing to understand is.
+
+570
+01:14:53.489 --> 01:15:00.390
+How we are creating our own trend. Of course, we have written it inside the constructor. If you want, you can give name over here.
+
+571
+01:15:00.390 --> 01:15:04.739
+Right later on, we are going to see that what happened if I need 3 or 4 threads.
+
+572
+01:15:04.739 --> 01:15:09.750
+I can't like afford to have all the threads having demo thread.
+
+573
+01:15:09.750 --> 01:15:16.260
+I need to give different threats in order to keep track that what thread is doing what some other threat is up to and so on.
+
+574
+01:15:16.260 --> 01:15:19.590
+Right I think we'll be fine.
+
+575
+01:15:19.590 --> 01:15:25.050
+3000.
+
+576
+01:15:25.314 --> 01:15:35.005
+Because we do not want everything to be printed out directly. Even if you do not write it down, you can simply write for Isaac was to 5. I greater than 0T. And plus. Plus.
+
+577
+01:15:35.305 --> 01:15:41.125
+But that will not serve the purpose of understanding that what the thread is doing and what it is not doing.
+
+578
+01:15:41.789 --> 01:15:45.210
+So, if you want to change the code, what we can do is.
+
+579
+01:15:45.210 --> 01:15:52.649
+Let's not have it right? So if you do not have it, do not require a try.
+
+580
+01:15:52.649 --> 01:15:56.340
+Not just for your.
+
+581
+01:15:56.340 --> 01:16:00.630
+It is just to show you that how the sleep method is going to work.
+
+582
+01:16:00.630 --> 01:16:04.319
+Not a complexity think.
+
+583
+01:16:04.319 --> 01:16:11.579
+But he had everything that we printed out just like an ordinary program.
+
+584
+01:16:11.579 --> 01:16:19.199
+See, it is not waiting. Everything will be printed out and it will get the output.
+
+585
+01:16:19.199 --> 01:16:23.550
+Right. The same I forgot earlier. See right so, as I said, that.
+
+586
+01:16:23.550 --> 01:16:27.420
+All the time, it is not possible to have the same program because.
+
+587
+01:16:27.420 --> 01:16:40.380
+You cannot control for the timing that which threat should start 1st or which threat should complete the task 1st or the we can later on we are going to see that but for the timing, you may end up getting some different combinations of output.
+
+588
+01:16:40.380 --> 01:16:46.439
+So earlier, if you have gone through the output, it was 5, then we have started with the main thread.
+
+589
+01:16:46.439 --> 01:16:50.250
+And then we had 54321, but over here.
+
+590
+01:16:50.250 --> 01:16:58.619
+We have 5, 4, then childhood is starting you have 54321 and so on if you again try to save and run, you might end up with the different output.
+
+591
+01:16:58.619 --> 01:17:03.600
+Okay, so not require that all out for that. You will get to same.
+
+592
+01:17:03.600 --> 01:17:08.550
+Right here you can see that main thread is completed everything. You have enough main trade.
+
+593
+01:17:08.550 --> 01:17:16.500
+Then childcare has started and completed everything right? So your output is totally dependent upon how the CPU is going to handle.
+
+594
+01:17:16.500 --> 01:17:25.465
+The 1st program, although we have so many methods in which we can control the threats that, which should print 1st, which will print. 2nd. Okay.
+
+595
+01:17:25.645 --> 01:17:32.305
+So, let's say that you need a program in which 1 of the 3rd is taking an input and 2nd thread will tell you whether it is.
+
+596
+01:17:32.579 --> 01:17:44.670
+And even our old, so, unless and until you give an input, the thread will not be able to make a judge right there with no judgement. So, in that case, you need to wait for that. We have so many methods apart from sleep.
+
+597
+01:17:45.930 --> 01:17:55.800
+Okay, I hope that is fine. Why main thread is printed 1st how come it go back to the childhood again?
+
+598
+01:17:55.800 --> 01:18:02.699
+If you just see the program main thread is always the 1st thread to start.
+
+599
+01:18:02.935 --> 01:18:16.944
+Right. So this 1st of all is going to take a new thread. The new thread has certain overhead to call the constructor. The constructor is initializing certain data and calling the run metal. So meanwhile, the childhood is busy doing certain tasks.
+
+600
+01:18:17.185 --> 01:18:18.925
+The main thread has started printing it out.
+
+601
+01:18:19.289 --> 01:18:23.039
+Right. So if I just take this thread or sleep before printing.
+
+602
+01:18:23.039 --> 01:18:30.930
+Then you will get the output of child thread printed out 1st so, for the timing, we are not taking care of the intergrade communication.
+
+603
+01:18:30.930 --> 01:18:35.100
+These are 2 threads working on the same program, and they are free to do.
+
+604
+01:18:35.100 --> 01:18:38.130
+They are free to print whatever they want in any order.
+
+605
+01:18:38.130 --> 01:18:48.899
+That we are not maintaining the dignity that 1 of the threads should complete, or maybe line by line it should be printed out there. Just giving the control to 2 threads. Do whatever you want to do into the program.
+
+606
+01:18:48.899 --> 01:18:54.689
+So that's why we have main thread then child thread and so on.
+
+607
+01:18:57.029 --> 01:19:02.399
+Is there a thread dot c2000 just sleep? 1000 metal.
+
+608
+01:19:02.399 --> 01:19:08.010
+Oh, okay. So I think what you were saying is that can I write.
+
+609
+01:19:08.010 --> 01:19:12.600
+Let me just take this come in town.
+
+610
+01:19:12.600 --> 01:19:17.819
+Okay, let me take this call it out.
+
+611
+01:19:23.729 --> 01:19:28.079
+Right. Really missing out something.
+
+612
+01:19:35.520 --> 01:19:44.069
+Okay, so I said the question is what if I remove the string.
+
+613
+01:19:45.300 --> 01:19:50.729
+Why we're getting in here the reason is, this method is defined inside the threat class.
+
+614
+01:19:50.729 --> 01:20:04.560
+Right and if you simplify to use it, you are getting an error. The reason being the method is defined as static. If you just remember we have return capital thread dot sleep. So we are referring this method with the help of the name of the class.
+
+615
+01:20:04.560 --> 01:20:08.100
+Writing sleep will simply tell you that. No such method exist.
+
+616
+01:20:09.390 --> 01:20:13.289
+Credit is undefined for this class threat demo.
+
+617
+01:20:13.289 --> 01:20:19.409
+So, here, we need to do sleep because this is the invalid method, which is defined by the threat.
+
+618
+01:20:21.119 --> 01:20:26.460
+Right. T dot sleep. Okay. If you want to write the next week, we need to go back here.
+
+619
+01:20:38.430 --> 01:20:50.970
+So, all that should not be called with the help of an object name. You are getting a warning that static data should be called in a static way. But it is fine. You can just like a setting method can recall with the help of.
+
+620
+01:20:50.970 --> 01:20:57.359
+The name of the object, but does not serve the purpose. So you will get a warning. You can ignore it and yes, this will work for you.
+
+621
+01:20:58.529 --> 01:21:03.630
+Yes, I'll be okay.
+
+622
+01:21:05.250 --> 01:21:09.029
+Silence.
+
+623
+01:21:10.795 --> 01:21:25.135
+Yes, instead of cannot sleep just sleep what I told if we are making a class, which implements or extends to try to classroom with Smith hotel sleep matter.
+
+624
+01:21:25.439 --> 01:21:29.159
+If you are extending the thread class, then yes, it will work.
+
+625
+01:21:29.159 --> 01:21:33.420
+Okay.
+
+626
+01:21:33.420 --> 01:21:39.329
+Mainly class may see from a.
+
+627
+01:21:39.329 --> 01:21:42.750
+How, but you need to extend thread in that case.
+
+628
+01:21:42.750 --> 01:21:46.289
+Implementing functionality.
+
+629
+01:21:48.630 --> 01:21:57.779
+Yes, ma'am. Thank you. Okay, so we do not have any questions so let's move further.
+
+630
+01:21:57.779 --> 01:22:00.779
+We will send you going to take 1 more thing.
+
+631
+01:22:00.779 --> 01:22:10.350
+Right. And then we will just take a break for some hours so that you differs the concept. I come up with some new examples and then we will continue.
+
+632
+01:22:10.350 --> 01:22:16.380
+So, we are just going to see the 2nd, way of creating a thread that is extending the thread class.
+
+633
+01:22:16.380 --> 01:22:23.279
+And then you will see that how we are going to implement that particular thing and which 1 is more favorable.
+
+634
+01:22:23.279 --> 01:22:27.869
+At what time you should extend the thread at what time? At what time you should go with the.
+
+635
+01:22:27.869 --> 01:22:31.500
+Our implementing the interface.
+
+636
+01:22:31.500 --> 01:22:34.800
+Yeah.
+
+637
+01:22:34.800 --> 01:22:42.000
+So, the 2nd, way of creating a thread is by extending the threat clubs.
+
+638
+01:22:42.000 --> 01:22:45.359
+Right and you know that if I'm extending something.
+
+639
+01:22:45.359 --> 01:22:55.199
+Into my own class, then there is a purpose, right? If you just remember the concept of inheritance that if you're extending something into your class, then you actually need to.
+
+640
+01:22:55.199 --> 01:22:59.579
+Take all the feature, which is defined by the parent class and then you want to add something.
+
+641
+01:22:59.579 --> 01:23:07.710
+Of your own, so unless and until you are adding certain data into that class, we do not usually go with extending the class.
+
+642
+01:23:07.710 --> 01:23:16.229
+But then implementing interface has its own advantage, or you can say, disadvantage that it requires you to compass. Really?
+
+643
+01:23:16.229 --> 01:23:28.170
+Override the run metal, although extending a thread class will also require you to override the method. Right? These are 2 different things. In the previous case, we are giving the definition to the run method.
+
+644
+01:23:28.170 --> 01:23:32.699
+Here we are overriding it again, we need to start method.
+
+645
+01:23:32.699 --> 01:23:38.399
+To start the thread, and it is also possible to run the thread directly from me.
+
+646
+01:23:38.399 --> 01:23:42.090
+So this is something which is an add on if you try to extend the class.
+
+647
+01:23:42.090 --> 01:23:46.050
+So, let's see, most of the structure is going to remain as it is.
+
+648
+01:23:46.050 --> 01:23:49.829
+You will see the 2 ways plus we have seen implementing interface.
+
+649
+01:23:49.829 --> 01:23:54.210
+Inside extending thread we are going to see again. 2 ways.
+
+650
+01:23:54.210 --> 01:23:58.170
+The 1st way is, you were starting the thread from the class itself.
+
+651
+01:23:58.170 --> 01:24:01.560
+And the 2nd, 1 is when you can create a threat from me.
+
+652
+01:24:01.560 --> 01:24:06.060
+Right. So let's go to the program.
+
+653
+01:24:07.409 --> 01:24:12.960
+Okay, so I'll keep that, uh.
+
+654
+01:24:12.960 --> 01:24:18.210
+This 1 as well, so that we can differentiate between both of them.
+
+655
+01:24:18.210 --> 01:24:21.779
+So, here what we have done by implementing an interface.
+
+656
+01:24:21.779 --> 01:24:28.890
+You had to create an object why we had to create an object because the thread you are going to create is actually of thread.
+
+657
+01:24:28.890 --> 01:24:36.000
+Right. You need to create an object you are calling the constructor and then you are storing it somewhere inside the reference variable.
+
+658
+01:24:36.000 --> 01:24:41.340
+However, when you were extending the thread, right? You have the facility to use Super.
+
+659
+01:24:41.340 --> 01:24:46.109
+Right, and why we have not written this because as soon as you come to this point.
+
+660
+01:24:46.109 --> 01:24:56.130
+The type of new thread is thread where is in a previous case, why we were implementing the enable interface. The type is not thread. So you need to explicitly create an object.
+
+661
+01:24:56.130 --> 01:25:08.010
+And then start the method, right? So, here you can use Super demo thread, which is same as writing this comma demo thread and storing it into the variable.
+
+662
+01:25:08.010 --> 01:25:15.479
+But just because here you need to create your own thread without extending the class we are storing it into a variable of a thread.
+
+663
+01:25:15.479 --> 01:25:21.630
+Oh, here, because we are extending the threat class. We are actually the child class of thread.
+
+664
+01:25:21.630 --> 01:25:27.779
+And at that point of time, you can use Super keyword, which will invoke the constructor off the threat class.
+
+665
+01:25:27.779 --> 01:25:36.779
+Right if you want to print the details of the current thread, we can use this key word. Instead of team that we have returned earlier inside the interface.
+
+666
+01:25:36.779 --> 01:25:41.489
+The next thing that we can do is we can call start directly.
+
+667
+01:25:41.489 --> 01:25:45.960
+Why we can all start directly because this is 1 of the method of class.
+
+668
+01:25:45.960 --> 01:25:49.409
+However, this was not reflected over here.
+
+669
+01:25:49.409 --> 01:25:53.729
+We need an object with the help of an object. We need to call the start.
+
+670
+01:25:53.729 --> 01:25:57.510
+So, I hope these 3 lines of comparisons are okay.
+
+671
+01:25:57.510 --> 01:26:03.060
+We have called the constructor, but now by not creating an object calling a super key word.
+
+672
+01:26:03.060 --> 01:26:06.180
+We have printed out the details using this.
+
+673
+01:26:06.180 --> 01:26:13.500
+And we have started it using the start keyword. This start keyword will definitely take you to the and method.
+
+674
+01:26:13.500 --> 01:26:26.340
+Right now this is something which is going to print it out. Now. Let me just answer the question, which was asked earlier but can I use sleep directly? Yes, you can right? Because now you are a subclass of trade.
+
+675
+01:26:26.340 --> 01:26:35.609
+So, thread requires, uh, some of the methods 1 of the method is sleep. You can invoke it from the child class directly as if it belongs to its own. Plus.
+
+676
+01:26:35.609 --> 01:26:39.300
+So, yes, this 1 is possible. Okay.
+
+677
+01:26:39.300 --> 01:26:42.659
+So, when you can start, we are inside the run method.
+
+678
+01:26:42.659 --> 01:26:45.840
+We are doing the same thing. We are printing out the value.
+
+679
+01:26:45.840 --> 01:26:51.119
+We are spending the thread for some seconds, let's say 1000 milliseconds.
+
+680
+01:26:51.119 --> 01:26:54.390
+And then we are exiting the child 3. okay.
+
+681
+01:26:55.770 --> 01:26:59.729
+As soon as we go inside, the main the things are not going to change at all.
+
+682
+01:26:59.729 --> 01:27:06.539
+We are creating an object, just because I do not need it later on. We have not stored it if you want to store it, but.
+
+683
+01:27:06.539 --> 01:27:10.979
+You will get a warning that the object is not utilized anywhere into your program.
+
+684
+01:27:10.979 --> 01:27:15.000
+So, we have called the constructor. This is more than enough to call it.
+
+685
+01:27:15.000 --> 01:27:21.630
+Additional, the things is taken care by the class itself you call the start method and you start with the thread.
+
+686
+01:27:22.710 --> 01:27:29.640
+Okay, we are doing the same thing. We are printing out the value from 5 to 1 inside the main thread.
+
+687
+01:27:29.640 --> 01:27:38.250
+And we are simply at the end, concluding it with the main thread. Oh, okay. This should be enough main thread.
+
+688
+01:27:38.250 --> 01:27:43.920
+Okay.
+
+689
+01:27:43.920 --> 01:27:55.800
+So this is the same kind of a program. You will get exactly. Same output. But now you have changed the logic by extending the thread clause instead of implementing that interface. Okay.
+
+690
+01:27:58.170 --> 01:28:01.890
+Yeah, so.
+
+691
+01:28:01.890 --> 01:28:09.479
+Let me just take your attention to the 1st line this 1. so you can see that the output is exactly see.
+
+692
+01:28:09.479 --> 01:28:17.520
+Even though, in the previous case you have returned over here, you are writing this. So, even if you are writing this, you are referring to the current object.
+
+693
+01:28:17.520 --> 01:28:27.090
+What is the type of current object thread over there? You have return team because we were creating an object of type thread. So, this is 1 of the same thing. But in 2 different ways.
+
+694
+01:28:28.289 --> 01:28:32.699
+Then method is going to print the value, so you can see 54321.
+
+695
+01:28:32.699 --> 01:28:37.979
+Uh, we have just been lucky here that we get 5040302 2 1, 1.
+
+696
+01:28:37.979 --> 01:28:41.699
+It might not be possible that you get the same sort of output all the time.
+
+697
+01:28:43.170 --> 01:28:51.270
+And then you will exit the child thread. You can see that here. We have kind of main thread printed out before exiting the child thread.
+
+698
+01:28:51.270 --> 01:28:55.800
+But that doesn't mean that the main threat is completed. 1st, followed by the child.
+
+699
+01:28:55.800 --> 01:29:01.380
+And just to be sure about that, what we do is we increase the time of.
+
+700
+01:29:01.380 --> 01:29:05.789
+The mainframe, so that this will always be printed out at the end.
+
+701
+01:29:05.789 --> 01:29:11.399
+But this is not the valid way to do it. We are going to see what are the different ways.
+
+702
+01:29:11.399 --> 01:29:20.279
+But then, for the timing, whatever examples that you are going to see will have the main thread to wait for certain longer time compared to the child.
+
+703
+01:29:20.279 --> 01:29:24.270
+So then the statement which is written at the end is printed at the end, but.
+
+704
+01:29:24.270 --> 01:29:28.859
+This is not something logical. We have certain methods to take care of it as well.
+
+705
+01:29:30.510 --> 01:29:34.229
+Right. So 2 different ways implementing interface.
+
+706
+01:29:34.229 --> 01:29:37.470
+That is Runnable and extending the class. That is thread.
+
+707
+01:29:37.470 --> 01:29:48.449
+While implementing the interface, you need to create an object of class thread, need to pass to parameters 1 of renewal time. Another 1 is the strain, which is simply the name of the thread.
+
+708
+01:29:48.449 --> 01:29:55.890
+You can print the detail if you want that is optional and then you need to call the start method with the help of the object of class thread.
+
+709
+01:29:55.890 --> 01:30:02.189
+The start method will take the control to the run metal, whereas when we talk about the threat class.
+
+710
+01:30:02.189 --> 01:30:06.600
+Just because we are extending the class, we do not need to create an object.
+
+711
+01:30:06.600 --> 01:30:17.760
+Whether we can take the facility from the parent. So here, what we have done is we have created a constructor, which is going to call the constructor of the class, which is threaded in this case.
+
+712
+01:30:17.760 --> 01:30:22.649
+You can print it out with the help of this, because we are referring to the current object.
+
+713
+01:30:22.649 --> 01:30:26.489
+And then you can directly call start instead of T dot stop.
+
+714
+01:30:26.489 --> 01:30:29.579
+And what we have seen in the interface.
+
+715
+01:30:29.579 --> 01:30:41.399
+This will take you over here. Somebody mentioned that. Can I use sleep? So you can see that here. I can you sleep? Because this is 1 of the methods, which is defined inside the thread.
+
+716
+01:30:41.399 --> 01:30:45.149
+And just because this is being a parent class can use it directly.
+
+717
+01:30:45.149 --> 01:30:50.760
+But still, you will see the examples in other resources, using thread dot sleep.
+
+718
+01:30:50.760 --> 01:30:56.039
+Because this makes sense that the sleep is defined as the static method inside the thread clubs.
+
+719
+01:30:56.039 --> 01:30:59.399
+The only way to do that is using the thread closets.
+
+720
+01:30:59.399 --> 01:31:10.529
+And then we have exiting the childhood, and then we have exiting the main thread because main is also doing certain printing out of the data while suspending it for certain seconds.
+
+721
+01:31:10.529 --> 01:31:13.710
+I hope we are fine.
+
+722
+01:31:13.710 --> 01:31:19.289
+Any questions the people are leaving the meeting, getting bore.
+
+723
+01:31:19.289 --> 01:31:22.770
+Silence.
+
+724
+01:31:22.770 --> 01:31:29.670
+Okay, so we'll just see 1 more thing on the topic is not yet completed. We are going to have another session today itself.
+
+725
+01:31:29.670 --> 01:31:34.770
+But let's break it for some time and then we will come back before that.
+
+726
+01:31:34.770 --> 01:31:38.939
+Just 1, important thing, so that we do not miss out the link.
+
+727
+01:31:40.560 --> 01:31:47.069
+Okay, so as I said that.
+
+728
+01:31:47.069 --> 01:32:00.114
+You need to decide that, which 1, you need to follow either you need to extend the thread class, or you need to implement the interface Runnable. So it is an obvious choice or it is an obvious tempt to go towards the thread extending class.
+
+729
+01:32:00.534 --> 01:32:04.765
+But, you know, that logically it is the class that you are extending.
+
+730
+01:32:05.069 --> 01:32:15.748
+Right the class, which is extending thread is logically not going to add certain details into it, which is the purpose of inheritance. So people usually follow implementing Runnable.
+
+731
+01:32:15.748 --> 01:32:22.198
+The other advantages, let's say that apart from implementing renewable, you also need to inherit some of the class.
+
+732
+01:32:22.198 --> 01:32:25.828
+Which is not possible when you go with this process.
+
+733
+01:32:25.828 --> 01:32:34.588
+Because you cannot extend multiple classes, but if you want to extend a class apart from creating your own thread, then this is the obvious choice for the programs.
+
+734
+01:32:34.588 --> 01:32:48.899
+Right. So that's why, you will see some examples in, which not some examples in most of the examples they are going to implement Runnable. And this is the obvious choice. Because this gives you the freedom of extending some of the class if you want somewhere into your program.
+
+735
+01:32:48.899 --> 01:32:53.729
+Okay. All right so let's see this.
+
+736
+01:32:53.729 --> 01:33:01.048
+Almost similar to what we have seen in renewable interface, but now we do not have just a single child thread.
+
+737
+01:33:01.048 --> 01:33:07.439
+We have multiple child threads, which is going to be created with the help of new thread to class.
+
+738
+01:33:07.439 --> 01:33:17.399
+Let's go to it. We have class new thread to implements Runnable. Now, apart from thread. We also have the name of the threat because I need to distinguish.
+
+739
+01:33:17.399 --> 01:33:22.198
+Find that which thread is printing out? What? So we have created a name.
+
+740
+01:33:22.198 --> 01:33:28.139
+And this name is utilized later on into public void run. So we have kept it is.
+
+741
+01:33:28.139 --> 01:33:34.828
+Inside the new thread directly inside the constructor. The things are similar.
+
+742
+01:33:34.828 --> 01:33:41.158
+Apart from that, we have a parameter constructed earlier. We had the default constructor.
+
+743
+01:33:41.158 --> 01:33:45.359
+Why parameter raise constructor so that you can take the name of.
+
+744
+01:33:45.359 --> 01:33:53.519
+The constructor sorry you can take the name of the thread, put it inside the constructor and assign it to the string that you have. Initialized.
+
+745
+01:33:54.569 --> 01:34:01.498
+Right rest of the things I've seen the only addition is now you are giving a different name to each thread that you are going to create.
+
+746
+01:34:01.498 --> 01:34:08.548
+If you somehow miss this out, you will have the same name for all the trades, and you will not be able to understand which thread is doing both.
+
+747
+01:34:08.548 --> 01:34:14.698
+So, just to differentiate between them, we are giving name with the help of constructor and assigning it to the string.
+
+748
+01:34:14.698 --> 01:34:18.809
+So, is it easy question new thread this name.
+
+749
+01:34:18.809 --> 01:34:23.609
+The threat is created of course, not all the threads are created at the same time.
+
+750
+01:34:23.609 --> 01:34:30.899
+1st time the constructed has been called 1st, threat is in process. 2nd, threat will come again in the process followed by 1 and so on.
+
+751
+01:34:30.899 --> 01:34:37.198
+And then you will have stopped the state of start will again take you to the run method.
+
+752
+01:34:37.198 --> 01:34:43.859
+We are not doing anything logical till now you can see that. We are simply printing out the data just in order to understand it.
+
+753
+01:34:43.859 --> 01:34:47.878
+So, we are pending out the values we are.
+
+754
+01:34:47.878 --> 01:34:56.099
+Just hibernating the thread for certain milliseconds and then which thread is exiting should be printed out along with the.
+
+755
+01:34:57.779 --> 01:35:02.969
+Now, as soon as we come inside, the main method, what you can see that we have new.
+
+756
+01:35:02.969 --> 01:35:09.868
+New thread 2, 1, that shows that this is the name of the thread. This is the name of the 2nd thread.
+
+757
+01:35:09.868 --> 01:35:17.698
+And this is the name of thread. The main thread is sleeping for a while for 10000. I tell you why it is 10000.
+
+758
+01:35:17.698 --> 01:35:29.939
+Because each and every thread is sleeping for 1000. really? 2nd, the main is trying to play safe and it has been slept for 10000 milliseconds. Although this is not a good practice to do. So.
+
+759
+01:35:29.939 --> 01:35:34.618
+Because you are knowingly or unknowingly wasting a lot of time.
+
+760
+01:35:34.618 --> 01:35:44.488
+While making this threat to sleep, right? So we have some interesting methods that we are going to see later on. So, here we have trend up sleep for 10000 milliseconds.
+
+761
+01:35:44.488 --> 01:35:47.548
+To be say that all the methods would be completed by then.
+
+762
+01:35:47.548 --> 01:35:52.649
+And then we are pointing out that main thread is exiting.
+
+763
+01:35:52.649 --> 01:35:56.998
+Right. Seems fine. Let me just try to run the cold.
+
+764
+01:35:58.109 --> 01:36:02.338
+Silence.
+
+765
+01:36:02.338 --> 01:36:06.238
+Okay, so now you can see there there are 3, 3.
+
+766
+01:36:06.238 --> 01:36:10.559
+Right. 1, 2 and 3 let's just wait for it to get complete.
+
+767
+01:36:10.559 --> 01:36:21.779
+Right. So you can see that after the 3rd 1 is exiting you have taken enough time because we were playing safe. We have taken 10000. so some of the time was in buffer so that we can print out main thread exiting.
+
+768
+01:36:23.309 --> 01:36:31.139
+Right, so information which is printed out is default value for the group because all of them are initiated by the main.
+
+769
+01:36:32.248 --> 01:36:36.658
+The default value for the priority 5 for each of them but now they have a different name.
+
+770
+01:36:36.658 --> 01:36:40.738
+So, now you can actually keep track that which thread is printing out. What.
+
+771
+01:36:40.738 --> 01:36:44.219
+Again, this is not in our control that why 3?
+
+772
+01:37:00.118 --> 01:37:12.748
+The details of all the threads are printed all the threads are printing 54321 again, the output may vary in your case. And even if I try to execute the program for the 2nd time, you may get a different sort of output. The same machine.
+
+773
+01:37:14.069 --> 01:37:18.179
+They are exiting again not required to be in the order.
+
+774
+01:37:18.179 --> 01:37:23.128
+It may happen that 3 exit before 1 and 2 or any shuffling is possible.
+
+775
+01:37:23.128 --> 01:37:30.599
+And at the end, we have main thread exiting so if you need to create multiple thread, you just need to create the multiple objects of the class.
+
+776
+01:37:30.599 --> 01:37:34.139
+If I do not pass the string as a perameter, you will just have a.
+
+777
+01:38:05.064 --> 01:38:08.184
+The main thread know that I have completed the task now, you can resume.
+
+778
+01:38:08.849 --> 01:38:12.958
+That this looks like much more logical. This is not going to waste our time.
+
+779
+01:38:12.958 --> 01:38:17.099
+And therefore, the sleep method is not always.
+
+780
+01:38:17.099 --> 01:38:21.149
+Required into your program, make sense.
+
+781
+01:38:21.149 --> 01:38:24.689
+I hope we're okay any questions so far.
+
+782
+01:38:28.918 --> 01:38:32.698
+Let me just stop sharing.
+
+783
+01:38:34.469 --> 01:38:42.868
+Yes, any questions.
+
+784
+01:38:44.279 --> 01:38:47.578
+No questions so.
+
+785
+01:38:47.578 --> 01:38:52.378
+We'll meet him again. A, what do you say? 2 PM would be fine.
+
+786
+01:38:54.779 --> 01:38:58.139
+He has main thread always ends and the last.
+
+787
+01:38:58.139 --> 01:39:03.269
+Even if it is done with the printing, the data, it will always be the last threat to complete.
+
+788
+01:39:05.698 --> 01:39:13.078
+Okay, so can you meet at 2 o'clock?
+
+789
+01:39:13.078 --> 01:39:22.588
+And we will complete rest of the things for tomorrow onwards. We are going to have the practicals for this section 10. right I'll just explain the practicals and.
+
+790
+01:39:22.588 --> 01:39:29.009
+I'll give you the time to complete it. Right but that will again me a discussion. You will complete it again. We will have a session to discuss that.
+
+791
+01:39:29.009 --> 01:39:34.349
+Right. So we'll end it.
+
+792
+01:39:34.349 --> 01:39:38.668
+Silence.
+
+793
+01:39:38.668 --> 01:39:42.088
+Okay, we'll let it here and.
+
+794
+01:39:42.088 --> 01:39:54.988
+We'll start it too. Okay. We have a question. Every time we run we get different outputs. So how it is reliable to get the desired output yes. For that we haven't a thread communication. That is what we are going to see that. How we can get rid of this thing.
+
+795
+01:39:54.988 --> 01:39:58.408
+That I should control a thread instead of the system.
+
+796
+01:39:59.849 --> 01:40:03.748
+Okay, so for that, we have into threat communication.
+
+797
+01:40:03.748 --> 01:40:06.988
+In 2005.
+
+798
+01:40:08.158 --> 01:40:11.849
+At least we can complete, uh, the topic today.
+
+799
+01:40:11.849 --> 01:40:18.929
+And what you can do is you can just work on the practicals. If somehow you have a problem. We'll come back again at 26.
+
+800
+01:40:18.929 --> 01:40:23.069
+So, let's postponed the practical thing for a day.
+
+801
+01:40:23.069 --> 01:40:30.149
+But, let me just try to complete the concept of multithreading so that it will be helpful for you for completing the practical.
+
+802
+01:40:30.149 --> 01:40:37.859
+Right so today we are meeting at 2 o'clock to complete list of the topics. It is not going to take more than 1 and a half hours.
+
+803
+01:40:37.859 --> 01:40:43.288
+And then we will be back. Okay.
+
+804
+01:40:43.288 --> 01:40:47.939
+Share the score, so we can revise it. Okay. I'll just put everything inside the trial.
+
+805
+01:40:47.939 --> 01:40:52.439
+Excuse me, man. Oh, yes.
+
+806
+01:40:52.439 --> 01:41:03.149
+And if we are implementing more than 1 thread than the correct basement, that the presentation will be sequential output moment to check whether the multithreading has been implemented correctly or not.
+
+807
+01:41:03.149 --> 01:41:09.868
+But this should be the way, but why we are not getting it. The reason is we are not handling the multi threat communication.
+
+808
+01:41:09.868 --> 01:41:14.969
+In that case for that, we need to synchronize it. Yes, exactly.
+
+809
+01:41:14.969 --> 01:41:23.219
+Okay, so my main console based application only depends on whether the multi setting has been implemented correctly. It's whether it gives sequential output or not.
+
+810
+01:41:23.219 --> 01:41:27.448
+Yes, yes, thank you.
+
+811
+01:41:28.769 --> 01:41:33.298
+So, I'm ending the meeting take care. We'll meet a bit too.
+
